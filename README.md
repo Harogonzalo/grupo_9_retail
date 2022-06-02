@@ -1,16 +1,22 @@
 # grupo_9_retail
 
-# Ofrecemos electrodomesticos y productos para el hogar. Seleccionamos aquellos productos que sobresalen del mercado basandonos en la interaccion del publico en redes, valoracion en sitios de distribucion masiva como Mercado Libre y un equipo de vendedores especializados.
-# Los usuarios podran comparar y comprar nuestros productos en un entorno facil y predictivo, teniendo en cuenta las distintas valoraciones del producto en las redes y la especializada descripcion de un vendedor experimentado del equipo de trabajo de #
+URL REPO: https://github.com/Harogonzalo/grupo_9_retail.git
 
-# https://www.fravega.com/
-# https://www.tiomusa.com.ar/
-# https://www.musimundo.com/
-# https://www.cetrogar.com.ar/
-# https://grupomarquez.com.ar/
+# Tematica del sitio
+- Ecomerce. Tienda virtual de Electrodomesticos y Articulos para el Hogar.
+# Publico objetivo
+- Nuestor sitio web esta orientado a usuarios de 18 años en adelante, que quieran decidir rapido y seguro sobre una compra.
 
+# Productos y Servicios
+- Ofrecemos electrodomesticos y productos para el hogar. Seleccionamos aquellos productos que sobresalen del mercado basandonos en la interaccion del publico en redes, valoracion en sitios de distribucion masiva como Mercado Libre y un equipo de vendedores especializados.
 
+# Listado de 5 paginas referentes
+- FRAVEGA https://www.fravega.com/
+- TIO MUSA https://www.tiomusa.com.ar/
+- MUSIMUNDO https://www.musimundo.com/
+- CETROGAR https://www.cetrogar.com.ar/
+- GRUPO MARQUEZ https://grupomarquez.com.ar/
 
 # Nosotros:
-# Diego Iacub, Antropologo, estudiante de Psicologia, me interesan los deportes, la musica, las ciencias sociales y la programacion. Me capacite en SAP, HTTML, CSS y estudio actualmente Full Stack Node a Distancia.
+- Diego Iacub, 35 años, padre, estudiante y trabajador
 
