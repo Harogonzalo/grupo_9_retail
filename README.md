@@ -19,4 +19,5 @@ URL REPO: https://github.com/Harogonzalo/grupo_9_retail.git
 
 # Nosotros:
 - Diego Iacub, 35 años, padre, estudiante y trabajador
+- Gonzalo Haro, 20 años, estudiante y actualmente trabajando en el Ministerio de educacion 
 
