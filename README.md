@@ -22,3 +22,4 @@ URL REPO: https://github.com/Harogonzalo/grupo_9_retail.git
 - Gonzalo Haro, 20 años, estudiante y actualmente trabajando en el Ministerio de educacion 
 - Juan Martin Estrella, 18 años, estudiante.
 - Alan , 36 años, Tecnico, adicto a la tecnologia.
+- Ignacio Gomez Cerruti, 20 años, estudiante.
