@@ -10,12 +10,47 @@ body {
 }
 
 header {
-    background-color: #4cc8e7;
+    color: white;
+    background-color:lightseagreen;
+    padding-bottom: lightseagreen;
+    font-size: 14px;
+    border-bottom: solid 3px indigo;
+    padding:22px;
+    margin-bottom: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+main {
+    margin: auto;
+    width: 90vw;
+}
+
+div {
+    margin: auto;
+    width: 90vw;
+}
+
+section {
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 h3 {
     font-size: 24px;
 }
+
+footer {color: white;
+    background-color:rebeccapurple;
+    height: 40px;
+    border-top: solid 1px lightseagreen;
+    padding: 12px;
+    text-align: center;
+    box-sizing: border-box
+}
+
 
 .precios {
     font-size: 18px;
@@ -27,4 +62,8 @@ h3 {
 
 .descripciones {
     font-size: 16px;
+}
+
+@media (min-width: 361px) {
+    .descuentos{ display: none}
 }
