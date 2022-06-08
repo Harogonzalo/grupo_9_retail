@@ -3,16 +3,24 @@ const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 4000;
 
-app.use(express.static('public'))
-;
+app.use(express.static('public'));
+//app.use(express.static('views'));
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/index.html'));
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/login.html'));
+    res.sendFile(path.join(__dirname, './views'));
 });
+
+
+/*const loginRoutes = require("./views/login.html");
+
+app.use('/login', loginRoutes);*/
+
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/404.html'));
