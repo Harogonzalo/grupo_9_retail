@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    
 }
 
 header {
@@ -21,21 +21,37 @@ header {
     box-sizing: border-box;
 }
 
+nav {
+    margin: auto;
+    width: 90vw;    
+}
+ul {
+    display: flex;
+    }
+
+ol{
+    list-style: none;
+    padding: 20px;
+}   
+
 main {
     margin: auto;
     width: 90vw;
 }
 
-div {
-    margin: auto;
-    width: 90vw;
-}
 
 section {
     margin: auto;
     width: 100vw;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    width: 100%
 }
 
 h3 {
@@ -64,6 +80,27 @@ footer {color: white;
     font-size: 16px;
 }
 
+Contenedor para Ofertas
+.contenedor-padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-between;
+}
+
+.elemento-hijo {
+    display: flex;
+    }
+
+
+
 @media (min-width: 361px) {
     .descuentos{ display: none}
 }
+@media (min-width: 361px) {
+    .descuentos{ display: none}
+}
+@media (min-width: 1024px) {
+    .descuentos{ display: none}
+}
+

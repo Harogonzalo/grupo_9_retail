@@ -1,6 +1,7 @@
 # grupo_9_retail
 
 URL REPO: https://github.com/Harogonzalo/grupo_9_retail.git
+URL TABLERO: https://github.com/Harogonzalo/grupo_9_retail/projects/1
 
 # Tematica del sitio
 - Ecomerce. Tienda virtual de Electrodomesticos y Articulos para el Hogar.
