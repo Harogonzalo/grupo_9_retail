@@ -21,9 +21,13 @@ header {
     box-sizing: border-box;
 }
 
+logo-header {
+    display: flex;
+}
+
 nav {
     margin: auto;
-    width: 90vw;    
+    width: 100%;    
 }
 ul {
     display: flex;
@@ -49,6 +53,11 @@ section {
     justify-content: center;
 }
 
+article .prod-contenedor {
+    display: flex;
+}
+
+
 div {
     display: flex;
     width: 100%
@@ -70,6 +79,7 @@ footer {color: white;
 
 .precios {
     font-size: 18px;
+    width: 30%;
 }
 
 .descuentos {
@@ -78,7 +88,14 @@ footer {color: white;
 
 .descripciones {
     font-size: 16px;
+    font-weight: 20%;
 }
+
+main section article i {
+    display: flex;
+}
+
+
 
 Contenedor para Ofertas
 .contenedor-padre {
@@ -88,16 +105,37 @@ Contenedor para Ofertas
     align-items: flex-between;
 }
 
-.elemento-hijo {
+.elemento-hijo 
+.precio-descuento{
     display: flex;
+}
+
+@media (min-width: 426px) {
+    main section article {
+        display: block;
+    }
+    
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
+    main section div.products article {
+        width: 45%;
+    }
+    
 
-
-@media (min-width: 361px) {
     .descuentos{ display: none}
 }
-@media (min-width: 361px) {
+
+
+
+
+
+@media (min-width: 769px) {
     .descuentos{ display: none}
 }
 @media (min-width: 1024px) {
