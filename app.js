@@ -9,19 +9,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/index.html'));
 });
 
-/*app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views'));
-});*/
-
-
-/*const loginRoutes = require("./views/login.html");
-
-app.use('/login', loginRoutes);*/
-
 // Error 404
-//app.get('*', (req, res) => {
-//    res.sendFile(path.join(__dirname, './views/404.html'));
-//});
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/404.html'));
+});
 
 // Login
 app.get('/login', (req, res) => {

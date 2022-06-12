@@ -95,6 +95,15 @@ main section article i {
     display: flex;
 }
 
+body-404 {
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
 
 
 Contenedor para Ofertas
