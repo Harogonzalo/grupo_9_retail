@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+/* GENERAL */
+
 body {
     font-family: 'Roboto', sans-serif;
     
 }
+
+/* ------ HEADER GENERAL ------ */
 
 header {
     color: white;
@@ -24,14 +28,29 @@ header {
 logo-header {
     display: flex;
 }
+ul-header {
+    display: flex;
+    }
+
+.nav-bar {
+    box-sizing: border-box;
+    border: 15px;
+    width: 100%;
+    position: relative;
+    top: 5px;
+    text-align:justify;
+}
+
+
 
 nav {
     margin: auto;
     width: 100%;    
 }
+
 ul {
     display: flex;
-    }
+}
 
 ol{
     list-style: none;
@@ -76,25 +95,6 @@ footer {color: white;
     box-sizing: border-box
 }
 
-
-.precios {
-    font-size: 18px;
-    width: 30%;
-}
-
-.descuentos {
-    font-size: 16px;
-}
-
-.descripciones {
-    font-size: 16px;
-    font-weight: 20%;
-}
-
-main section article i {
-    display: flex;
-}
-
 body-404 {
     margin: auto;
     width: 100vw;
@@ -103,8 +103,6 @@ body-404 {
     justify-content: center;
 
 }
-
-
 
 Contenedor para Ofertas
 .contenedor-padre {
@@ -118,6 +116,10 @@ Contenedor para Ofertas
 .precio-descuento{
     display: flex;
 }
+
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
 
 @media (min-width: 426px) {
     main section article {
@@ -136,13 +138,8 @@ Contenedor para Ofertas
         width: 45%;
     }
     
-
     .descuentos{ display: none}
 }
-
-
-
-
 
 @media (min-width: 769px) {
     .descuentos{ display: none}
