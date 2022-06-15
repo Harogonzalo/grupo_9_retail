@@ -5,55 +5,38 @@
 }
 
 body {
-    /*font-family: 'Roboto', sans-serif;*/
-    width:"100vw";
+    font-family: 'Roboto', sans-serif;
+    width:"100%";
 }
 
 header {
     display: flex;
     color: white;
-    background-color:lightseagreen;
+    background-color:#0c0c0c;
     padding-bottom: lightseagreen;
     font-size: 14px;
     border-bottom: solid 3px indigo;
-    margin-bottom: 15px;
     text-align: center;
-    box-sizing: border-box;
-    justify-content: space-between;
+    margin-bottom: 15px;
     align-items: center;
-    width: 100%;
-    padding: 10px;
-
-}
-
-logo-header {
-    display: flex;
-}
-
-    
-    width:"100vw";
-    color: rgb(255, 255, 255);
-    background-color:#340b8c;
-    padding-bottom: #340b8c;
-    border-bottom: solid 3px rgb(255, 255, 255);
-    padding:22px;
-    margin-bottom: 1px;
-    /*position:fixed*/
+    justify-content: space-between;
+    padding: 15px;
+   
 }
 
 .logo-header {
-    width:"12vw";
     display: flex;
 }
 .busca-header {
     display: flex;
+    justify-content: space-around;
 }
 
 .ul-header {
     display: flex;
     color: aliceblue;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 
@@ -61,13 +44,13 @@ logo-header {
 /* ---------------- INDEX ---------------- */
 
 .div-nav-bar {
-    /*background-color: #5079F2;*/
+    background-color: #5079F2;
     box-sizing: border-box;
     border: 15px;
     width: 100vw;
     height: 4%;
-    /*position: relative;*/
-    /*bottom: 5px;*/
+    position: relative;
+    bottom: 5px;
     text-align:center;
     display:flex;
 }
@@ -96,7 +79,7 @@ section {
     margin: auto;
     width: 100%;
     text-align: center;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     
@@ -171,7 +154,7 @@ Contenedor para Ofertas
 @media (min-width: 426px) {
     
     
-    /*main section article {
+    main section article {
         display: block;
     }
     
