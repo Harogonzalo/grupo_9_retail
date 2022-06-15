@@ -1,7 +1,3 @@
-/*Como cliente quiero ver un resumen de la oferta de productos para poder
-decidir rápidamente si quedarme o buscar el producto en otro sitio. ★ Como
-cliente quiero que el sitio funcione bien en mi teléfono celular para poder
-acceder en cualquier momento.*/
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,51 +15,56 @@ acceder en cualquier momento.*/
     ></script>
     <title>Index</title>
   </head>
+
   <body>
+
     <header>
       <div class="logo-header">
-        <img src="/img/Logo-prueba2.png"
-        width="8%"
-        alt="Logo de MI NOMBRE"/>
-      <div>
+        <img src="/img/Logo-prueba2.png" href="#" alt="Logo de Solo lo Mejor"/>
+      <div class="busca-header">
         <input autocomplete="off" 
-              placeholder="Buscá productos..." 
+              placeholder="Buscar productos aqui..." 
               type="text" 
               value="">
       </div>      
-      <nav>
-        <ul class="ul-header">
-          <li>
+      <div class="ul-header">
+        <ul>
+          <ol>
             <a href="/register">Registrate</a>
             <i class="fa-solid fa-id-card"></i>
-          </li>
-          <li>
+          </ol>
+          <ol>
             <a href="/login">Ingresá</a>
             <i class="fa-solid fa-right-to-bracket"></i>
-          </li>
-          <li>
+          </ol>
+          <ol>
             <a href="/productCart"
               >Mis compras
               <i class="fa-solid fa-basket-shopping"></i>
             </a>
-          </li>
+          </ol>
         </ul>
-      </nav>
+      </div>
     </div>
     </header>
 
-    <nav>
-        <ul class="nav-bar">
-        <li><a href="#Televisores">Televisores</a></li>
-        <li><a href="#Calefaccion">Calefaccion</a></li>
-        <li><a href="#Computacion">Computacion</a></li>
-        <li><a href="#Telefonia">Telefonia</a></li>
-    </ul>
-      <img src="/img/img-home-banner.jpg" alt="OFERTAS" width="100%" height="35%"/>
-    </nav>
+    
 
     <main>
-        <section>
+      <div class="div-nav-bar">
+        <ul>
+        <ol><a href="#Televisores">Televisores</a></lo>
+        <ol><a href="#Calefaccion">Calefaccion</a></lo>
+        <ol><a href="#Computacion">Computacion</a></lo>
+        <ol><a href="#Telefonia">Telefonia</a></lo>
+        </ul>
+      
+      </div>
+
+      <section class="img-banner">
+        <img src="/img/img-home-banner.jpg" alt="OFERTAS" width="100%" height="35%"/>  
+      </section>
+      <section>
         <h3>OFERTAS</h3>
         <div class="prod-contenedor">
         <article>
@@ -116,3 +117,9 @@ acceder en cualquier momento.*/
     </footer>
   </body>
 </html>
+
+/*Como cliente quiero ver un resumen de la oferta de productos para poder
+decidir rápidamente si quedarme o buscar el producto en otro sitio. ★ Como
+cliente quiero que el sitio funcione bien en mi teléfono celular para poder
+acceder en cualquier momento.*/
+
