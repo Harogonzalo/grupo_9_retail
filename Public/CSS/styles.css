@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+/* PALETA DE COLORES */
+
+/*
+#340B8C
+#210759
+#5079F2
+#035AA6
+#38BDF2
+*/
+
 /* GENERAL */
 
 body {
@@ -15,14 +25,14 @@ body {
 
 header {
     color: white;
-    background-color:lightseagreen;
-    padding-bottom: lightseagreen;
+    background-color: #340b8c;
+    padding-bottom: #340b8c;
     font-size: 14px;
     border-bottom: solid 3px indigo;
     padding:22px;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 logo-header {
@@ -33,15 +43,17 @@ ul-header {
     }
 
 .nav-bar {
+    background-color: #5079F2;
     box-sizing: border-box;
     border: 15px;
     width: 100%;
+    height: 8%;
     position: relative;
-    top: 5px;
-    text-align:justify;
+    bottom: 5px;
+    text-align:center;
 }
 
-
+/* ---------------- INDEX ---------------- */
 
 nav {
     margin: auto;
@@ -86,14 +98,18 @@ h3 {
     font-size: 24px;
 }
 
+/* ---------------- FOOTER ---------------- */
+
 footer {color: white;
-    background-color:rebeccapurple;
+    background-color:#38BDF2;
     height: 40px;
     border-top: solid 1px lightseagreen;
     padding: 12px;
     text-align: center;
     box-sizing: border-box
 }
+
+/* ---------------- ERROR 404 ---------------- */
 
 body-404 {
     margin: auto;
@@ -103,20 +119,6 @@ body-404 {
     justify-content: center;
 
 }
-
-Contenedor para Ofertas
-.contenedor-padre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-between;
-}
-
-.elemento-hijo 
-.precio-descuento{
-    display: flex;
-}
-
 
 /* ---------------- MEDIA QUERIES ---------------- */
 
