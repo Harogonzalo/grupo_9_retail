@@ -4,65 +4,36 @@
     box-sizing: border-box;
 }
 
-/* PALETA DE COLORES */
-
-/*
-#340B8C
-#210759
-#5079F2
-#035AA6
-#38BDF2
-*/
-
-/* GENERAL */
-
 body {
     font-family: 'Roboto', sans-serif;
     
 }
 
-/* ------ HEADER GENERAL ------ */
-
 header {
+    display: flex;
     color: white;
-    background-color: #340b8c;
-    padding-bottom: #340b8c;
+    background-color:lightseagreen;
+    padding-bottom: lightseagreen;
     font-size: 14px;
     border-bottom: solid 3px indigo;
-    padding:22px;
-    margin-bottom: 1px;
+    margin-bottom: 15px;
     text-align: center;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+
 }
 
 logo-header {
     display: flex;
 }
-ul-header {
-    display: flex;
-    }
 
-.nav-bar {
-    background-color: #5079F2;
-    box-sizing: border-box;
-    border: 15px;
-    width: 100%;
-    height: 8%;
-    position: relative;
-    bottom: 5px;
-    text-align:center;
-}
-
-/* ---------------- INDEX ---------------- */
-
-nav {
-    margin: auto;
-    width: 100%;    
-}
 
 ul {
     display: flex;
-}
+    }
 
 ol{
     list-style: none;
@@ -71,37 +42,35 @@ ol{
 
 main {
     margin: auto;
-    width: 90vw;
+    width: 100%;
 }
 
 
 section {
     margin: auto;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    
 }
 
-article .prod-contenedor {
-    display: flex;
-}
+.prod-contenedor {
+    width: 200px;
+    height: 300px;
 
 
-div {
-    display: flex;
-    width: 100%
 }
+
 
 h3 {
     font-size: 24px;
+    text-align: center;
 }
 
-/* ---------------- FOOTER ---------------- */
-
 footer {color: white;
-    background-color:#38BDF2;
+    background-color:rebeccapurple;
     height: 40px;
     border-top: solid 1px lightseagreen;
     padding: 12px;
@@ -109,7 +78,25 @@ footer {color: white;
     box-sizing: border-box
 }
 
-/* ---------------- ERROR 404 ---------------- */
+
+.precios {
+    font-size: 18px;
+    text-align: center;
+}
+
+.descuentos {
+    font-size: 16px;
+    display:
+}
+
+.descripciones {
+    font-size: 16px;
+    font-weight: 20%;
+}
+
+main section article i {
+    display: flex;
+}
 
 body-404 {
     margin: auto;
@@ -120,8 +107,20 @@ body-404 {
 
 }
 
-/* ---------------- MEDIA QUERIES ---------------- */
 
+
+Contenedor para Ofertas
+.contenedor-padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-between;
+}
+
+.elemento-hijo 
+.precio-descuento{
+    display: flex;
+}
 
 @media (min-width: 426px) {
     main section article {
@@ -140,13 +139,32 @@ body-404 {
         width: 45%;
     }
     
-    .descuentos{ display: none}
+
+    .descuentos{ display: block}
 }
+
+
+
+
 
 @media (min-width: 769px) {
-    .descuentos{ display: none}
+    .descuentos{ display: block}
 }
 @media (min-width: 1024px) {
-    .descuentos{ display: none}
+    .descuentos{ 
+        display: block
+    }
 }
 
+.buscador{
+    height: 42px;
+    width: 230px;
+
+}
+.categorias{
+    width: 100%;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+}
