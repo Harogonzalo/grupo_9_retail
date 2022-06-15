@@ -115,7 +115,7 @@ footer {color: white;
 
 .descuentos {
     font-size: 16px;
-    display:
+    display: block
 }
 
 .descripciones {
@@ -189,7 +189,7 @@ Contenedor para Ofertas
 
 .buscador{
     height: 42px;
-    width: 230px;
+    width: 300px;
 
 }
 .categorias{
@@ -198,4 +198,39 @@ Contenedor para Ofertas
 .nav-bar{
     display: flex;
     justify-content: space-around;
+}
+Contenedor para Novedades
+.contenedor-padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-between;
+}
+
+.elemento-hijo 
+.precio-descuento{
+    display: flex;
+}
+
+@media (min-width: 426px) {
+    
+    
+    main section article {
+        display: block;
+    }
+    
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section div.products article {
+        width: 45%;
+    }
+    
+
+    .descuentos{ display: block}
 }
