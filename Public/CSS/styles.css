@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    
+    /*font-family: 'Roboto', sans-serif;*/
+    width:"100vw";
 }
 
 header {
@@ -30,6 +30,52 @@ logo-header {
     display: flex;
 }
 
+    
+    width:"100vw";
+    color: rgb(255, 255, 255);
+    background-color:#340b8c;
+    padding-bottom: #340b8c;
+    border-bottom: solid 3px rgb(255, 255, 255);
+    padding:22px;
+    margin-bottom: 1px;
+    /*position:fixed*/
+}
+
+.logo-header {
+    width:"12vw";
+    display: flex;
+}
+.busca-header {
+    display: flex;
+}
+
+.ul-header {
+    display: flex;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+/* ---------------- INDEX ---------------- */
+
+.div-nav-bar {
+    /*background-color: #5079F2;*/
+    box-sizing: border-box;
+    border: 15px;
+    width: 100vw;
+    height: 4%;
+    /*position: relative;*/
+    /*bottom: 5px;*/
+    text-align:center;
+    display:flex;
+}
+
+nav {
+    margin: auto;
+    width: 100vw;    
+}
 
 ul {
     display: flex;
@@ -50,7 +96,7 @@ section {
     margin: auto;
     width: 100%;
     text-align: center;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     display: flex;
     justify-content: space-around;
     
@@ -70,7 +116,7 @@ h3 {
 }
 
 footer {color: white;
-    background-color:rebeccapurple;
+    background-color:#38BDF2;
     height: 40px;
     border-top: solid 1px lightseagreen;
     padding: 12px;
@@ -123,7 +169,9 @@ Contenedor para Ofertas
 }
 
 @media (min-width: 426px) {
-    main section article {
+    
+    
+    /*main section article {
         display: block;
     }
     
