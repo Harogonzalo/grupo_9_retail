@@ -39,6 +39,6 @@ app.get('/register', (req, res) => {
 });*/
 
 
-app.listen(4000, () => {
-    console.log('listening on http://localhost:4000');
+app.listen(3000, () => {
+    console.log('listening on http://localhost:3000');
 });
