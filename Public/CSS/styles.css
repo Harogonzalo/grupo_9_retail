@@ -4,10 +4,24 @@
     box-sizing: border-box;
 }
 
+/* PALETA DE COLORES */
+
+/*
+#340B8C
+#210759
+#5079F2
+#035AA6
+#38BDF2
+*/
+
+/* GENERAL */
+
 body {
     font-family: 'Roboto', sans-serif;
     width:"100%";
 }
+
+/* ------ HEADER GENERAL ------ */
 
 header {
     display: flex;
@@ -88,8 +102,6 @@ section {
 .prod-contenedor {
     width: 200px;
     height: 300px;
-
-
 }
 
 
@@ -97,6 +109,8 @@ h3 {
     font-size: 24px;
     text-align: center;
 }
+
+/* ------- FOOTER -------- */
 
 footer {color: white;
     background-color:#38BDF2;
@@ -107,6 +121,7 @@ footer {color: white;
     box-sizing: border-box
 }
 
+/*--------???SE USA???---------*/
 
 .precios {
     font-size: 18px;
@@ -127,6 +142,49 @@ main section article i {
     display: flex;
 }
 
+
+/* ------ Carrito de Compras ------- */
+
+main .contenedor-carrito {
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+
+main h4 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.prod-contenedor-carrito {
+    display: flex;
+    flex-grow: 0.75;
+}
+
+.res-contenedor-carrito {
+    display: flex;
+    flex-grow: 0.25;
+}
+
+.precio-contenedor-carrito {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.totales {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ------- ERROR 404 -------- */
+
+
+
 body-404 {
     margin: auto;
     width: 100vw;
@@ -136,6 +194,7 @@ body-404 {
 
 }
 
+/*--------???SE USA???---------*/
 
 
 Contenedor para Ofertas
@@ -150,6 +209,10 @@ Contenedor para Ofertas
 .precio-descuento{
     display: flex;
 }
+
+
+/* ------ MEDIA QUERIES ------- */
+
 
 @media (min-width: 426px) {
     
@@ -234,7 +297,3 @@ Contenedor para Novedades
 
     .descuentos{ display: block}
 }  
- /* Login */
-
-
- 
