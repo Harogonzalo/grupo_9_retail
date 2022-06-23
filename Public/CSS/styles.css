@@ -145,41 +145,6 @@ main section article i {
 
 /* ------ Carrito de Compras ------- */
 
-main .contenedor-carrito {
-    margin: auto;
-    max-width: 700px;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    height: 100vh;
-
-}
-
-main h4 {
-    font-size: 30px;
-    padding: 10px;
-}
-
-.prod-contenedor-carrito {
-    display: flex;
-    flex-grow: 0.75;
-}
-
-.res-contenedor-carrito {
-    display: flex;
-    flex-grow: 0.25;
-}
-
-.precio-contenedor-carrito {
-    padding: 15px;
-    margin-top: 10px;
-    margin-bottom: 60px;
-}
-
-.totales {
-    display: flex;
-    justify-content: space-between;
-}
 
 
 
@@ -299,11 +264,6 @@ Contenedor para Novedades
 
     .descuentos{ display: block}
 }  
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   
   body {
     background-image: url('fondo.jpg')

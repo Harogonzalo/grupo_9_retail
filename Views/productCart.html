@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/carrito.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -46,49 +46,47 @@
       
     </header>
 
-    <nav class="categorias">
-        <ul class="nav-bar">
-        <li><a href="#TV, Audio y Video">TV, Audio y Video</a></li>
-        <li><a href="Electrodomesticos">Electrodomesticos</a></li>
-        <li><a href="#Computacion">Computacion</a></li>
-        <li><a href="Celulares">Celulares</a></li>
-    </ul>
-    </nav>
-
-
-    <main class="contenedor-carrito">
+    <main class="main-carrito">
         
   
-        <div class="prod-contenedor-carrito">
-            <h4>Mi Carrito</h4>
-        </div>
-
+        <div class="contenedor-carrito">
+            <h3>Mi Carrito</h3>
         
           
-        <div class="res-contenedor-carrito">
-
+        <div class="productos-carrito">
+          <article>
+            <img src= "/img/img-cafetera-moulinex.jpg" alt="Cafetera" class="barra"/>
+            <div class="logo-envio barra" >
+              <i class="fa-solid fa-truck"></i>
+            </div>
+              <div class="price-discount">
+                <p class="price">$6.770</p>
+                <p class="discount">40% off</p>
+              </div>
+              <h4 class="description">Cafetera Moulinex</h4>
+          </article>
          
-        <section class="precio-contenedor-carrito">
+        <section class="total-carrito">
         <div class="totales">
             <div>
-              <h3>TOTAL : </h3>
-            </div>
-            <div>
-              <h3> $ </h3>
+              <h3>TOTAL : $</h3>
             </div>
           </div>
   
           <form action="#" method="GET">
-            <button type="submit">Pagar</button>
-          </form>
+            <button class="botons" type="submit">Pagar</button>
+          
       
-          <button type="button" onclick="">Vaciar Carrito</button>
+          <button class="botons" type="submit" onclick="">Vaciar Carrito</button>
         
           <a href="/index">
-            <button type="submit">Comprar más</button>
+            <button class="botons" type="submit">Comprar más</button>
           </a>
+
+        </form>
         </section>
     </div>
+  </div>
       </main>
   
       <footer>
