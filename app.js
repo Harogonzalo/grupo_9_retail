@@ -21,6 +21,10 @@ app.get('/productCart', (req,res)=>{
     res.sendFile(__dirname + '/views/productcart.html');
 });
 
+app.get('/productDetail', (req,res)=>{
+    res.sendFile(__dirname + '/views/productDetail.html');
+});
+
 app.listen(PORT, ()=>{
     console.log(`Server running at http://${HOST}:${PORT}/`);
 });
