@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -79,43 +80,72 @@ body {
 
 /* ------ Carrito de Compras ------- */
 
-.contenedor-carrito {
-    width: 80%;
+.div-carrito {
+    width: 90%;
     height: 100%;
     background: #000000;
     padding: 30px;
     margin: auto;
-    margin-top: 10px;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
     margin-bottom: 60px;
     box-sizing: content-box;
+    display: flex;
 }
 
+.div-articulos{
+    width: 60%;
+    height: 600px;
+    border: #ffffff 2px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    align-items: flex-start;
+}
 /* News Cards */
-.news-cards {
+.nuevo-articulo {
     /*display: grid;
     grid-template-columns: repeat(4, 1fr);*/
-    gap: 50px;
-    margin: 50px 0;
-    display: flex
-    
-;
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+    justify-items: center;
+    border: #ffffff 2px solid;
   }
   
-  .news-cards img {
+  .nuevo-articulo img {
     width: 100%;
     height: 140px;
   }
   
-  .news-cards h3 {
-    font-size: 20px;
+  .nuevo-articulo h3 {
+    font-size: 30px;
     margin: 10px 0;
   }
   
-  .news-cards a {
+  .div-precio{
+    display: flex;
+
+  }
+
+  .precio {
+    font-size: 22px;
+    text-align: left;
+    flex-grow: 30%;
+}
+
+.descuento{
+    padding-left: 5px;
+    font-size: 16px;
+    color: greenyellow;
+    text-align: left;
+    flex-grow: 70%;
+}
+
+  .nuevo-articulo a {
     padding: 10px 0;
     color: #f2f2f2;
     text-transform: uppercase;
@@ -124,48 +154,101 @@ body {
   }
   
   .div-totales{
-    flex-grow: 1;
-    order: 1;
+    width: 40%;
     height: 600px;
     display: flex;
     flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
+  /*align-items: center;
+  text-align: center;*/
   border: 2px solid #fff;
   color: #fff;
 }
 
-.news-cards .div-totales img {
-    
-    width: 45%;
-    height: 50%;
+.div-logo{
+    background-color: #340B8C;
+    padding: 5px;
+    border: #ffffff 2px;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+  text-align: center;
 }
 
 .div-totales .h3-totales{
     font-size: 36px;
     margin-bottom: 2px;
+    border: #ffffff 2px;
+    padding: 20px;
 }
 
-
-.caja-totales{
+.div-precioFinal{
     font-size: 36px;
     margin-bottom: 2px;
     height: 60%;
     padding-bottom: 20px;
+    border: #ffffff 2px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
+/*
+.div-botones{
+    width: 100%;
+    border: #ffffff 2px;
+    background-color: #340B8C;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+*/
 form{
-    align-self: flex-end;
+    background-color: #340B8C;
+    width: 100%;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+input {
+    border-radius: 0.3em;
+    height: 30px;
+    background-color:rgba(227, 227, 227, 0.812);
+    border: none;
+    padding: 10px;
+    transition: all 0.2s;
+    outline: none;
+}
+
+input:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+form a button{
+    margin: 5px;
+    width: max-content;
+    background-color: rgb(201, 10, 218);
+    opacity: 0.5;
+    border-radius: 0.8em;
+    font-weight: bold;
+    padding: 20px;
+    border: solid 1px rgb(85, 2, 94);
+    transition: all 0.2s;
+}
+
+.div-botones .form-botones:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.div-botones{
+    width: 30%;
+
 }
 
 
-  .contenedor-carrito h3 {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
-  
-  .contenedor-carrito p {
+.contenedor-carrito p {
     height: 40px;
     text-align: left;
     font-size: 18px;
@@ -196,27 +279,6 @@ form{
     margin-top: 60px;
   }
 
-.price {
-    font-size: 18px;
-    text-align: left;
-    flex-grow: 30%;
-}
-
-.discount{
-    font-size: 16px;
-    color: greenyellow;
-    text-align: left;
-    flex-grow: 70%;
-}
-
-.description {
-    font-size: 16px;
-}
-
-.price-discount {
-    display: flex;
-    margin-top: 5px;
-}
 
 .total-carrito {
     
@@ -225,7 +287,7 @@ form{
     
 
 }
-
+*/
 
 footer {color: white;
     background-color:#38BDF2;
