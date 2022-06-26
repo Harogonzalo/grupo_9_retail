@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
-app.use(express.static('public'));
+
 
 const PORT = process.env.PORT || 4000;
 const HOST = process.env.HOST || 'localhost';
+app.use(express.static('public'));
 
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/index.html');
