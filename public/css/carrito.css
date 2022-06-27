@@ -20,88 +20,50 @@ a {
     list-style: none;
   }
 
-.container {
-    width: 100vw;
-    display: flex;
-}
+  /* Navigation */
 
-/* Navigation */
-.nav-main {
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 15hw;
-    padding: 0%;
-    margin: 0%;
+header {
     background-color: #340B8C;
     border-bottom: solid 4px rgb(226, 6, 167);
-    width: 100vw;
 }
 
-.div-logo-nav{
-    /*border: #ffffff solid 2px;*/
-}
-
-.nav-main img{
-    display: inline-block;
-    padding: 5px;
-    width: 130px;
-}
-
-.nav-main ul.nav-menu {
-    flex: 1;
+.todo-header{
     display: flex;
-    justify-content: space-around;
-  }
+    padding: 0px 10px;
+    justify-content: space-between;
+}
 
-  .nav-brand {
-    width: 50px;
-  }
-  
-  .nav-izq{
-    /*border: #ffffff solid 2px;*/
+.cuotas{
+    text-align: right;
+    align-content: flex-end;
+}
+
+.der-header{
+    align-self: center;    
+}
+
+.toda-navbar{
     display: flex;
-    padding-right: 10vw;
-    height: 90%;
-    align-self: center;
-  }
+    justify-content: space-between;
+    padding: 0px 5px;
+}
 
-  .nav-der{
+.der-navbar{
     /*border: #ffffff solid 2px;*/
     text-align: right;
-    flex-grow: ;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
     }
 
-  .nav-main ul li {
+.busqueda {
     padding: 10px;
-  }
-  
-  .nav-main ul li a {
-    padding: 2px;
-  }
-  
-  .nav-main ul li a:hover {
-    /*border-bottom: 2px solid #fff;*/
+    align-self: center;
+}
+
+.lupa {
+        padding: 10px;
     }
-  
-  .nav-menu{
-    /*border: #ffffff solid 2px;*/
-    /*flex-grow: 25;*/
-    width: 90wh;
-    margin: auto;
-  }
-
-  .div-busqueda{
-    align-self: center;
-    border: #ffffff solid 2px;
-    width: 400PX;
-  }
-
-  .nav-main ul.nav-menu-right {
-    margin-right: 50px;
-    align-self: center;
-  }
 
   /* Responsive Button */
   .menu-btn {
@@ -125,41 +87,38 @@ h4 {
     margin:auto;
     padding: 5px;
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
 }
 
 .div-carrito {
-    width: 90%;
-    height: 100%;
+    width: 90vw;
     background: #000000;
-    padding: 30px;
+    padding: 20px;
     margin: auto;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
     margin-bottom: 60px;
-    
     display: flex;
+
 }
 
 .div-articulos{
     border: solid 1px rgb(226, 6, 167);
     border-radius: 0.5em;
     margin-right: 20px; 
-    width: 60vw;
-    height: 90vh;
+    /*width: 60vw;*/
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     padding: 10px;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .nuevo-articulo {
     /*display: grid;
     grid-template-columns: repeat(4, 1fr);*/
-    width: 30%;
     border:  0.5px rgb(14, 4, 105);
     border-radius: 0.5em;
     margin: 5px;
@@ -174,7 +133,7 @@ h4 {
     height: 140px;
   }
   .nuevo-articulo h3 {
-    font-size: 30px;
+    font-size: 1.5rem;
     margin: 10px 0;
   }
   .div-precio{
@@ -182,14 +141,14 @@ h4 {
 
   }
   .precio {
-    font-size: 22px;
+    font-size: 1.2rem;
     text-align: left;
     flex-grow: 30%;
 }
 
 .descuento{
     padding-left: 5px;
-    font-size: 16px;
+    font-size: 0.8rem;
     color: greenyellow;
     text-align: left;
     flex-grow: 70%;
@@ -205,7 +164,6 @@ h4 {
   
   .div-totales{
     width: 25vw;
-    height: 90vh;
     border: solid 1px rgb(226, 6, 167);
     border-radius: 0.5em;
     display: flex;
@@ -226,14 +184,14 @@ h4 {
 }
 
 .div-totales .h3-totales{
-    font-size: 36px;
+    font-size: 1.5rem;
     margin-bottom: 2px;
     border: #ffffff 2px;
     padding: 20px;
 }
 
 .div-precioFinal{
-    font-size: 36px;
+    font-size: 2rem;
     margin-bottom: 2px;
     height: 60%;
     padding-bottom: 20px;
@@ -251,6 +209,7 @@ form{
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
+    border-radius: 0.8em;
 }
 
 input {
@@ -285,12 +244,13 @@ form a button{
 
 .div-botones{
     width: 30%;
+    
 }
 
 .contenedor-carrito p {
     height: 40px;
     text-align: left;
-    font-size: 18px;
+    font-size: 0.8rem;
     line-height: 40px;
   }
   
@@ -311,7 +271,7 @@ form a button{
     padding: 12px;
     color: white;
     margin: 16px 0;
-    font-size: 16px;
+    font-size: 0.7rem;
     display:grid;
     align-items: flex-start;
     text-align:center;
@@ -334,3 +294,152 @@ footer {color: white;
     padding: 12px;
     text-align: center;
 }
+
+/* Mobile */
+@media (max-width: 480px) {
+    .description {
+        display: none;
+    }
+     nav {
+    display: none;
+    }
+    .header-nav {
+display: flex;
+flex-wrap: wrap;
+padding: 10px;
+}
+.cuotas h2{
+    font-size: 12px;
+    text-align: center;
+}
+    
+}
+    /*Mobile large  */
+    @media (min-width: 481px) {
+     article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+     .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        }
+
+     .burger-menu {
+         display: none;
+     }
+     .cuotas h2{
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    }
+
+    /* Tablet */
+    @media (min-width: 768px) {
+        .header-nav {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-evenly;
+        }
+        .logo {
+            display: flex;
+            
+        }
+        .buscador {
+            display: flex;
+            
+        }
+        .cuotas {
+            display:flex;
+            
+        }
+        .cuotas h2{
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .toda-navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .toda-navbar ul {
+            display: flex;
+        }
+        .toda-navbar li {
+            margin: 10px 10px;
+        }
+       
+       .section div.products {
+           display: flex;
+       }
+
+       /*article {
+           padding: 20px;
+       }
+      */
+    }
+/* Desktops and monitors */
+    @media (min-width: 1200px) {
+        .header-nav, .toda-navbar {
+            max-width: 1200px;
+            margin: auto;
+            justify-content: space-evenly;
+            display: flex;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+        
+        article {
+            box-shadow: none;
+            transition-property: all;
+            transition-duration: 0.5s;
+        }
+        article:hover {
+            box-shadow:0px 0px 10px rgb(100, 100, 100) ;
+        }
+        main section article i {
+            transition: all 0.5s;
+        }
+        main section article i:hover {
+            transform:rotateZ(-90deg);
+        }
+        
+        .footer-design {
+            display: flex;
+            margin:10px;
+        }
+        .copy-right {
+            text-align: center;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+       .texto-footer {
+           display: flex;
+           margin: 0 50px;
+       }
+
+       .izquierda-navbar li {
+           transition-property: all;
+           transition-duration: 0.5s;
+       }
+       .izquierda-navbar li:hover {
+           text-decoration: underline;
+       }
+       .right-navbar li {
+           transition-property: all;
+           transition-duration: 0.5s;
+       }
+       .right-navbar li:hover {
+        text-decoration: underline;
+       }
+
+    }
