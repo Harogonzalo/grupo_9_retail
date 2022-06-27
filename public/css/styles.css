@@ -38,6 +38,12 @@ header {
    
 }
 
+header img {
+        display: inline-block;
+        padding: 5px;
+        width: 130px;
+}
+
 .logo-header {
     display: flex;
 }
