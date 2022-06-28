@@ -2,104 +2,108 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
-    <script
-      src="https://kit.fontawesome.com/0442526d0c.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <script src="https://kit.fontawesome.com/0442526d0c.js" crossorigin="anonymous"></script>
     <title>Index</title>
   </head>
 
   <body>
 
-    <header>
-      <a href="/">
-        
-        <img src="/img/Logo-prueba2.png"
-        width="20%"
-        alt="Logo de MI NOMBRE"/>
-      
-        <input autocomplete="off" class="buscador"
-              placeholder="Buscá productos..." 
-              type="text" 
-              id="buscador"
-              value=""/>
-            
-     
-      <div class="ul-header">
-        <ul>
-          <ol>
-            <a href="/register">Registrate</a>
-            <i class="fa-solid fa-id-card"></i>
-          </ol>
-          <ol>
-            <a href="/login">Ingresá</a>
-            <i class="fa-solid fa-right-to-bracket"></i>
-          </ol>
-          <ol>
-            <a href="/productCart"
-              >Mis compras
-              <i class="fa-solid fa-basket-shopping"></i>
-            </a>
-          </ol>
-        </ul>
-      </div>
-      
-    </header>
-
-    <nav class="categorias">
-        <ul class="nav-bar">
-        <li><a href="#TV, Audio y Video">TV, Audio y Video</a></li>
-        <li><a href="Electrodomesticos">Electrodomesticos</a></li>
-        <li><a href="#Computacion">Computacion</a></li>
-        <li><a href="Celulares">Celulares</a></li>
+<!------ HEADER -------->
+<header>
+  <div class="todo-header" >
+  <div class="izq-header">
+    <img src="/img/Logo-prueba2.png" alt="Logo de MI NOMBRE" width="50%" />
+  </div>
+    
+  <div class="cuotas">  
+    <ul class="der-header">
+      <li><a href="/register">Creá tu cuenta  </a><i class="fa-solid fa-id-card"></i>
+      </li>
+      <li><a href="/login">Ingresá </a> <i class="fa-solid fa-right-to-bracket"></i>
+      </li>
+      <li><a href="#">Mis compras </a> <i class="fa-solid fa-basket-shopping"></i>
+      </li>
     </ul>
-    </nav>
-
-    <main>
+  </div>
+  </div>
+<!------ NAVBAR -------->
+  <nav class="toda-navbar">
+    <ul class="izq-navbar">
+      <li>
+        <a href="#TV, Audio y Video">TV, Audio y Video</a></li>
+      <li>
+        <a href="Electrodomesticos">Electrodomesticos</a></li>
+      <li>
+        <a href="#Computacion">Computacion</a></li>
+      <li>
+        <a href="Celulares">Celulares</a>
+      </li>
+    </ul>
+    <div class="der-navbar">
+    
+    <div class="busqueda">
+    <input type="text" placeholder="Buscar productos, marcas..">
     </div>
-    </header>
+    <div class="lupa">
+    <i class="fas fa-search"></i>
+    </div>
+    </div>
+  </nav>
+<!----- Icono Menu ----->
+  <div class="burger-menu">
+    <i class="fas fa-bars"></i>
+  </div>
+</header>
+
+<main>
       <section class="img-banner">
         <img src="/img/E-COMMERCE (4).png" alt="OFERTAS" width="100%" height="35%"/>  
       </section>
       
-        <h3>OFERTAS</h3>
-        <section>
-        <article class="prod-contenedor">
+        <h4>OFERTAS</h4>
+        
+        <div class="contenedor-bar">
+
+        <div class="prod-contenedor">
         <div class="img-producto">
         <a href="*"></a>
         <img src="/img/img-tv-samsung-smart.jpg"
           width="160"
           alt="SmartTv Samsung"/>
         </div>
-        <div class="prod-contenedor">
-          <h4 class="descripciones">SmartTv Samsung 43"</h4>
-        <p class="descuentos">5% off</p>
-        <p class="precios">$60.200</p>
+        <h3>SmartTv Samsung 43"</h3>
+        <p class="descuento">5% off</p>
+        <p class="precio">$60.200</p>
         </div>
-        </article>
-        <article class="prod-contenedor">
+      
+        
+
+        <div class="prod-contenedor">
         <div class="img-producto">
           <a href="*"></a>
           <img src="/img/horno-electrico-.jpg"
             width="160"
             alt=" Horno Electrico Ultracomb"/>
           </div>
-          <h4 class="descripciones">Horno Electrico</h4>
+          <h3 class="descripciones">Horno Electrico</h3>
           <div class="precio-descuento">
           <p class="descuentos">10% off</p>
           <p class="precios">$34.200</p>
-    </div>
+        </div>
         </article>
+      </div>
          </section>
-        <h3>MAS VENDIDOS</h3>
-      <section>
+
+         <h4>MAS VENDIDOS</h4>
+      <div class="contenedor-masVendidos">
     <article class="prod-contenedor">
       <div class="img-producto">
         <a href="*"></a>
@@ -107,14 +111,14 @@
           width="160"
           alt="Cafetera"/>
         </div>
-        <h4 class="descripciones">Cafetera Moulinex</h4>
-        <div class="precio-descuento">
+        <h3 class="descripciones">Cafetera Moulinex</h3>
+        <div class="div-precio">
         <p class="descuentos">40% off</p>
         <p class="precios">$30.500</p>
     </div>
-    </section>
+  </div>
 
-      <h3>NOVEDADES</h3>
+      <h4>NOVEDADES</h4>
       <section>
         <article class="prod-contenedor">
         <img src="img\pava-atma.jpg" 

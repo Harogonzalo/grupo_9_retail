@@ -36,6 +36,7 @@ header {
 .cuotas{
     text-align: right;
     align-content: flex-end;
+    align-self: center;
 }
 
 .der-header{
@@ -60,6 +61,7 @@ header {
     padding: 10px;
     align-self: center;
 }
+
 
 .lupa {
         padding: 10px;
