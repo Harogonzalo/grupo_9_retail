@@ -18,46 +18,54 @@
   <body>
 
     <header>
-      <a href="/">
-        <img src="/img/Logo-prueba2.png" alt="Logo de MI NOMBRE" width="50%" />
-        </a>
-      
-        <input autocomplete="off" class="buscador"
-              placeholder="Buscá productos..." 
-              type="text" 
-              id="buscador"
-              value=""/>
-            
-     
-      <div class="ul-header">
-        <ul>
-          <ol>
-            <a href="/register">Registrate</a>
-            <i class="fa-solid fa-id-card"></i>
-          </ol>
-          <ol>
-            <a href="/login">Ingresá</a>
-            <i class="fa-solid fa-right-to-bracket"></i>
-          </ol>
-          <ol>
-            <a href="/productCart"
-              >Mis compras
-              <i class="fa-solid fa-basket-shopping"></i>
-            </a>
-          </ol>
+      <div class="todo-header" >
+      <div class="izq-header">
+        <a href="/">
+          <img src="/img/Logo-prueba2.png" alt="Logo de MI NOMBRE" width="50%" />
+          </a>
+      </div>
+        
+      <div class="cuotas">  
+        <ul class="der-header">
+          <li><a href="/register">Creá tu cuenta  </a><i class="fa-solid fa-id-card"></i>
+          </li>
+          <li><a href="/login">Ingresá </a> <i class="fa-solid fa-right-to-bracket"></i>
+          </li>
+          <li><a href="/productCart">Mis compras </a> <i class="fa-solid fa-basket-shopping"></i>
+          </li>
         </ul>
       </div>
-      
+      </div>
+  <!------ NAVBAR -------->
+      <nav class="toda-navbar">
+        <ul class="izq-navbar">
+          <li>
+            <a href="#TV, Audio y Video">TV, Audio y Video</a></li>
+          <li>
+            <a href="Electrodomesticos">Electrodomesticos</a></li>
+          <li>
+            <a href="#Computacion">Computacion</a></li>
+          <li>
+            <a href="Celulares">Celulares</a>
+          </li>
+        </ul>
+        <div class="der-navbar">
+        
+        
+        
+      <div class="busqueda">
+        <input type="text" placeholder="Buscar productos, marcas..">
+        </div>
+        <div class="lupa">
+        <i class="fas fa-search"></i>
+        </div>
+        </div>
+      </nav>
+  <!----- Icono Menu ----->
+      <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
-
-    <nav class="categorias">
-        <ul class="nav-bar">
-        <li><a href="#TV, Audio y Video">TV, Audio y Video</a></li>
-        <li><a href="Electrodomesticos">Electrodomesticos</a></li>
-        <li><a href="#Computacion">Computacion</a></li>
-        <li><a href="Celulares">Celulares</a></li>
-    </ul>
-    </nav>
 
     <main class="main-login">
     
@@ -69,7 +77,7 @@
               <input class="controls" type="constraseña" placeholder="Ingresar constraseña"><br>
               <input class="botons" type="submit" value="Ingresar"><br>
               <p><a href="#">Olvido su contraseña?</a></p> 
-              <p> <a href="#">Ya tenes cuenta?</a></p>
+              <p><a href="/register">Registrate</a></p>
             </div>
         </form>    
         
