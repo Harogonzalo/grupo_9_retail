@@ -13,39 +13,7 @@
 </head>
 <body>
     <header>
-      <div>
-        <a href="/">
-          <img src="/img/Logo-prueba2.png" alt="Logo de MI NOMBRE" width="50%" />
-          </a>
-      </div>
-        
-      
-        <input autocomplete="off" class="buscador"
-              placeholder="Buscá productos..." 
-              type="text" 
-              id="buscador"
-              value=""/>
-            
-     
-      <div class="ul-header">
-        <ul>
-          <ol>
-            <a href="/register">Registrate</a>
-            <i class="fa-solid fa-id-card"></i>
-          </ol>
-          <ol>
-            <a href="/login">Ingresá</a>
-            <i class="fa-solid fa-right-to-bracket"></i>
-          </ol>
-          <ol>
-            <a href="/productCart"
-              >Mis compras
-              <i class="fa-solid fa-basket-shopping"></i>
-            </a>
-          </ol>
-        </ul>
-      </div>
-      
+      <%- include("../partials/header") %>
     </header>
 
     <main class="main-carrito">
@@ -93,7 +61,7 @@
       </main>
   
       <footer>
-        "Solo Lo Mejor S.A. - Formulario 960/D - Data Fiscal - Terminos y condiciones - ETC"
+        <%- include("../partials/footer") %>
       </footer>
 
 
