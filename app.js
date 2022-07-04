@@ -1,11 +1,40 @@
 const express = require('express');
 const app = express();
-
+const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || 'localhost';
-app.use(express.static('public'));
 
+const mainRoutes = require('./routes/mainRoutes');
+const productsRoutes = require('./routes/products');
+const usersRoutes = require('./routes/users');
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+//Rutas index
+app.use('/', mainRoutes);
+app.use('/products', productsRoutes);
+app.use('/users', usersRoutes);
+
+// configuarcion de public static
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.listen(PORT, ()=>{
+    console.log(`Server running at http://${HOST}:${PORT}/`);
+});
+
+
+
+
+// Rutas a vistas
+
+/**/
+
+
+
+
+/*
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/index.html');
 });
@@ -25,7 +54,5 @@ app.get('/productCart', (req,res)=>{
 app.get('/productDetail', (req,res)=>{
     res.sendFile(__dirname + '/views/productDetail.html');
 });
+*/
 
-app.listen(PORT, ()=>{
-    console.log(`Server running at http://${HOST}:${PORT}/`);
-});

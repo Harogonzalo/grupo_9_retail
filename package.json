@@ -2,7 +2,7 @@
   "name": "GRUPO_9_RETAIL",
   "version": "1.0.0",
   "description": "URL REPO https://github.com/Harogonzalo/grupo_9_retail.git",
-  "main": "index.html",
+  "main": "index.ejs",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,7 @@
   "license": "ISC",
   "keywords": [],
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.1"
   }
 }
