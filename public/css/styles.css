@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-/* PALETA DE COLORES */
-
-/*
+/* PALETA DE COLORES
 #340B8C
 #210759
 #5079F2
@@ -67,17 +65,16 @@ a {
     display: flex;
     justify-content: space-around;
     align-self: center;
-    }
+}
 
 .busqueda {
     padding: 10px;
     align-self: center;
 }
 
-
 .lupa {
         padding: 10px;
-    }
+}
 
   /* Responsive Button */
   .menu-btn {
@@ -89,15 +86,12 @@ a {
     display: none;
   }
 
-
-
 /* ------ MAIN ------ */
 
 main {
     margin: auto;
     width: 100vw;
 }
-
 
 .div-ofertas {
     width: 90vw;
@@ -109,8 +103,6 @@ main {
     color: white;
     box-shadow: 7px 13px 37px #000;
     margin-bottom: 60px;
-    
-
 }
 
 .div-articulos{
@@ -122,6 +114,8 @@ main {
     margin: auto;
     padding: 10px;
     align-items: center;
+    justify-content: space-evenly;
+    box-sizing: content-box;
 }
 
 .nuevo-articulo {
@@ -145,29 +139,6 @@ main {
     margin: 10px 0;
   }
 
-
-
-
-
-
-
-
-
-/* borrar?
-
-section {
-    width: 90vw;
-    background: #000000;
-    padding: 20px;
-    margin: auto;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px #000;
-    margin-bottom: 60px;
-    display: flex;
-}
-*/
 h4 {
     width: 90vw;
     height: 8vh;
@@ -180,19 +151,6 @@ h4 {
     text-align: center;
     font-size: 2rem;
 }
-/* borrar?
-.contenedor-bar{
-    border: solid 1px rgb(226, 6, 167);
-    border-radius: 0.5em;
-    margin-right: 20px; 
-    width: 60vw;
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 10px;
-    align-items: center;
-}
-*/
 
 h3 {
     font-size: 1.5rem;
@@ -236,30 +194,6 @@ footer {color: white;
     box-sizing: border-box
 }
 
-/*--------???SE USA???---------*/
-/*
-.precios {
-    font-size: 18px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.descuentos {
-    font-size: 16px;
-    display: block;
-    color: #ffffff;
-}
-
-.descripciones {
-    font-size: 16px;
-    font-weight: 20%;
-    color: #ffffff;
-}
-
-main section article i {
-    display: flex;
-}
-*/
 
 /* ------ Carrito de Compras ------- */
 
@@ -373,18 +307,13 @@ body-404 {
         .toda-navbar ul {
             display: flex;
         }
-        .toda-navbar li {
+.toda-navbar li {
             margin: 10px 10px;
         }
-       
-       .section div.products {
-           display: flex;
-       }
 
-
-
-
-
+.section div.products {
+    display: flex;
+}
 
 @media (min-width: 1024px) {
     .header-nav, .toda-navbar {
@@ -394,31 +323,10 @@ body-404 {
         display: flex;
     }
     
-    .descuentos{ 
+.descuentos{ 
         display: block
     }
 }
-
-.categorias{
-    width: 100%;
-}
-.nav-bar{
-    display: flex;
-    justify-content: space-around;
-}
-Contenedor para Novedades
-.contenedor-padre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-between;
-}
-
-.elemento-hijo 
-.precio-descuento{
-    display: flex;
-}
-
 
 @media (min-width: 426px) {
     
@@ -439,21 +347,9 @@ Contenedor para Novedades
         width: 45%;
     }
     
-
     .descuentos{ display: block}
 }  
-  
-  body {
-    font-family: "Oswald", sans-serif;
-    background-color: #090411;
-    background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%2333037f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-  
-  
-  
-  
-  
-  
+
   /* ------ Login y Register Comparten clases ------- */
   .form-register {
     width: 400px;
@@ -519,6 +415,6 @@ Contenedor para Novedades
     height: 60vh;
 
   }
- 
+
   
  
