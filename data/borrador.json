@@ -1,0 +1,12 @@
+/* <% for(let index=0; index < products.length; index++) { %>
+        
+    <h3><%= products[index].titulo %></h3>
+    <p class="div-precio">
+      <%= products[index].description %>
+      <%= products[index].price %>
+      <%= products[index].discount %>
+    </p>
+  </a>
+    <a href="#">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
+  
+<% } %>  */
