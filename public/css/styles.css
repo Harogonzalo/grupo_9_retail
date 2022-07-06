@@ -72,6 +72,16 @@ a {
     align-self: center;
 }
 
+input {
+    border-radius: 0.3em;
+    height: 30px;
+    background-color:rgba(227, 227, 227, 0.812);
+    border: none;
+    padding: 10px;
+    transition: all 0.2s;
+    outline: none;
+}
+
 .lupa {
         padding: 10px;
 }
@@ -257,7 +267,7 @@ body-404 {
        display: flex;
        flex-wrap: wrap;
        padding: 10px;
-       }
+    }
 
     .burger-menu {
         display: none;
@@ -265,17 +275,16 @@ body-404 {
     .cuotas h2{
        font-size: 12px;
        text-align: center;
-   }
+    }
 
 
    }
 
 
 @media (min-width: 769px) {
-    .descuentos{ display: block}
-}
-
-.header-nav {
+    .descuentos{ display: block
+    }
+    .header-nav {
             display: flex;
             align-items: center;
             padding: 20px;
@@ -307,13 +316,14 @@ body-404 {
         .toda-navbar ul {
             display: flex;
         }
-.toda-navbar li {
+        .toda-navbar li {
             margin: 10px 10px;
         }
-
-.section div.products {
+        .section div.products {
     display: flex;
-}
+        }
+    }
+
 
 @media (min-width: 1024px) {
     .header-nav, .toda-navbar {
