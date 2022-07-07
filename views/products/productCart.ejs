@@ -1,83 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <%- include("../partials/head") %>
-    <link rel="stylesheet" href="/css/carrito.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/carrito.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+    />
+    <script
+      src="https://kit.fontawesome.com/0442526d0c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Carrito de Compras</title>
-</head>
-<body>
-<!------ HEADER -------->
-  <header>
+  </head>
+  <body>
+    <!------ HEADER -------->
+    <header><%- include("../partials/header") %></header>
 
-    <%- include("../partials/header") %>
-
-  </header>
-    
-  <main>
+    <main>
       <h4>CARRITO DE COMPRAS</h4>
-     <div class="div-carrito">
-            
-     
-            <!-- Articulos en Carrito -->
-      <div class="div-articulos">
-      
-        <div class="nuevo-articulo">
-       <img src="/img/pava-atma.jpg" alt="" />
-        <h3>Pava Electrica Atma</h3>
-        <div class="div-precio"><p class="precio">$6.770</p>
-          <p class="descuento">40% off</p>
-        </div>
-          <a href="/productDetail">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
-      </div>
-      
-      <div class="nuevo-articulo">
-        <img src="/img/img-tv-samsung-smart.jpg" alt="" />
-        <h3>Smart TV Samsung</h3>
-        <div class="div-precio">
-        <p class="precio">$6.770</p>
-        <p class="descuento">40% off</p>
-        </div>
-        <a href="/productDetail">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
-        </div>
-        
-        <div class="nuevo-articulo">
-        <img src="/img/img-cafetera-moulinex.jpg" alt="" />
-        <h3>Cafetera Moulinex</h3>
-        <div class="div-precio">
-          <p class="precio">$6.770</p>
-          <p class="descuento">40% off</p>
-        </div>
-          <a href="/productDetail">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
-      </div>
-      </div>
-      <div class="div-totales">
-       <div class="div-logo">
-        <img src="/img/Logo-prueba2.png" width="25%" alt="Logo de MI NOMBRE" />
-       </div>
-        <h3 class="h3-totales">TOTAL COMPRAS</h3>
-       <div class="div-precioFinal"> $ 10.000,00
+      <div class="div-carrito">
+        <!-- Articulos en Carrito -->
+        <div class="div-articulos">
+          <div class="nuevo-articulo">
+            <img src="/img/pava-atma.jpg" alt="" />
+            <h3>Pava Electrica Atma</h3>
+            <div class="div-precio">
+              <p class="precio">$20.770</p>
+              <p class="descuento">40% off</p>
+            </div>
+            <a href="#"
+              >Mas Detalles <i class="fas fa-angle-double-right"></i
+            ></a>
+          </div>
 
+          <div class="nuevo-articulo">
+            <img src="/img/img-tv-samsung-smart.jpg" alt="" />
+            <h3>Smart TV Samsung</h3>
+            <div class="div-precio">
+              <p class="precio">$60.200</p>
+              <p class="descuento">40% off</p>
+            </div>
+            <a href="#"
+              >Mas Detalles <i class="fas fa-angle-double-right"></i
+            ></a>
+          </div>
+
+          <div class="nuevo-articulo">
+            <img src="/img/img-cafetera-moulinex.jpg" alt="" />
+            <h3>Cafetera Moulinex</h3>
+            <div class="div-precio">
+              <p class="precio">$30.500</p>
+              <p class="descuento">40% off</p>
+            </div>
+            <a href="#"
+              >Mas Detalles <i class="fas fa-angle-double-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="div-totales">
+          <div class="div-logo">
+            <img
+              src="/img/Logo-prueba2.png"
+              width="25%"
+              alt="Logo de MI NOMBRE"
+            />
+          </div>
+          <h3 class="h3-totales">TOTAL COMPRAS</h3>
+          <div class="div-precioFinal">$ 111.470,00</div>
+          <div>
+            <form action="javascript:void(0);">
+              <div class="div-botones">
+                <a href="/"> <button>PAGAR</button></a>
+              </div>
+              <div class="div-botones">
+                <a href="/"> <button>Vaciar Carrito</button></a>
+              </div>
+              <div class="div-botones">
+                <a href="/"> <button>Comprar más</button></a>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div>  
-      <form action="javascript:void(0);">
-        <div class="div-botones"><a href="/"> 
-        <button>PAGAR</button></a> 
-        </div>
-        <div class="div-botones"><a href="/">
-        <button>Vaciar Carrito</button></a>
-        </div>
-        <div class="div-botones"><a href="/">
-        <button>Comprar más</button></a>
-        </div>
-      </form>
-    </div>
-    </div>
-    </div>
-      </main>
-  
-      <footer>
-        <%- include("../partials/footer") %>
-      </footer>    
-</body>
+    </main>
+
+    <footer><%- include("../partials/footer") %></footer>
+  </body>
 </html>
-

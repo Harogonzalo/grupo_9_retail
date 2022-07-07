@@ -124,8 +124,9 @@ main {
     margin: auto;
     padding: 10px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     box-sizing: content-box;
+    
 }
 
 .nuevo-articulo {
@@ -390,6 +391,7 @@ body-404 {
     font-family: 'calibri';
     font-size: 18px;
     color: white;
+    height: 40px;
   }
   
   .form-register p {
@@ -411,13 +413,14 @@ body-404 {
   
   .form-register .botons {
     width: 100%;
-    padding: 12px;
+    padding: 20px;
     color:black;
     margin: 16px 0;
     font-size: 16px;
     background-color: rgb(201, 10, 218);
     opacity: 0.5;
     transition: all 0.2s;
+    text-align: center;
 
   }
 
