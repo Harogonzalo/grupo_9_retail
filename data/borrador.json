@@ -10,3 +10,22 @@
     <a href="#">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
   
 <% } %>  */
+
+
+/*
+<div class="div-articulos">
+
+<% for(let index=0; index < products.length; index++) { %>
+  <a href="/detalle/<%= menu[index].id %>">
+        
+    <h3><%= products[index].name %></h3>
+    <p class="div-precio">
+      <%= products[index].description %>
+      <%= products[index].price %>
+      <%= products[index].discount %>
+    </p>
+    <a href="#">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
+  
+<% } %>
+
+</div> */
