@@ -178,7 +178,7 @@ h3 {
     flex-grow: 30%;
 }
 
-.descuentos{
+.descuento {
     padding-left: 5px;
     font-size: 0.8rem;
     color: greenyellow;
@@ -208,6 +208,102 @@ footer {color: white;
 
 /* ------ Carrito de Compras ------- */
 
+.div-carrito {
+    width: 90vw;
+    background: #000000;
+    padding: 20px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 60px;
+    display: flex;
+  }
+
+.div-totales {
+    width: 25vw;
+    border: solid 1px rgb(226, 6, 167);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;
+    text-align: center;*/
+    color: #fff;
+  }
+  
+  .div-logo {
+    background-color: #340b8c;
+    padding: 5px;
+    border-radius: 0.5em;
+    width: 100%;
+    box-sizing: BORDER-BOX;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .div-totales .h3-totales {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    border: #ffffff 2px;
+    padding: 20px;
+  }
+  
+  .div-precioFinal {
+    font-size: 2rem;
+    margin-bottom: 2px;
+    height: 60%;
+    padding-bottom: 20px;
+    border: #ffffff 2px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  form {
+    background-color: #340b8c;
+    width: 100%;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 0.8em;
+  }
+  
+  input {
+    border-radius: 0.3em;
+    height: 30px;
+    background-color: rgba(227, 227, 227, 0.812);
+    border: none;
+    padding: 10px;
+    transition: all 0.2s;
+    outline: none;
+  }
+  
+  input:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  
+  form a button {
+    margin: 5px;
+    width: 90%;
+    background-color: rgb(201, 10, 218);
+    opacity: 0.5;
+    border-radius: 0.8em;
+    font-weight: bold;
+    padding: 20px;
+    border: solid 1px rgb(85, 2, 94);
+    transition: all 0.2s;
+  }
+  
+  .div-botones .form-botones:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  
+  .div-botones {
+    width: 30%;
+  }
 
 
 
