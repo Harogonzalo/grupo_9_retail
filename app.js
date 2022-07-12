@@ -12,13 +12,14 @@ const usersRoutes = require('./routes/users');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+// configuarcion de public static
+app.use(express.static(path.join(__dirname, 'public')));
+
 //Rutas index
 app.use('/', mainRoutes);
 app.use('/products', productsRoutes);
 app.use('/users', usersRoutes);
 
-// configuarcion de public static
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(PORT, ()=>{
     console.log(`Server running at http://${HOST}:${PORT}/`);
