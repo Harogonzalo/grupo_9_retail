@@ -6,8 +6,8 @@ const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || 'localhost';
 
 const mainRoutes = require('./routes/mainRoutes');
-const productsRoutes = require('./routes/products');
-const usersRoutes = require('./routes/users');
+const productsRoutes = require('./routes/productRoutes');
+const usersRoutes = require('./routes/userRoutes');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
