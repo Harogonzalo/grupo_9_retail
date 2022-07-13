@@ -445,8 +445,8 @@ body-404 {
 
    }
 
-
-   @media (min-width: 769px) {
+/*MIN - Desde que empieza*/
+   @media (min-width: 768px) {
     .descuentos{ display: block
     }
     .header-nav {

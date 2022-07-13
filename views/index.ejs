@@ -12,31 +12,35 @@
 
   <%- include("./partials/header") %>
 
+<!------  MAIN  ------>
+
 <main>
   <div>
     <img class="img-banner" src="/img/E-COMMERCE (4).png" alt="OFERTAS" />  
   </div>
 
 <div class="div-ofertas">
-
     <h4>OFERTAS</h4>
 
-
-
 <div class="div-articulos">
-<div class="nuevo-articulo">
+  
+  <% for( let i = 0; i < products.length; i++ ) { %>
+    <h3> <%= products[i].name %> </h3>
+    
+  <% } %>
+
+  <div class="nuevo-articulo">
   <div>
-    <a href="*"></a>  <img src="/img/img-tv-samsung-smart.jpg" width="160" alt="SmartTv Samsung"/>
+    <a href="#"></a>  <img src="/img/img-tv-samsung-smart.jpg" width="160" alt="SmartTv Samsung"/>
   </div>
   <h3>SmartTv Samsung 43"</h3>
   <div class="div-precio"><p class="precio">$60.200</p>
     <p class="descuento">5% off</p>
   </div>
     <a href="/products/productDetail">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
-  
 </div>
 
-<div class="nuevo-articulo">
+<!-- <div class="nuevo-articulo">
   <div>
     <a href="*"></a>
   <img src="/img/img-cafetera-moulinex.jpg"
@@ -49,9 +53,9 @@
   </div>
     <a href="/products/productDetail">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
   
-  </div>
+  </div> -->
 
-    <div class="nuevo-articulo">
+    <!-- <div class="nuevo-articulo">
       <div>
         <a href="*"></a>
       <img src="/img/Iphone-13-Pro.3.jpg"
@@ -64,7 +68,7 @@
         <a href="/products/productDetail">Mas Detalles <i class="fas fa-angle-double-right"></i></a>
       
   
-</div>
+</div> -->
 </div>
 </div>
 
