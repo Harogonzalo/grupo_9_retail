@@ -3,13 +3,9 @@ const usersController = {
         res.render('users/register');
     },
 
-
-
     login: (req, res) => {
          res.render('users/login');
     },
-
-
 
     editProduct: (req, res) => {
         res.render('users/editProduct');
