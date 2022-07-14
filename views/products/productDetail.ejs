@@ -7,40 +7,38 @@
 <body>
     
       <%- include("../partials/header") %>
-    
 
-    <main>
+      <main>
       <h4>Detalle de Producto</h4>
       <div class="div-carrito">
         <!-- Articulos en Detalle -->
         
-        <div class="div-articulos">
-        
-        <div class="nuevo-articulo">
-          <a href="/products/productDetail"></a><img src="/img/pava-atma.jpg" width="160" alt="Pava"/>
-          <h3>Pava Electrica ATMA</h3>
-        <div class="div-precio">
-          <p class="precio">$20.770</p>
-          <p class="descuento">40% off</p>
-        </div>
+        <div class="div-articulos">                  
+          <% for( let i = 0; i < 1/*products.length*/; i++ ) { %>
+            <div class="nuevo-articulo">  
+            <img src= <%= productsDetail[i].imagen %> />  
+            <h3> <%= productsDetail[i].name %> </h3>
+            <!-- <div class="div-precio">
+            <P class="precio">  $ <%= productsDetail[i].price %> </P>
+            <P class="descuento">  <%= productsDetail[i].discount %> % off</P>
+          </div>
+            <a href= "#" >Mas Detalles <i class="fas fa-angle-double-right"> </i></a>
+          </div> -->
+          </div>
+          <% } %>
+
+        <div class="detalle-articulo">
+        <h2>Detalle: La pava eléctrica Atma PE0821NAP tiene un diseño clásico en color metalico y una capacidad de 1,7 litros. Posee indicador de nivel de agua. Corta automáticamente al hervir el agua y es ideal para tomar mate, té, café u otras infusiones. También viene con enrollacable y giro 360º, para tener mayor comodidad en la conexión.</h2>
         </div>
 
-        <div class="nuevo-articulo">
-        <h4 class="div-totales">Detalle: La pava eléctrica Atma PE0821NAP tiene un diseño clásico en color metalico y una capacidad de 1,7 litros. Posee indicador de nivel de agua. Corta automáticamente al hervir el agua y es ideal para tomar mate, té, café u otras infusiones. También viene con enrollacable y giro 360º, para tener mayor comodidad en la conexión. Por otro lado, su filtro de doble acción alarga la vida útil de la jarra, brindando mejor calidad de agua caliente y evitando que se incrusten sólidos en sus paredes interiores.</h4>
         </div>
 
-
-        </div>
         <div class="div-totales">
           <div class="div-logo">
-            <img
-              src="/img/Logo-prueba2.png"
-              width="25%"
-              alt="Logo de MI NOMBRE"
-            />
+            <img src="/img/Logo-prueba2.png" width="25%" alt="Logo de MI NOMBRE"/>
           </div>
           <h3 class="h3-totales">PRECIO</h3>
-          <div class="div-precioFinal">$ 111.470,00</div>
+          <div class="div-precioFinal"><P> $ 10000</P> </div>
           <div>
             <form action="javascript:void(0);">
               <div class="div-botones">
@@ -62,9 +60,6 @@
         <%- include("../partials/footer") %>
       </footer>
 
-
-
-    
 </body>
 </html>
 

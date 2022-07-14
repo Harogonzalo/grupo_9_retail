@@ -132,8 +132,12 @@ main {
     align-items: center;
     justify-content: space-between;
     box-sizing: content-box;
-    
 }
+
+.div-articulos img{
+  width: 160px;
+}
+
 
 .nuevo-articulo {
     /*display: grid;
@@ -373,6 +377,19 @@ footer li a, footer li{
     width: 30%;
   }
 
+
+  .detalle-articulo {
+    width: 50vw;
+    height: 40vh;
+    border:  0.5px rgb(14, 4, 105);
+    border-radius: 0.5em;
+    margin: 5px;
+    padding: 10px;
+    justify-items: center;
+    border: rgb(14, 4, 105) 4px solid;
+    background-color: rgb(66, 51, 141);
+
+  }
 
 
 /* ------- ERROR 404 -------- */

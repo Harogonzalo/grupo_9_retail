@@ -1,4 +1,4 @@
-const productList = [
+const listProducts = [
     {
     id: 1,
     name: "Horno Electrico",
@@ -12,7 +12,7 @@ const productList = [
     id: 2,
     name: "Cafetera Moulinex",
     description: "Juego Red Dead Redemption II para xbox, Rockstar Games",
-    imagen: "imagen-1616099612014.jpg",
+    imagen: "/img/img-cafetera-moulinex.jpg",
     price: 30500,
     discount: 40,
     category: "ofertas",
@@ -29,19 +29,18 @@ const productList = [
   {
     id: 4,
     name: "Notebook Lenovo",
-    description:
-      "Intel Core i5 10210U 12GB de RAM 512GB SSD, Intel UHD Graphics 620 1920x1080px",
-    price: "$154999",
-    discount: "15",
+    description: "Intel Core i5 10210U 12GB de RAM 512GB SSD, Intel UHD Graphics 620 1920x1080px",
+    price: 154999,
+    discount: 15,
     interes: "novedades",
     imagen: "/img/notebook.jpg",
   },
   {
     id: 5,
     name: "Samsung Galaxy A33",
-    description: " 5g 128 Gb Awesome Black 6 Gb Ram ",
-    price: "$65000",
-    discount: "",
+    description: "5g 128 Gb Awesome Black 6 Gb Ram",
+    price: 65000,
+    discount: null,
     interes: "novedades",
     imagen: "/img/telefono.jpg",
   },
@@ -49,7 +48,7 @@ const productList = [
     id: 6,
     name: "Heladera Patrick",
     description: "HPK141M10 silver con freezer 355L 220V",
-    imagen: "imagen-1617485554035.jpg",
+    imagen: "/img/imagen-1617485554035.jpg",
     price: 102000,
     discount: 25,
     category: "ofertas",
@@ -67,11 +66,11 @@ const productList = [
 
 const productsController = {
   productDetail: (req, res) => {
-    res.render("products/productDetail");
+    res.render("products/productDetail", {productsDetail: listProducts});
   },
 
   productCart: (req, res) => {
-    res.render("products/productCart");
+    res.render("products/productCart", {productsCart: listProducts});
   },
 };
 
