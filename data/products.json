@@ -1,0 +1,65 @@
+[
+    {
+    "id": "1",
+    "name": "Horno Electrico",
+    "description": "bla bl bla",
+    "price": "34200",
+    "discount": "10",
+    "category": "novedades",
+    "imagen": "/img/horno-electrico-.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Cafetera Moulinex",
+    "description": "Juego Red Dead Redemption II para xbox, Rockstar Games",
+    "price": "30500",
+    "discount": "40",
+    "category": "ofertas",
+    "imagen": "/img/img-cafetera-moulinex.jpg"
+},
+  {
+    "id": "3",
+    "name": "Pava Electrica Atma",
+    "description": "PAva bla bla bla",
+    "price": "6770",
+    "discount": "15",
+    "category": "novedades",
+    "imagen": "/img/pava-atma.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Notebook Lenovo",
+    "description": "Intel Core i5 10210U 12GB de RAM 512GB SSD, Intel UHD Graphics 620 1920x1080px",
+    "price": "154999",
+    "discount": "15",
+    "category": "novedades",
+    "imagen": "/img/notebook.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Samsung Galaxy A33",
+    "description": "5g 128 Gb Awesome Black 6 Gb Ram",
+    "price": "65000",
+    "discount": "null",
+    "category": "novedades",
+    "imagen": "/img/telefono.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Heladera Pati:c k",
+    "description": "HPK141M10 silver con freezer 355L 220V",
+    "price": "102000",
+    "discount": "25",
+    "category": "ofertas",
+    "imagen": "/img/imagen-1617485554035.jpg"
+  },
+  {
+    "id": "7",
+    "name": "SmartTv Samsung 43",
+    "description": "bla bnla bla",
+    "price": "60200",
+    "discount": "5",
+    "category": "ofertas",
+    "imagen": "/img/img-tv-samsung-smart.jpg"
+  }
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include("../partials/head") %>
+
+    <title>Editar Producto</title>
+
+  <body>
+
+      <%- include("../partials/header") %>
+
+    <main>
+    
+        <form class="form-register"
+              action ="/products/<%= listProdcuts.id ?? ''%>?_method=PUT" method="post">
+
+            <input class="controls" type="text" name="Nombre de Producto" id="Nombre de Producto" placeholder="Ingrese Producto" 
+            value="<%= listProdcuts.name ?? ''%>">
+
+            <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="Ingrese Descripcion" 
+            value="<%= listProdcuts.description ?? ''%>">
+
+            <input class="controls" type="text" name="Precio" id="Categoria" placeholder="Ingrese Categoria" 
+            value="<%= listProdcuts.price ?? ''%>">
+
+            <input class="controls" type="text" name="Decuento" id="Categoria" placeholder="Ingrese Categoria" 
+            value="<%= listProdcuts.discount ?? ''%>">
+
+            <input class="controls" type="text" name="category" id="Oferta o Novedad" placeholder="Ingrese si es Oferta o Novedad" 
+            value="<%= listProdcuts.category ?? ''%>">
+
+            <input class="controls" type="file" name="Imagen" id="Imagen" placeholder="Adjunte Imagen" 
+            value="<%= listProdcuts.imagen ?? ''%>"> 
+
+            <input class="botons" type="submit" value="Subir">
+        </form>
+    </main>
+
+      <%- include("../partials/footer") %>
+
+  </body>
+</html>
