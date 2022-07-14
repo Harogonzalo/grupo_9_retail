@@ -5,11 +5,6 @@ const router = express.Router();
 
 const productsController = require('../controllers/productsController');
 
-// // INDEX
-// //router.get('/', productsController.productCart)
-
-// //ESTO ES LO QUE VA DESPUES DE /PRODUCTOS!!!!!
-
 //Ruta de Carrito de Compras
 router.get('/productCart', productsController.productCart);
 
@@ -24,10 +19,10 @@ router.get('/productDetail', productsController.productDetail);
  //router.post('/', upload.single('image'), productsController.storeProduct);
  //router.post('/', upload.array('image', 3), productsController.storeProduct);
 
-// // Route to get a product by id
+ // Route to get a product by id
  router.get('/:id', productsController.getProductById);
 
-// // Route edit a product
+ // Route edit a product
  router.get('/edit/:id', productsController.editProduct);
  router.put('/:id', productsController.updateProduct);
 
