@@ -578,6 +578,7 @@ body-404 {
 
   /* ------ Login y Register Comparten clases ------- */
   .form-register {
+    display: block;
     width: 400px;
     background: #340B8C;
     padding: 30px;
@@ -639,10 +640,6 @@ body-404 {
 
   }
 
-  .main-login {
-    height: 60vh;
-
-  }
 
   
  
