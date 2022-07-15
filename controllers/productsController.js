@@ -6,13 +6,21 @@ const productListPath = path.resolve(__dirname, "../data/products.json");
 const productList = JSON.parse(fs.readFileSync(productListPath, "utf8"));
 
 const productsController = {
-  productDetail: (req, res) => {
-    res.render("products/productDetail", { productsDetail: productList });
+  editProduct: (req, res) => {
+    res.render("products/editProduct", { productsDetail: productList });
   },
 
-  productCart: (req, res) => {
-    res.render("products/productCart", { productsCart: productList });
+  productDetail: (req, res) => {
+    let id = req.params.id
+    let productoFiltrado = productList.find((producto) => producto.id == id )
+    
+    console.log(productoFiltrado)
+    res.render("products/productDetail",{productoFiltrado});
   },
+
+  // productCart: (req, res) => {
+  //   res.render("products/productCart", { productsCart: productList });
+  // },
 
   getAllProducts: (req, res) => {
     res.render("index", {

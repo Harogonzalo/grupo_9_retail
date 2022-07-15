@@ -12,24 +12,24 @@
     <main>
     
         <form class="form-register"
-              action ="/products/<%= editProduct.id ?? ''%>?_method=PUT" method="post">
+              action ="/products?_method=PUT" method="post"enctype="multipart/form-data" >
 
-            <input class="controls" type="text" name="Nombre de Producto" id="Nombre de Producto" placeholder="Ingrese Producto" 
+            <input class="controls" type="text" name="nombreProducto" id="Nombre de Producto" placeholder="Ingrese Producto" 
             value="<%= productlist.name ?? ''%>">
 
-            <input class="controls" type="text" name="Descripcion" id="Descripcion" placeholder="Ingrese Descripcion" 
+            <input class="controls" type="text" name="descripcion" id="Descripcion" placeholder="Ingrese Descripcion" 
             value="<%= productlist.description ?? ''%>">
 
-            <input class="controls" type="text" name="Precio" id="Categoria" placeholder="Ingrese Categoria" 
+            <input class="controls" type="text" name="precio" id="Categoria" placeholder="Ingrese Categoria" 
             value="<%= productlist.price ?? ''%>">
 
-            <input class="controls" type="text" name="Decuento" id="Categoria" placeholder="Ingrese Categoria" 
+            <input class="controls" type="text" name="descuento" id="Categoria" placeholder="Ingrese Categoria" 
             value="<%= productlist.discount ?? ''%>">
 
-            <input class="controls" type="text" name="category" id="Oferta o Novedad" placeholder="Ingrese si es Oferta o Novedad" 
+            <input class="controls" type="text" name="categoria" id="Oferta o Novedad" placeholder="Ingrese si es Oferta o Novedad" 
             value="<%= productlist.category ?? ''%>">
 
-            <input class="controls" type="file" name="Imagen" id="Imagen" placeholder="Adjunte Imagen" 
+            <input class="controls" type="file" name="imagen" id="Imagen" placeholder="Adjunte Imagen" 
             value="<%= productlist.imagen ?? ''%>"> 
 
             <input class="botons" type="submit" value="Subir">
