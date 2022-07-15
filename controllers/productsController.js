@@ -14,24 +14,20 @@ const productsController = {
     let id = req.params.id
     let productoFiltrado = productList.find((producto) => producto.id == id )
     
-    console.log(productoFiltrado)
-    res.render("products/productDetail",{productoFiltrado});
+    // console.log(productoFiltrado)
+    res.render("products/productDetail/" + id,{productoFiltrado });
   },
-
-  // productCart: (req, res) => {
-  //   res.render("products/productCart", { productsCart: productList });
-  // },
 
   getAllProducts: (req, res) => {
     res.render("index", {
       products: productList,
     });
   },
-  getProductById: (req, res) => {
-    let id = req.params.id;
+   getProductById: (req, res) => {
+     let id = req.params.id;
 
-    res.send("Get product by id: " + id);
-  },
+     res.send("Get product by id: " + id);
+   },
   createProduct: (req, res) => {
     res.render("products/createProducts");
   },
