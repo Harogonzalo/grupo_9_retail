@@ -9,6 +9,9 @@ const productsController = {
   editProduct: (req, res) => {
     res.render("products/editProduct", { productsDetail: productList });
   },
+  productCart: (req, res) => {
+    res.render("products/productCart", { products: productList });
+},
 
   productDetail: (req, res) => {
     let id = req.params.id
@@ -23,11 +26,11 @@ const productsController = {
       products: productList,
     });
   },
-   getProductById: (req, res) => {
-     let id = req.params.id;
+  getProductById: (req, res) => {
+    let id = req.params.id;
 
-     res.send("Get product by id: " + id);
-   },
+    res.send("Get product by id: " + id);
+  },
   createProduct: (req, res) => {
     res.render("products/createProducts");
   },

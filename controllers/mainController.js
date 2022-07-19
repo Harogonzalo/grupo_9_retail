@@ -8,12 +8,6 @@ const mainController = {
   index: (req, res) => {
     res.render("index", { products: productList });
 },
-  productCart: (req, res) => {
-    res.render("products/productCart", { products: productList });
-},
-  productDetail: (req, res) => {
-    res.render("products/productDetail", { products: productList });
-},
-
+  
 };
 module.exports = mainController;

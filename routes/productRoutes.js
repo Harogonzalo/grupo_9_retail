@@ -5,12 +5,14 @@ const router = express.Router();
 
 const productsController = require('../controllers/productsController');
 
-// DETALLE DEL PRODUCTO
-router.get('/productDetail/:id', productsController.productDetail);
-router.get('/editProduct', productsController.editProduct);
+router.get('/productCart', productsController.productCart)
+//router.get('products/description', mainController.productDetail)
 
+// DETALLE DEL PRODUCTO
+router.get('/productDetail', productsController.productDetail);
+/*
  // Route to get all products
- router.get('/', productsController.getAllProducts);
+ router.get('/products', productsController.getAllProducts);
 
  // Route create a new product
  router.get('/create', productsController.createProduct);
@@ -26,5 +28,5 @@ router.get('/editProduct', productsController.editProduct);
 
  // Route to delete a product
  router.delete('/:id', productsController.deleteProduct);
-
+*/
 module.exports = router;
