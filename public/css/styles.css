@@ -486,6 +486,16 @@ body-404 {
   main section article {
     display: block;
   }
+  .div-logo img{
+    width: 50%;
+  }
+  .div-botones{
+    width: 100%;
+  }
+  .div-precioFinal{
+    font-size: 1.5rem;
+    padding-left: 0px;
+  }
   
   main section div.products {
     display: flex;
@@ -541,6 +551,13 @@ body-404 {
   .logo {
     display: flex;
   }
+  .div-logo img{
+    width: 50%;
+  }
+  .div-precioFinal{
+    padding-left: 0px;
+  }
+  
   .buscador {
     display: flex;
   }
@@ -550,6 +567,10 @@ body-404 {
   .cuotas h2 {
     font-size: 12px;
     text-align: center;
+  }
+  .div-botones{
+    width: 100%;
+
   }
   .toda-navbar {
     display: flex;
@@ -576,7 +597,7 @@ body-404 {
   .logoFooter {
     grid-column: 1/3;
   }
-.der-header {
+  .der-header {
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -604,7 +625,9 @@ body-404 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-
+  .div-logo img{
+    width: 33%;
+  }
   /*footer section{
             height: 100%;
         }*/
