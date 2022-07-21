@@ -4,7 +4,7 @@ const usersController = {
     },
 
     login: (req, res) => {
-         res.render('users/login');
+        res.render('users/login');
     },
     
 }

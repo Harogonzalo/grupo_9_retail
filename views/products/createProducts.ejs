@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <%- include("../partials/head") %>
 
-    <%- include("../partials/head") %>
-
-    <title>Vender Producto</title>
+  <title>Vender Producto</title>
 
   <body>
-
-      <%- include("../partials/header") %>
+    <%- include("../partials/header") %>
 
     <main>
+      <div class="edit-product">
+        <form action="/products" method="post" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Producto" />
+          <input type="text" name="description" placeholder="Descripcion" />
+          <input type="text" name="price" placeholder="Precio" />
+          <input type="text" name="discount" placeholder="Descuento" />
+          <input type="text" name="category" placeholder="Categoria" />
+          <input type="file" name="image" id="image" multiple />
 
-<form action="/products" method="post" enctype="multipart/form-data">
-    <input type="text" name="name" placeholder="Producto">
-    <input type="text" name="description" placeholder="Descripcion">
-    <input type="text" name="price" placeholder="Precio">
-    <input type="text" name="discount" placeholder="Descuento">
-    <input type="text" name="category" placeholder="Categoria">
-    <input type="file" name="image" id="image" multiple>
-    
-    <br>
-    <input type="submit" value="Crear">
-</form>
+          <br />
+          <input type="submit" value="Crear" />
+        </form>
+        
+      </div>
+    </main>
 
-</main>
-
-<%- include("../partials/footer") %>
-
-</body>
+    <%- include("../partials/footer") %>
+  </body>
 </html>
