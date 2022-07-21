@@ -11,26 +11,26 @@
 
     <main>
     
-        <form class="form-register"
-              action ="/products?_method=PUT" method="post"enctype="multipart/form-data" >
+        <form class="form-register" action = "?_method=PUT" method="post"enctype="multipart/form-data" >
 
+          <h2>VAS A EDITAR PRODUCTO: <%= product.name %></h2>
             <input class="controls" type="text" name="nombreProducto" id="Nombre de Producto" placeholder="Ingrese Producto" 
-            value="<%= productlist.name ?? ''%>">
+            value="<%= product.name ?? ''%>">
 
             <input class="controls" type="text" name="descripcion" id="Descripcion" placeholder="Ingrese Descripcion" 
-            value="<%= productlist.description ?? ''%>">
+            value="<%= product.description ?? ''%>">
 
             <input class="controls" type="text" name="precio" id="Categoria" placeholder="Ingrese Categoria" 
-            value="<%= productlist.price ?? ''%>">
+            value="<%= product.price ?? ''%>">
 
             <input class="controls" type="text" name="descuento" id="Categoria" placeholder="Ingrese Categoria" 
-            value="<%= productlist.discount ?? ''%>">
+            value="<%= product.discount ?? ''%>">
 
             <input class="controls" type="text" name="categoria" id="Oferta o Novedad" placeholder="Ingrese si es Oferta o Novedad" 
-            value="<%= productlist.category ?? ''%>">
+            value="<%= product.category ?? ''%>">
 
             <input class="controls" type="file" name="imagen" id="Imagen" placeholder="Adjunte Imagen" 
-            value="<%= productlist.imagen ?? ''%>"> 
+            value="<%= product.imagen ?? ''%>"> 
 
             <input class="botons" type="submit" value="Subir">
         </form>

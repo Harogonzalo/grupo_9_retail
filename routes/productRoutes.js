@@ -14,22 +14,33 @@ router.get('/productCart', productsController.productCart)
 // DETALLE DEL PRODUCTO
 router.get('/productDetail/:id', productsController.productDetail);
 /*
- // Route to get all products
- router.get('/products', productsController.getAllProducts);
+//RUTAS A VISTAS
 
- // Route create a new product
- router.get('/create', productsController.createProduct);
- //router.post('/', upload.single('image'), productsController.storeProduct);
- //router.post('/', upload.array('image', 3), productsController.storeProduct);
+router.get("/productCart", productsController.productCart);
+router.get("/productDetail", productsController.productDetail);
 
- // Route to get a product by id
- router.get('/:id', productsController.getProductById);
+//RUTAS CRUD
+// RUTA Listado de productos
+router.get("/products", productsController.getAllProducts);
 
- // Route edit a product
- router.get('/edit/:id', productsController.editProduct);
- router.put('/:id', productsController.updateProduct);
+// RUTA Formulario de creación de productos
+router.get("/products/create", productsController.createProduct);
+//router.post('/', upload.single('image'), productsController.storeProduct);
+router.post("/", validate, upload.array("image", 3),productsController.storeProduct);
 
- // Route to delete a product
- router.delete('/:id', productsController.deleteProduct);
+// RUTA Detalle de un producto particular
+router.get("/products/:id", productsController.getProductById);
+
+//  /products (POST)
+// RUTA Acción de creación (a donde se envía el formulario)
+
+// RUTA Formulario de edición de productos
+router.get("/products/:id/edit", productsController.editProduct);
+
+// RUTA Acción de edición (a donde se envía el formulario)
+router.put("/products/:id", productsController.updateProduct);
+
+// RUTA Acción de borrado
+router.delete("/products/:id", productsController.deleteProduct);
 */
 module.exports = router;

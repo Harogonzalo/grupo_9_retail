@@ -382,264 +382,6 @@ form a button {
   background-color: rgb(66, 51, 141);
 }
 
-/* ------- ERROR 404 -------- */
-
-body-404 {
-  margin: auto;
-  width: 100vw;
-  text-align: center;
-  box-sizing: border-box;
-  justify-content: center;
-}
-
-/* ------ MEDIA QUERIES ------- */
-
-/* Mobile */
-@media (max-width: 480px) {
-  nav {
-    display: none;
-  }
-  main {
-    display: block;
-  }
-  main .div-articulos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-  }
-  .nuevo-articulo {
-  width: 45%;
-  }
-  .header-nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-  }
-  .cuotas h2 {
-    font-size: 12px;
-    text-align: center;
-  }
-  .burger-menu{       /* La idea es que al apretar este boton se abra el menu izquierda. por ahora le display none.*/
-    display: block;
-    z-index: 2;
-    font-size: 2rem;
-    background-color: #38bdf2;
-    padding:0px 5px 0px;
-    border:solid 
-  }
-  .izq-header{
-    width: 40%;
-  }
-  .izq-header img{
-    width: 80%;
-    height: 90px;
-  }
-  .der-header{
-    list-style: none;
-  padding: 5px 0px 0px 0px;
-  width: 60%;
-  }
-  .der-header-list{
-    display: grid;
-    grid-template-columns: 150px 150px;
-  }
-  .izq-navbar{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: #210759;
-    width: 100vw;
-    font-size: 18px;
-    overflow-y: auto;
-    transform: translateY(-100%);
-    transition: transform 350ms cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
-    z-index: 5;
-  }
-  .izq-navbar.show{
-    transform:translateY(0px)
-  }
-  .burger-menu.mobile{
-    position: absolute;
-    top:-10px;
-    z-index: 6;
-  }
-  .izq-navbar li{
-    padding:20px;
-  }
-  .der-navbar{
-    width: 80%;
-  }
-  .busqueda input{
-    width: 300px;
-    position: relative;
-    right: 20px;
-  }
-  .toda-navbar{
-    flex-direction: row-reverse;
-  }
-  main section article {
-    display: block;
-  }
-  .div-logo img{
-    width: 50%;
-  }
-  .div-botones{
-    width: 100%;
-  }
-  .div-precioFinal{
-    font-size: 1.5rem;
-    padding-left: 0px;
-  }
-  
-  main section div.products {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    }  
-    main section div.products article {
-      width: 45%;
-    }
-    .descuentos {
-      display: block;
-    }
-}
-/*Mobile large  */
-@media (min-width: 481px)  /* and (max-width: 768px)*/ {
-  main .div-articulos {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .nuevo-articulo {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    width: 45%;
-  }
-  .header-nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-  }
-
-  .burger-menu {
-    display: none;
-  }
-  .cuotas h2 {
-    font-size: 12px;
-    text-align: center;
-  } 
-  /*MIN - Desde que empieza*/
-  .descuentos {
-    display: block;
-  }
-  .header-nav {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    justify-content: space-evenly;
-  }
-  .logo {
-    display: flex;
-  }
-  .div-logo img{
-    width: 50%;
-  }
-  .div-precioFinal{
-    padding-left: 0px;
-  }
-  
-  .buscador {
-    display: flex;
-  }
-  .cuotas {
-    display: flex;
-  }
-  .cuotas h2 {
-    font-size: 12px;
-    text-align: center;
-  }
-  .div-botones{
-    width: 100%;
-
-  }
-  .toda-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .toda-navbar ul {
-    display: flex;
-  }
-  .toda-navbar li {
-    margin: 10px 10px;
-  }
-  .section div.products {
-    display: flex;
-  }
-  footer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  footer section {
-    height: 100%;
-    border-left: 0;
-  }
-  .logoFooter {
-    grid-column: 1/3;
-  }
-  .der-header {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  }
-}
-@media (min-width: 769px) /* and (max-width: 1279px)*/{
-  .header-nav,
-  .toda-navbar {
-    width: 100vw;
-    margin: auto;
-    justify-content: space-evenly;
-    display: flex;
-  }
-  main .div-articulos{
-    justify-content: center;
-  }
-  .nuevo-articulo{
-    width: auto;
-  }
-  .descuentos {
-    display: block;
-  }
-
-  footer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .div-logo img{
-    width: 33%;
-  }
-  /*footer section{
-            height: 100%;
-        }*/
-
-  .logoFooter {
-    grid-column: 1/5;
-  }
-
-  .socialMedia {
-    border-right: 0;
-  }
-}
 /* ------ Login y Register Comparten clases ------- */
 .form-register {
   display: block;
@@ -702,3 +444,303 @@ body-404 {
   transition: all 0.2s;
   text-align: center;
 }
+
+/* ------- ERROR 404 -------- */
+
+body-404 {
+  margin: auto;
+  width: 100vw;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+/* ------ MEDIA QUERIES ------- */
+
+/* Mobile */
+@media (max-width: 480px) {
+  nav {
+    display: none;
+  }
+  main {
+    display: block;
+  }
+  main .div-articulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .nuevo-articulo {
+  width: 45%;
+  }
+  .header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .cuotas h2 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .burger-menu{       /* La idea es que al apretar este boton se abra el menu izquierda. por ahora le display none.*/
+    display: block;
+    z-index: 2;
+    font-size: 2rem;
+    background-color: #38bdf2;
+    padding:0px 5px 0px;
+    border:solid 
+  }
+  .izq-header{
+    width: 40%;
+  }
+  .izq-header img{
+    width: 80%;
+    height: 90px;
+  }
+  .der-header{
+    list-style: none;
+  padding: 5px 0px 0px 0px;
+  width: 20vw;
+
+  }
+  .der-header-list{
+    display: grid;
+    grid-template-columns: 150px 150px;
+  }
+  .izq-navbar{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #210759;
+    width: 100vw;
+    font-size: 18px;
+    overflow-y: auto;
+    transform: translateY(-100%);
+    transition: transform 350ms cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+    z-index: 5;
+  }
+  .izq-navbar.show{
+    transform:translateY(0px)
+  }
+  .burger-menu.mobile{
+    position: absolute;
+    top:-10px;
+    z-index: 6;
+  }
+  .izq-navbar li{
+    padding:20px;
+  }
+  .der-navbar{
+    width: 80%;
+  }
+  .busqueda input{
+    width: 300px;
+    position: relative;
+    right: 20px;
+  }
+  .toda-navbar{
+    flex-direction: row-reverse;
+  }
+  main section article {
+    display: block;
+  }
+  
+  main section div.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    }  
+    main section div.products article {
+      width: 45%;
+    }
+    .descuentos {
+      display: block;
+    }
+}
+/*Mobile large  */
+@media (min-width: 480px)  /* and (max-width: 768px)*/ {
+  main .div-articulos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .nuevo-articulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 45%;
+  }
+  .header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  .cuotas h2 {
+    font-size: 12px;
+    text-align: center;
+  } 
+  /*MIN - Desde que empieza*/
+  .descuentos {
+    display: block;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+  .logo {
+    display: flex;
+  }
+  .buscador {
+    display: flex;
+  }
+  .cuotas {
+    display: flex;
+  }
+  .cuotas h2 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .toda-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toda-navbar ul {
+    display: flex;
+  }
+  .toda-navbar li {
+    margin: 10px 10px;
+  }
+  .section div.products {
+    display: flex;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer section {
+    height: 100%;
+    border-left: 0;
+  }
+  .logoFooter {
+    grid-column: 1/3;
+  }
+.der-header {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  }
+}
+@media (min-width: 769px) /* and (max-width: 1279px)*/{
+  .header-nav,
+  .toda-navbar {
+    width: 100vw;
+    margin: auto;
+    justify-content: space-evenly;
+    display: flex;
+  }
+  .der-header {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    }
+  
+  main .div-articulos{
+    justify-content: center;
+  }
+  .nuevo-articulo{
+    width: auto;
+  }
+  .descuentos {
+    display: block;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*footer section{
+            height: 100%;
+        }*/
+
+  .logoFooter {
+    grid-column: 1/5;
+  }
+
+  .socialMedia {
+    border-right: 0;
+  }
+}
+
+@media (min-width: 1024px)  {
+
+
+
+
+
+
+}
+
+
+
+
+/* PARA BOTONES
+button, .tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 90vh;
+}
+
+.button {
+  width: 300px;
+  height: 80px;
+  background: dodgerblue;
+  border-radius: 6px;
+  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+}
+
+.button svg {
+  transform: rotate(180deg);
+  transition: all .5s;
+}
+
+.button__circle {
+  width: 120px;
+  height: 120px;
+  background: mediumseagreen;
+  border-radius: 50%;
+  transform: rotate(-180deg);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.tick {
+  color: white;
+  font-size: 2em;
+  transition: all .9s;
+}
+*/

@@ -1,10 +1,18 @@
 [
-{  "Identificador": "id",
-    "Nombre": "firstName",
-    "Apellido": "lastName",
-    "Email": "email",
-    "Contraseña": "password",
-    "Categoría": "category",
+{  "id": "id",
+    "Nombre": "Cosme",
+    "Apellido": "Fulanito",
+    "Email": "cosme_fulanito@gmail.com",
+    "Contraseña": "1234password",
+    "Categoría": "user",
+    "Imagen": "image"
+},
+{  "id": "id",
+    "Nombre": "Esteban",
+    "Apellido": "Quito",
+    "Email": "EstebanQuito@gmail.com",
+    "Contraseña": "123456",
+    "Categoría": "admin",
     "Imagen": "image"
 }
 ]

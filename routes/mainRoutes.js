@@ -4,8 +4,8 @@ const mainController = require('../controllers/mainController');
 
 router.get('/', mainController.index);
 router.get('/index', mainController.index)
-//router.get('products/productCart', mainController.productCart)
-//router.get('products/description', mainController.productDetail)
+router.get('/index', mainController.ofertaProducts)
+router.get('/index', mainController.novedadesProducts)
 
 // router.get('*', mainController.sendPageNotFound)
 
