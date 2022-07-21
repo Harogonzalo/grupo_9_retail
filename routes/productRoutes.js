@@ -5,11 +5,14 @@ const router = express.Router();
 
 const productsController = require('../controllers/productsController');
 
+router.get('/createProduct', productsController.createProduct);
+
+
 router.get('/productCart', productsController.productCart)
 //router.get('products/description', mainController.productDetail)
 
 // DETALLE DEL PRODUCTO
-router.get('/productDetail', productsController.productDetail);
+router.get('/productDetail/:id', productsController.productDetail);
 /*
  // Route to get all products
  router.get('/products', productsController.getAllProducts);

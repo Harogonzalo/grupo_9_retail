@@ -18,7 +18,7 @@ const productsController = {
     let productoFiltrado = productList.find((producto) => producto.id == id )
     
     // console.log(productoFiltrado)
-    res.render("products/productDetail/" + id,{productoFiltrado });
+    res.render("products/productDetail",{productoFiltrado });
   },
 
   getAllProducts: (req, res) => {
