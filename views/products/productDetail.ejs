@@ -13,42 +13,42 @@
       <div class="div-carrito">
         <!-- Articulos en Detalle -->
         
-        <div class="div-articulos">                  
+        <div>                  
           
             <div class="nuevo-articulo">  
-            <!-- <img src=  />   -->
-            <h3> <%= productoFiltrado.id %> </h3>
-            <!-- <div class="div-precio">
-            <p class="precio">  $  </p>
-            <p class="descuento">   % off</p>
+            <img src= <%= productoFiltrado.imagen %> />
+            <h3> <%= productoFiltrado.name %> </h3>
+            <div class="div-precio">
+            <p class="precio">  <%= productoFiltrado.price %>$  </p>
+            <p class="descuento">   <%= productoFiltrado.discount %>% off</p>
           </div>
             <a href= "#" >Mas Detalles <i class="fas fa-angle-double-right"> </i></a>
           </div> -->
           </div>
 
         <div class="detalle-articulo">
-        <h2>Detalle: La pava eléctrica Atma PE0821NAP tiene un diseño clásico en color metalico y una capacidad de 1,7 litros. Posee indicador de nivel de agua. Corta automáticamente al hervir el agua y es ideal para tomar mate, té, café u otras infusiones. También viene con enrollacable y giro 360º, para tener mayor comodidad en la conexión.</h2>
+        <h2>Detalle: <%= productoFiltrado.fulldescription %> </h2>
+        
+      </div>
+      <div class="div-totales">
+        <div class="div-logo">
+          <img src="/img/Logo-prueba2.png" width="25%" alt="Logo de MI NOMBRE"/>
         </div>
+        <h3 class="h3-totales">PRECIO</h3>
+        <div class="div-precioFinal"><P>$<%= productoFiltrado.price %></P> </div>
+        <div>
+          <form action="javascript:void(0);">
+            <div class="div-botones">
+              <a href="/"> <button>PAGAR</button></a>
+            </div>
+            <div class="div-botones">
+              <a href="/"> <button>Vaciar Carrito</button></a>
+            </div>
+            <div class="div-botones">
+              <a href="/"> <button>Comprar más</button></a>
+            </div>
 
         </div>
-
-        <div class="div-totales">
-          <div class="div-logo">
-            <img src="/img/Logo-prueba2.png" width="25%" alt="Logo de MI NOMBRE"/>
-          </div>
-          <h3 class="h3-totales">PRECIO</h3>
-          <div class="div-precioFinal"><P><%= productoFiltrado.price %></P> </div>
-          <div>
-            <form action="javascript:void(0);">
-              <div class="div-botones">
-                <a href="/"> <button>PAGAR</button></a>
-              </div>
-              <div class="div-botones">
-                <a href="/"> <button>Vaciar Carrito</button></a>
-              </div>
-              <div class="div-botones">
-                <a href="/"> <button>Comprar más</button></a>
-              </div>
             </form>
           </div>
         </div>
