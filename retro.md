@@ -14,9 +14,12 @@ mas commits de cada integrante
 ### Continuar haciendo.
 Codeando los html y css
 Consultar con el equipo
+Seguir interiorizandonos con las Routes del proyecto
+Dividir bien las tareas para que no haya sobrecarga de una parte
 
 ### Hacer menos.
 No dejar pasar tanto tiempo sin comunicarnos con el resto del equipo
+Llegar justos a los Sprints
 
 ### Dejar de hacer.
 Trabajar individualmente
