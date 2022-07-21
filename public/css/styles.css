@@ -311,7 +311,8 @@ footer li {
   font-size: 1.5rem;
   margin-bottom: 2px;
   border: #ffffff 2px;
-  padding: 20px;
+  padding: 20px 0px 0px 0px;
+
 }
 
 .div-precioFinal {
@@ -367,7 +368,7 @@ form a button {
 }
 
 .div-botones {
-  width: 30%;
+  width: 100%;
 }
 
 .detalle-articulo {
@@ -383,7 +384,7 @@ form a button {
 }
 
 /* ------ Login y Register Comparten clases ------- */
-.form-register {
+.form-register, .edit-product {
   display: block;
   width: 400px;
   background: #340b8c;
@@ -403,7 +404,7 @@ form a button {
   margin-bottom: 20px;
 }
 
-.controls {
+.controls, .edit-product form input {
   width: 100%;
   background: #24303c;
   padding: 10px;
@@ -445,6 +446,10 @@ form a button {
   text-align: center;
 }
 
+
+.edit-product form{
+  flex-direction: column;
+}
 /* ------- ERROR 404 -------- */
 
 body-404 {
@@ -564,9 +569,15 @@ body-404 {
     .descuentos {
       display: block;
     }
+    .div-precioFinal{
+      padding-left: 0px;
+    }
+    .h3-totales{
+      padding: 20px 0px 0px 0px;
+    }
 }
 /*Mobile large  */
-@media (min-width: 480px)  /* and (max-width: 768px)*/ {
+@media (min-width: 481px)  /* and (max-width: 768px)*/ {
   main .div-articulos {
     width: 100%;
     display: flex;
@@ -644,6 +655,9 @@ body-404 {
   align-self: center;
   display: flex;
   flex-direction: column;
+  }
+  .div-precioFinal{
+    padding-left: 0px;
   }
 }
 @media (min-width: 769px) /* and (max-width: 1279px)*/{
