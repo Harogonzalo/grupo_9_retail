@@ -9,7 +9,7 @@
 
     <main>
       <div class="edit-product">
-        <form action="/products" method="post" enctype="multipart/form-data">
+        <form action="/products/createProduct" method="post" enctype="multipart/form-data">
           <input type="text" name="name" placeholder="Producto" />
           <input type="text" name="description" placeholder="Descripcion Breve" />
           <input type="text" name="fulldescription" placeholder="Descripcion Larga" />
@@ -17,7 +17,6 @@
           <input type="text" name="discount" placeholder="Descuento" />
           <input type="text" name="category" placeholder="Categoria" />
           <input type="file" name="image" id="image" multiple />
-
           <br />
           <input type="submit" value="Crear" />
         </form>

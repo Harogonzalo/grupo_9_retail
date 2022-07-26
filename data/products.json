@@ -1,5 +1,5 @@
 [
-    {
+  {
     "id": "1",
     "name": "Horno Electrico",
     "description": "bla bl bla",
@@ -18,7 +18,7 @@
     "discount": "40",
     "category": "ofertas",
     "imagen": "/img/img-cafetera-moulinex.jpg"
-},
+  },
   {
     "id": "3",
     "name": "Pava Electrica Atma",

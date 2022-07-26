@@ -15,7 +15,6 @@ const productsController = {
         productResults.push(productList[i])
       }
     }
-    console.log(productResults)
     res.render('products/searchProducts', {productSearch: productResults})
   },
   editProduct: (req, res) => {
@@ -47,7 +46,12 @@ const productsController = {
     res.render("products/createProducts");
   },
   storeProduct: (req, res) => {
+    console.log(req.files[0].filename)
+    console.log("------------------------------------")
     let product = req.body;
+    console.log("------------------------------------")
+    product.imagen =  "/img/uploads/"+ req.files[0].filename
+    console.log(product)
 
     product.id = uuidv4();
 

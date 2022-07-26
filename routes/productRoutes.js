@@ -5,6 +5,9 @@ const productsController = require('../controllers/productsController');
 const upload = require('../middlewares/multer');
 const validateProduct = require('../middlewares/productValidate');
 
+// RUTA Listado de productos */
+router.get("/", productsController.getAllProducts);
+
 //RUTAS A VISTAS
 
 router.get("/productCart", productsController.productCart);
@@ -14,14 +17,12 @@ router.get('/search', productsController.search)
 router.get("/products/:id/edit", productsController.editProduct);
 // RUTA Formulario de creación de productos
 router.get("/createProduct", productsController.createProduct);
-router.post('/createProduct', upload.array ('images', 5), validateProduct, productsController.updateProduct);
+router.post('/createProduct', upload.array ('image', 5), validateProduct, productsController.storeProduct);
+
 
 // RUTA Detalle de un producto particular
 router.get("/products/:id", productsController.getProductById);
 /*
-// RUTA Listado de productos
-router.get("/products", productsController.getAllProducts);
-
  //RUTA Acción de edición (a donde se envía el formulario)
 router.put("/products/:id", productsController.updateProduct);
 
