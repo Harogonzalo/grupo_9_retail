@@ -23,6 +23,7 @@ router.get("/:id", productsController.productDetail);
 router.get("/products/:id", productsController.getProductById);
 //RUTA Formulario de edición de productos
 router.get("/:id/edit", productsController.editProduct);
+router.post('/:id/edit', upload.array ('image', 5), validateProduct, productsController.updateProduct);
 /*
  //RUTA Acción de edición (a donde se envía el formulario)
 router.put("/products/:id", productsController.updateProduct);
