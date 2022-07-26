@@ -3,7 +3,7 @@
     "id": "1",
     "name": "Horno Electrico",
     "description": "bla bl bla",
-    "fulldescription": "Horno Electrico para calentar gracias al poder del intelecto humano capaz de aprovechar el poder de la electricidad ",
+    "fulldescription": "Un horno eléctrico es aquel aparato para la cocción que funciona con energía eléctrica. Esta es convertida en calor por resistencias. Los hornos eléctricos son totalmente automatizados; la cocción es la más perfecta por el control que mantiene sobre la temperatura en todo momento.",
     "price": "34200",
     "discount": "10",
     "category": "novedades",
@@ -43,7 +43,7 @@
     "id": "5",
     "name": "Samsung Galaxy A33",
     "description": "5g 128 Gb Awesome Black 6 Gb Ram",
-    "fulldescription": "Celular para sacar fotos de gatos",
+    "fulldescription": "Autonomía: muy buena autonomía, pero viene sin cargador, algo incomprensible. Conectividad y audio: sonido decente y conectividad con todo lo necesario hoy en día. Conclusión: un teléfono que puede sorprender",
     "price": "65000",
     "discount": "null",
     "category": "novedades",
@@ -57,7 +57,7 @@
     "price": "102000",
     "discount": "25",
     "category": "ofertas",
-    "imagen": "/img/imagen-1617485554035.jpg"
+    "imagen": "/img/heladera.jpg"
   },
   {
     "id": "7",

@@ -35,10 +35,14 @@
       <div class="der-navbar">
       
       <div class="busqueda">
-      <input type="text" placeholder="Buscar productos, marcas..">
+        <form action="products/search" method="GET">
+      <input class="lupaSubmit" type="text" name="search"  placeholder="Buscar productos, marcas..">
+      <input class="lupaSubmitlupa" type="submit" value="Search">
+      </form>
       </div>
-      <div class="lupa">
-      <i class="fas fa-search"></i>
+      <!-- Por ahora no se como hacer que esta lupa actue como boton -->
+      <!-- <div class="lupa">
+      <i class="fas fa-search"></i> -->
       </div>
       </div>
       <div class="burger-menu">

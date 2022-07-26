@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include("../partials/head") %>
+    
+    <title>Index</title>
+
+  <body>
+
+<!------ HEADER ------>
+
+
+  <%- include("../partials/header") %>
+
+<!------  MAIN  ------>
+
+<main>
+    <div class="div-ofertas">
+        <h4>BUSQUEDA</h4>
+    
+    <div class="div-articulos">    
+      <% for( let i = 0; i < productSearch.length; i++ ) { %>   
+        <div class="nuevo-articulo">  
+        <img src= <%= productSearch[i].imagen %> />  
+        <h3> <%= productSearch[i].name %> </h3>
+        <div class="div-precio">
+        <P class="precio">  $ <%= productSearch[i].price %> </P>
+        <P class="descuento">  <%= productSearch[i].discount %> % off</P>
+      </div>
+        <a href= "/products/productDetail/<%= productSearch[i].id %>" >Mas Detalles <i class="fas fa-angle-double-right"> </i></a>
+      </div>
+      <% } %></div>
+    </div>
+</main>
+      
+<%- include("../partials/footer") %>      
+
+</body>
+</html>

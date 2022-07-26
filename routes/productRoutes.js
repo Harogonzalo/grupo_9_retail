@@ -9,6 +9,7 @@ const validateProduct = require('../middlewares/productValidate');
 
 router.get("/productCart", productsController.productCart);
 router.get("/productDetail/:id", productsController.productDetail);
+router.get('/search', productsController.search)
 //RUTA Formulario de edición de productos
 router.get("/products/:id/edit", productsController.editProduct);
 // RUTA Formulario de creación de productos

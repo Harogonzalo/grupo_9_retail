@@ -1,21 +1,20 @@
 ## Retrospectiva del Sprint 1
 
 ### Comenzar a hacer.
-categorias y botones
-relacionar htmls
-en Index poner nav bar denro de header
-configurar ref de index hacia afuera
-configurar  pagina de error
+Mas reuniones grupales
+Mas comunicacion
 
 ### Hacer más.
 Organizar encuentros sincronicos
-mas commits de cada integrante
+Mas commits de cada integrante
+Entender cada parte del codigo
 
 ### Continuar haciendo.
 Codeando los html y css
 Consultar con el equipo
 Seguir interiorizandonos con las Routes del proyecto
-Dividir bien las tareas para que no haya sobrecarga de una parte
+Dividir las tareas para que no haya sobrecarga de una parte
+
 
 ### Hacer menos.
 No dejar pasar tanto tiempo sin comunicarnos con el resto del equipo
