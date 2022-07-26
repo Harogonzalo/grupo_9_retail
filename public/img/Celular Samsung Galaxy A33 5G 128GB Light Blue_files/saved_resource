@@ -1,0 +1,28 @@
+<!-- cms -->
+(function() {
+var qss = "&cb=" + Math.floor(99999999999 * Math.random());
+try {
+qss += "&ref=" + encodeURIComponent(document.referrer)
+} catch (e) {}
+try {
+qss += "&sc_r=" + encodeURIComponent(screen.width + "x" + screen.height)
+} catch (e) {}
+try {
+qss += "&sc_d=" + encodeURIComponent(screen.colorDepth)
+} catch (e) {}
+e=function(){};
+var callCm = function(c, d) {
+var a = function() {
+callCmInternal(c, d);
+};
+"complete" === document.readyState ? setTimeout(a) : window.addEventListener ? window.addEventListener("load", a, !1) : window.attachEvent("onload", a)
+}
+cmCalled = !1;
+callCmInternal = function(c, d) {
+if (!cmCalled) {
+cmCalled = !0;
+imgCm=createImgElement(d);
+document.getElementById('blue-tags-div').appendChild(imgCm);
+}
+};
+})();
