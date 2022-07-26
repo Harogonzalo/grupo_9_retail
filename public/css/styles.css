@@ -203,10 +203,10 @@ h3 {
 /* ------- FOOTER -------- */
 
 .div-footer {
-  background-color: #38bdf2;
+  background-color: #340b8c;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   width: 100vw;
 }
 
@@ -225,7 +225,7 @@ h3 {
 
 .section-footer {
   border-radius: 0;
-  border: 1px solid lightseagreen;
+  border: 1px solid rgb(226, 6, 167);
   height: 100%;
   /*width:100%;*/
   grid-template-columns: 50% 50%;
