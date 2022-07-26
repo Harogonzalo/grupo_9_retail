@@ -69,3 +69,20 @@ No dejar pasar tanto tiempo sin comunicarnos con el resto del equipo
 
 ### Dejar de hacer.
 LLegar a tiempo con los sprints
+
+### Retrospectiva del Sprint 4
+
+### Comenzar a hacer.
+Actualizar tablero Frecuentemente
+Dejar el responsive del sitio en orden 
+### Hacer más.
+ Cocretar mas encuentros sincronicos
+ Definir equitativamente la tarea de cada uno con respecto al proyecto 
+ ### Continuar haciendo.
+ Organizar el sitio
+ corregir nombres 
+### Hacer menos.
+Dejar pasar el tiempo sin comunicarnos 
+Posponer  hasta ultimo momento 
+### Dejar de hacer.
+no dejar puntos sin terminar de los Sprint

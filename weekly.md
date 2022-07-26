@@ -8,9 +8,10 @@
 - Limpia de código
 - Se reestructuró el directorio de vistas separándo las vistas principales, las vistas de productos y las vistas de usuario.
 
-# 13-7-2022
+# 21-7-2022
 
--
--
--
--
+-Se fijaron Los dias Jueves 18hs para la weeklies 
+- Se definieron los campos para los productos y se genero archivo JSon
+-Se emprolijo el codigo
+- Se creo products.json y user.json
+-Finalizando Crud
