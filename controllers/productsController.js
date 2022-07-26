@@ -17,9 +17,6 @@ const productsController = {
     }
     res.render('products/searchProducts', {productSearch: productResults})
   },
-  editProduct: (req, res) => {
-    res.render("products/editProduct", { productsDetail: productList });
-  },
   productCart: (req, res) => {
     res.render("products/productCart", { products: productList });
 },
@@ -43,15 +40,11 @@ const productsController = {
     res.send("Get product by id: " + id);
   },
   createProduct: (req, res) => {
-    res.render("products/createProducts");
+    res.render("products/create");
   },
   storeProduct: (req, res) => {
-    console.log(req.files[0].filename)
-    console.log("------------------------------------")
     let product = req.body;
-    console.log("------------------------------------")
     product.imagen =  "/img/uploads/"+ req.files[0].filename
-    console.log(product)
 
     product.id = uuidv4();
 
@@ -60,14 +53,13 @@ const productsController = {
     fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
 
     res.redirect("/products");
-  },
-  editProduct: (req, res) => {
-    let id = req.params.id;
-    let product = productList.find((product) => product.id == id);
+  }, editProduct: (req, res) => {
+    let id = req.params.id
+    console.log(id)
+    let productoFiltrado = productList.find((producto) => producto.id == id )
+    console.log(productoFiltrado)
 
-    res.render("products/editProduct", {
-      products: product,
-    });
+    res.render("products/editProduct", {productoFiltrado });
   },
   updateProduct: (req, res) => {
     let id = req.params.id;

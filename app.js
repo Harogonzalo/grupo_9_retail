@@ -26,9 +26,9 @@ app.listen(PORT, ()=>{
 });
 
 // 404
-app.use((req, res, next) => {
-    res.status(404).render("../views/404.ejs")
-})
+// app.use((req, res, next) => {
+//     res.status(404).render("../views/404.ejs")
+// })
 
 
 

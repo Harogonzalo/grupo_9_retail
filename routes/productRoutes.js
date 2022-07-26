@@ -11,17 +11,18 @@ router.get("/", productsController.getAllProducts);
 //RUTAS A VISTAS
 
 router.get("/productCart", productsController.productCart);
-router.get("/productDetail/:id", productsController.productDetail);
 router.get('/search', productsController.search)
-//RUTA Formulario de edición de productos
-router.get("/products/:id/edit", productsController.editProduct);
 // RUTA Formulario de creación de productos
-router.get("/createProduct", productsController.createProduct);
-router.post('/createProduct', upload.array ('image', 5), validateProduct, productsController.storeProduct);
+router.get("/create", productsController.createProduct);
+router.post('/create', upload.array ('image', 5), validateProduct, productsController.storeProduct);
+
 
 
 // RUTA Detalle de un producto particular
+router.get("/:id", productsController.productDetail);
 router.get("/products/:id", productsController.getProductById);
+//RUTA Formulario de edición de productos
+router.get("/:id/edit", productsController.editProduct);
 /*
  //RUTA Acción de edición (a donde se envía el formulario)
 router.put("/products/:id", productsController.updateProduct);
