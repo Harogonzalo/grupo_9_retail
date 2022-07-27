@@ -78,5 +78,15 @@
     "category": "Video",
     "imagen": "/img/uploads/1658874371317.jpg",
     "id": "39d2ee78-1652-4bf8-9aba-53c56c3d592d"
+  },
+  {
+    "id": "15",
+    "name": "Panel Calefactor",
+    "description": "Calefactor",
+    "fulldescription": "El panel Hotpanel es un calefactor pensado para que puedas calefaccionar tu hogar de la forma más segura. Cuenta con una potencia de 1200 W y una gran convección natural de calor.",
+    "price": "300",
+    "discount": "5",
+    "category": "ofertas",
+    "imagen": "/img/calefactorPanel.jpg"
   }
 ]
