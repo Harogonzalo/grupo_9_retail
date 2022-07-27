@@ -55,17 +55,19 @@ const productsController = {
     res.redirect("/products");
   }, editProduct: (req, res) => {
     let id = req.params.id
-    console.log(id)
     let productoFiltrado = productList.find((producto) => producto.id == id )
-    console.log(productoFiltrado)
 
     res.render("products/editProduct", {productoFiltrado });
   },
   updateProduct: (req, res) => {
     let id = req.params.id;
     let newProduct = req.body;
-
     newProduct.id = id;
+    console.log(req.file)
+    console.log(newProduct)
+    if (req.file === undefined) {
+      newProduct.imagen = productList[id - 1].imagen
+    }
 
     for (let index = 0; index < productList.length; index++) {
       const element = productList[index];

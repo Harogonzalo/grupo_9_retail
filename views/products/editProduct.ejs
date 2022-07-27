@@ -14,23 +14,27 @@
         <form class="form-register" action = "?_method=PUT" method="post"enctype="multipart/form-data" >
 
           <h2>VAS A EDITAR PRODUCTO: <%= productoFiltrado.name %></h2>
-            <input class="controls" type="text" name="nombreProducto" id="Nombre de Producto" placeholder="Ingrese Producto" 
+            <input class="controls" type="text" name="name" id="Nombre de Producto" placeholder="Ingrese Producto" 
             value="<%= productoFiltrado.name ?? ''%>">
 
-            <input class="controls" type="text" name="descripcion" id="Descripcion" placeholder="Ingrese Descripcion" 
+            <input class="controls" type="text" name="description" id="Descripcion" placeholder="Ingrese Descripcion" 
             value="<%= productoFiltrado.description ?? ''%>">
 
-            <input class="controls" type="text" name="precio" id="Categoria" placeholder="Ingrese Categoria" 
+            <input class="controls" type="text" name="fulldescription" id="Descripcion" placeholder="Ingrese Descripcion entera" 
+            value="<%= productoFiltrado.fulldescription ?? ''%>">
+
+
+            <input class="controls" type="text" name="price" id="Categoria" placeholder="Ingrese Categoria" 
             value="<%= productoFiltrado.price ?? ''%>">
 
-            <input class="controls" type="text" name="descuento" id="Categoria" placeholder="Ingrese Categoria" 
+            <input class="controls" type="text" name="discount" id="Categoria" placeholder="Ingrese Categoria" 
             value="<%= productoFiltrado.discount ?? ''%>">
 
-            <input class="controls" type="text" name="categoria" id="Oferta o Novedad" placeholder="Ingrese si es Oferta o Novedad" 
+            <input class="controls" type="text" name="category" id="Oferta o Novedad" placeholder="Ingrese si es Oferta o Novedad" 
             value="<%= productoFiltrado.category ?? ''%>">
 
             <input class="controls" type="file" name="imagen" id="Imagen" placeholder="Adjunte Imagen" 
-            value="<%= productoFiltrado.imagen ?? ''%>"> 
+            value="<%= + productoFiltrado.imagen ?? ''%>"> 
 
             <input class="botons" type="submit" value="Subir">
         </form>
