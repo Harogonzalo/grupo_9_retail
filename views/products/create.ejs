@@ -17,6 +17,18 @@
           <input type="text" name="discount" placeholder="Descuento" />
           <input type="text" name="category" placeholder="Categoria" />
           <input type="file" name="image" id="image" multiple />
+          <div>
+            <label><b> Categoria </b>:</label>
+            <select name="category" class="form-select">
+              <option value=""> Elegi una categoria</option>
+              <%
+                let categorias = ["TV", "Audio", "Video", "Electrodomesticos", "Computacion", "Celulares"];
+                %>
+                <% for (const categoria of categorias) { %>
+                  <option value="<%=categoria%>"> <%= categoria %> </option>
+                <% } %>
+            </select>
+          </div>
           <br />
           <input type="submit" value="Crear" />
         </form>

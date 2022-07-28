@@ -63,11 +63,12 @@ const productsController = {
     let id = req.params.id;
     let newProduct = req.body;
     newProduct.id = id;
-    console.log(req.file)
-    console.log(newProduct)
-    if (req.file === undefined) {
+    if (req.files === undefined) {
       newProduct.imagen = productList[id - 1].imagen
+    } else {
+      newProduct.imagen = "/img/uploads/"+ req.files[0].filename
     }
+
 
     for (let index = 0; index < productList.length; index++) {
       const element = productList[index];

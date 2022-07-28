@@ -10,16 +10,17 @@
       <%- include("../partials/header") %>
 
     <main>
-    
-        <form class="form-register">
-            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
-            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
-            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-            <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <div>
+        <form action="/users/register" method="post" class="form-register">
+            <input class="controls" type="text" name="username" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="surname" id="apellidos" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="email" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="password" name="password" id="correo" placeholder="Ingrese su Contraseña">
             <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
             <input class="botons" type="submit" value="Registrar">
             <p><a href="/users/login">¿Ya tenes Cuenta?</a></p>
         </form>
+        </div>
     </main>
 
       <%- include("../partials/footer") %>

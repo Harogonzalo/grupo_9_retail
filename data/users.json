@@ -1,18 +1,20 @@
 [
-{  "id": "id",
-    "Nombre": "Cosme",
-    "Apellido": "Fulanito",
-    "Email": "cosme_fulanito@gmail.com",
-    "Contraseña": "1234password",
-    "Categoría": "user",
-    "Imagen": "image"
-},
-{  "id": "id",
-    "Nombre": "Esteban",
-    "Apellido": "Quito",
-    "Email": "EstebanQuito@gmail.com",
-    "Contraseña": "123456",
-    "Categoría": "admin",
-    "Imagen": "image"
-}
+  {
+    "id": "id",
+    "username": "Cosme",
+    "surname": "Fulanito",
+    "email": "cosme_fulanito@gmail.com",
+    "password": "1234password",
+    "level": "user",
+    "image": "image"
+  },
+  {
+    "id": "id",
+    "username": "Esteban",
+    "surname": "Quito",
+    "email": "EstebanQuito@gmail.com",
+    "password": "123456",
+    "level": "admin",
+    "image": "image"
+  }
 ]
