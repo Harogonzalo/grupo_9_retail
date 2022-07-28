@@ -1,24 +1,18 @@
 <header>
+<div class="todo-header">
+    
+    <a href="/"> <img src="/img/logo-alargado.png" alt="Logo de MI NOMBRE"/> </a>
 
-<div class="todo-header" >
-    <div class="izq-header">
-      <a href="/"> <img src="/img/Logo-prueba2.png" alt="Logo de MI NOMBRE" width="50%" /> </a>
-      </a>
-    </div>
-      
-    <div class="der-header">  
-      <ul class="der-header-list">
-        <li><a href="/users/register">Creá tu cuenta  </a><i class="fa-solid fa-id-card"></i></li>
+    <div class = "iconos-header">
+      <ul>
+        <li><a href="/users/register">Registrate </a><i class="flaticon-user-1"></i>
+        <a href="/users/login">Ingresá</a></li>
         
-        <li><a href="/users/login">Ingresá </a> <i class="fa-solid fa-right-to-bracket"></i></li>
-        
-        <li><a href="/products/productCart">Mis compras </a> <i class="fa-solid fa-basket-shopping"></i></li>
-        
-        <li><a href="/products/create">Vender </a> <i class="fa-solid fa-basket-shopping"></i></li>
-        
+        <li><a href="/products/productCart">Mis compras</a> <i class="flaticon-shopping-cart-2"></i>
+        <a href="/products/createProduct">Vender</a></li>
       </ul>
     </div>
-    </div>
+</div>
   <!------ NAVBAR -------->
     <nav class="toda-navbar">
       <ul class="izq-navbar">
@@ -33,26 +27,23 @@
         </li>
       </ul>
       <div class="der-navbar">
-      
-      
-        <form class ="busqueda" action="products/search" method="GET">
-      <input class="lupaSubmit" type="text" name="search"  placeholder="Buscar productos, marcas..">
-      <input class="lupaSubmitlupa" type="submit" value="Search">
+        
+      <form class ="busqueda" action="products/search" method="GET">
+      <input type="text" name="search"  placeholder="Buscar productos, marcas..">
+      <!-- <input class="flaticon-magnifying-glass" type="submit" value="Search"> -->
+      <i class="flaticon-magnifying-glass" type="submit" value="Search"></i>
       </form>
       
-      <!-- Por ahora no se como hacer que esta lupa actue como boton -->
-      <!-- <div class="lupa">
-      <i class="fas fa-search"></i> -->
-      </div>
       </div>
       <div class="burger-menu">
         <i class="fas fa-bars"></i>
         <span>CATEGORÍAS</span>
       </div>
     </nav>
-  <!----- Icono Menu ----->
+  
   </header>
-<script>document.querySelector('.burger-menu').addEventListener('click',() =>{
+<script>
+  document.querySelector('.burger-menu').addEventListener('click',() =>{
   document.querySelector('.izq-navbar').classList.toggle('show')
   document.querySelector('.burger-menu').classList.toggle('mobile')
 })</script>
