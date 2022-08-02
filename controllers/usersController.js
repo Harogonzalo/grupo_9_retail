@@ -1,6 +1,7 @@
 const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
 const path = require("path");
+const { validationResult }= require('express-validator')
 
 const userListPath = path.resolve(__dirname, "../data/users.json");
 const userList = JSON.parse(fs.readFileSync(userListPath, "utf8"));
@@ -14,6 +15,13 @@ const usersController = {
         res.render('users/login');
     },
     userStore: (req, res) => {
+        const resultValidation = validationResult(req);
+        if (resultValidation.errors.length > 0){
+            return res.render('users/register', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            });
+        } else {
         let user = req.body;
         user.id = uuidv4();
         user.level = "user"
@@ -22,7 +30,8 @@ const usersController = {
         fs.writeFileSync(userListPath, JSON.stringify(userList, null, 2));
     
         res.redirect("/index");
-    },    
+    }    
+}
 }
 
 module.exports = usersController;

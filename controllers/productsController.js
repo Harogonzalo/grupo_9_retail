@@ -1,6 +1,8 @@
 const { v4: uuidv4 } = require("uuid");
 const fs = require("fs");
 const path = require("path");
+const { validationResult }= require('express-validator')
+
 
 const productListPath = path.resolve(__dirname, "../data/products.json");
 const productList = JSON.parse(fs.readFileSync(productListPath, "utf8"));
@@ -43,6 +45,15 @@ const productsController = {
     res.render("products/create");
   },
   storeProduct: (req, res) => {
+    const resultValidation = validationResult(req);
+
+    console.log(resultValidation)
+    if (resultValidation.errors.length > 0){
+        return res.render('products/create', {
+            errors: resultValidation.mapped(),
+            oldData: req.body
+        });
+    } else {
     let product = req.body;
     product.imagen =  "/img/uploads/"+ req.files[0].filename
 
@@ -53,7 +64,7 @@ const productsController = {
     fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
 
     res.redirect("/products");
-  }, editProduct: (req, res) => {
+  }}, editProduct: (req, res) => {
     let id = req.params.id
     let productoFiltrado = productList.find((producto) => producto.id == id )
 

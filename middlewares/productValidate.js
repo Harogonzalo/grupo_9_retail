@@ -13,7 +13,13 @@ const validateProduct = [
     body('description')
         .isLength({ min: 10 })
         .withMessage('La descripción debe tener al menos 10 caracteres'),
-    body('images')
+        body('fulldescription')
+        .isLength({ min: 10 })
+        .withMessage('La descripción debe tener al menos 10 caracteres'),
+        body('category')
+        .notEmpty()
+        .withMessage("Debe elegir una categoria"),
+    body('image')
         .custom((value, { req }) => {
             let images = req.files;
 

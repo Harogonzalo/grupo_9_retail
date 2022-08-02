@@ -12,10 +12,40 @@
     <main>
     <div>
         <form action="/users/register" method="post" class="form-register">
-            <input class="controls" type="text" name="username" id="nombres" placeholder="Ingrese su Nombre">
-            <input class="controls" type="text" name="surname" id="apellidos" placeholder="Ingrese su Apellido">
-            <input class="controls" type="email" name="email" id="correo" placeholder="Ingrese su Correo">
-            <input class="controls" type="password" name="password" id="correo" placeholder="Ingrese su Contraseña">
+            <input class="controls <%= locals.errors && errors.username ? "is-invalid" : null %>"
+            type="text" 
+            name="username" 
+            id="nombres" 
+            placeholder="Ingrese su Nombre" 
+            value="<%= locals.oldData ? oldData.username : null %>">
+            <% if (locals.errors && errors.username) { %>
+              <div class="danger-text">
+                <p style="font-size: 16px;"> <%= errors.username.msg %></p>
+              </div>
+            <% } %>
+            <input class="controls" type="text" name="surname" id="apellidos" placeholder="Ingrese su Apellido" value="<%= locals.oldData ? oldData.surname : null %>">
+            <input class="controls <%= locals.errors && errors.email ? "is-invalid" : null %>"
+            type="email"
+            name="email" 
+            id="correo" 
+            placeholder="Ingrese su Correo"
+            value="<%= locals.oldData ? oldData.email : null %>">
+            <% if (locals.errors && errors.email) { %>
+              <div class="danger-text">
+                <p style="font-size: 16px;" > <%= errors.email.msg %></p>
+              </div>
+            <% } %>
+
+            <input class="controls <%= locals.errors && errors.password ? "is-invalid" : null %>" 
+            type="password" 
+            name="password" 
+            id="correo" 
+            placeholder="Ingrese su Contraseña">
+            <% if (locals.errors && errors.password) { %>
+              <div class="danger-text">
+                <p style="font-size: 16px;"> <%= errors.password.msg %></p>
+              </div>
+            <% } %>
             <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
             <input class="botons" type="submit" value="Registrar">
             <p><a href="/users/login">¿Ya tenes Cuenta?</a></p>

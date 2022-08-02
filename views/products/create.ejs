@@ -11,23 +11,54 @@
       <div class="edit-product">
         <form action="/products/create" method="post" enctype="multipart/form-data">
           <input type="text" name="name" placeholder="Producto" />
+          <% if (locals.errors && errors.name) { %>
+            <div class="danger-text">
+              <p style="font-size: 16px;"> <%= errors.name.msg %></p>
+            </div>
+          <% } %>
           <input type="text" name="description" placeholder="Descripcion Breve" />
+          <% if (locals.errors && errors.description) { %>
+            <div class="danger-text">
+              <p style="font-size: 16px;"> <%= errors.description.msg %></p>
+            </div>
+          <% } %>
           <input type="text" name="fulldescription" placeholder="Descripcion Larga" />
+          <% if (locals.errors && errors.fulldescription) { %>
+            <div class="danger-text">
+              <p style="font-size: 16px;"> <%= errors.fulldescription.msg %></p>
+            </div>
+          <% } %>
           <input type="text" name="price" placeholder="Precio" />
+          <% if (locals.errors && errors.price) { %>
+            <div class="danger-text">
+              <p style="font-size: 16px;"> <%= errors.price.msg %></p>
+            </div>
+          <% } %>
           <input type="text" name="discount" placeholder="Descuento" />
-          <input type="text" name="category" placeholder="Categoria" />
+          <label style="font-size: 18px"><b> Categoria </b>:</label>
+          <select name="category" class="form-select">
+            <option value=""> Elegi una categoria</option>
+            <%
+              let categorias = ["TV", "Audio", "Video", "Electrodomesticos", "Computacion", "Celulares"];
+              %>
+              <% for (const categoria of categorias) { %>
+                <option value="<%=categoria%>">
+                  <%= locals.oldData && (categoria === oldData.category) ? 'selected' : null %>  <%= categoria %> </option>
+              <% } %>
+          </select>
+          <% if (locals.errors && errors.category) { %>
+            <div class="danger-text">
+              <p style="font-size: 16px;"> <%= errors.category.msg %></p>
+            </div>
+          <% } %>
           <input type="file" name="image" id="image" multiple />
+          <% if (locals.errors && errors.image) { %>
+            <div class="danger-text">
+              <p style="font-size: 16px;"> <%= errors.image.msg %></p>
+            </div>
+          <% } %>
           <div>
-            <label><b> Categoria </b>:</label>
-            <select name="category" class="form-select">
-              <option value=""> Elegi una categoria</option>
-              <%
-                let categorias = ["TV", "Audio", "Video", "Electrodomesticos", "Computacion", "Celulares"];
-                %>
-                <% for (const categoria of categorias) { %>
-                  <option value="<%=categoria%>"> <%= categoria %> </option>
-                <% } %>
-            </select>
+
           </div>
           <br />
           <input type="submit" value="Crear" />

@@ -204,7 +204,7 @@ footer i {
     font-size: 22px;
     margin-bottom: 20px;
   }
-  .controls, .edit-product form input {
+  .controls, .form-select, .edit-product form input {
     width: 100%;
     background: #24303c;
     padding: 10px;
@@ -214,7 +214,7 @@ footer i {
     font-family: "calibri";
     font-size: 18px;
     color: white;
-    height: 40px;
+    height: 42px;
   }
   .form-register p {
     height: 40px;
@@ -245,6 +245,13 @@ footer i {
   .edit-product form{
     flex-direction: column;
   }
+.danger-text{
+    color:red;
+    padding-bottom: 5px;
+}
+.is-invalid{
+    border: solid 1px red;
+}
 /* ------ Carrito de Compras y Detalle de Productos ------- */
 
 .div-totales {
@@ -387,5 +394,11 @@ footer i {
     }
     .section-footer h2{
         font-size: 2rem;
+    }
+}
+/* Laptops grandes y desktop. */ 
+@media (min-width: 1200px) {
+    .izq-navbar{
+        transform: translateY(+410%);
     }
 }
