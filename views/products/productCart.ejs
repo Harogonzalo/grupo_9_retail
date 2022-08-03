@@ -11,59 +11,51 @@
 
     <main>
       <h4>CARRITO DE COMPRAS</h4>
-      <div class="div-carrito">
-        <!-- Articulos en Carrito -->
-        <div class="div-articulos">
+      <div class="ofertas">
+  
+        <% for( let i = 0; i < 4/*products.length*/; i++ ) { %>
+        <div id="container">	
+        <div class="product-details">
           
-          <% for( let i = 0; i < 3/*products.length*/; i++ ) { %>
-            <div class="nuevo-articulo">  
-            <img src= <%= products[i].imagen %> />  
-            <h3> <%= products[i].name %> </h3>
-            <div class="div-precio">
-            <P class="precio">  $ <%= products[i].price %> </P>
-            <P class="descuento">  <%= products[i].discount %> % off</P>
-          </div>
-            <a href= "#" >Mas Detalles <i class="fas fa-angle-double-right"> </i></a>
-          </div>
-          <% } %>
-
-          <!-- <div class="nuevo-articulo">
-            <img src="/img/pava-atma.jpg" alt="" />
-            <h3>Pava Electrica Atma</h3>
-            <div class="div-precio">
-              <p class="precio">$20.770</p>
-              <p class="descuento">40% off</p>
-            </div>
-            <a href="#"
-              >Mas Detalles <i class="fas fa-angle-double-right"></i
-            ></a>
-          </div>
-
-          <div class="nuevo-articulo">
-            <img src="/img/img-tv-samsung-smart.jpg" alt="" />
-            <h3>Smart TV Samsung</h3>
-            <div class="div-precio">
-              <p class="precio">$60.200</p>
-              <p class="descuento">40% off</p>
-            </div>
-            <a href="#"
-              >Mas Detalles <i class="fas fa-angle-double-right"></i
-            ></a>
-          </div>
-
-          <div class="nuevo-articulo">
-            <img src="/img/img-cafetera-moulinex.jpg" alt="" />
-            <h3>Cafetera Moulinex</h3>
-            <div class="div-precio">
-              <p class="precio">$30.500</p>
-              <p class="descuento">40% off</p>
-            </div>
-            <a href="#"
-              >Mas Detalles <i class="fas fa-angle-double-right"></i
-            ></a>
-          </div> -->
+        <h1><%= products[i].name %></h1>
+        <!-- <span class="hint-star star">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </span> -->
+        <p class="information">ACA VAN MAS DETALLES DEL PRODUCTO</p>
+      <div class="control">
+        
+        <button class="btn">
+         <span class="price"> $ <%= products[i].price %></span>
+         <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+         <span class="buy">C</span>
+       </button>
+      </div>
+      </div>
+      <div class="product-image">
+        
+        <img src= <%= products[i].imagen %> alt="">
+        
+      
+      <div class="info">
+        <h2> Description</h2>
+        <ul>
+          <li><strong>Height : </strong>5 Ft </li>
+          <li><strong>Shade : </strong>Olive green</li>
+          <li><strong>Decoration: </strong>balls and bells</li>
+          <li><strong>Material: </strong>Eco-Friendly</li>
+          
+        </ul>
+      </div>
+      </div>
         </div>
-        <div class="div-totales">
+        <% } %>
+    </div>
+    </div>
+        <div class="contenedor-totales">
           <div class="div-logo">
             <img src="/img/Logo-prueba2.png" width="25%" alt="Logo de MI NOMBRE"/>
           </div>
@@ -80,15 +72,6 @@
               <div class="div-botones">
                 <a href="/"> <button>Comprar más</button></a>
               </div>
-
-              <!-- <div class="button">
-                <div class="container">
-                  <div class="tick">
-                  </div>
-                </div>
-              </div> -->
-
-
             </form>
           </div>
         </div>
