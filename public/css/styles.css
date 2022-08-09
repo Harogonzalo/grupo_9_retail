@@ -7,9 +7,7 @@
 /* ------GENERAL------ */
 body {
     font-family: "Oswald", sans-serif;
-    /*background-color: #090411;
-    background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%2333037f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-*/}
+}
 
 /* ------ HEADER GENERAL ------ */
 header {
@@ -19,54 +17,43 @@ header {
 .todo-header {
     display: flex;
     padding: 5px 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
-/* BORRAR DEL HEADER EL WIDT Y ELIMINAR EL DIV IZQ-HEADER*/
 .todo-header img{
-    width: 42vw;
-}
-.iconos-header{
-    align-self: center;
-    text-align: right;
-}
-.iconos-header ul{
-    list-style: none;
+    width: 45vw;
 }
 .todo-header a {
     color: #ffffff;
     text-decoration: none;
 }
+/* ---BOTONES HEADER---*/
+
 .contenedor-botones {
-	width: 33%;
+	width: 36%;
 	display: grid;
-	grid-template-columns: 1fr 0.22fr 1fr;
-	gap: 0.5px;
-    
+	grid-template-columns: repeat(2 , 1fr);
+    height: 12vw;
+    padding-top: 5px;
 }
-.boton-dos {
+.boton-uno, .boton-dos,  .boton-tres, .boton-cuatro {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	background: #5079F2;
+	background: #38B6FF;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	border: none;
 	cursor: pointer;
 	text-transform: uppercase;
 	transition: .3s ease all;
-	border-radius: 5px;
 	position: relative;
 	overflow: hidden;
     height: auto;
     max-height: 90%;
-        -webkit-transform: skew(-20deg);
-           -moz-transform: skew(-20deg);
-             -o-transform: skew(-20deg);
+    transform: matrix(1, 0.3, 0, 1, 0, 0);
 } 
-
-
-.boton-dos span {
+.boton-dos,.boton-tres,.boton-cuatro,.boton-uno span {
 	position: relative;
 	z-index: 2;
 	transition: .3s ease all;
@@ -80,29 +67,125 @@ header {
 	z-index: 1;
 	top: 0;
 	left: calc(-100% - 80px);
-	border-bottom: 80px solid #035AA6;
+	border-bottom: 80px solid #38B6FF;
 	border-right: 80px solid transparent;
 	transition: .4s ease-in-out all;
 }
-
 .boton-dos:hover::after {
 	left: 0;
 }
-
-.contenedor-iconos{
-    max-width: 29px;
-    background-color: #eee;
-    border-radius: 5px;
-    -webkit-transform: skew(-20deg);
-    /* -moz-transform: skew(-20deg);
-      -o-transform: skew(-20deg); */
-    height: auto;
-    max-height: 90%;
-   
+.boton-uno {
+    background: #5271FF;
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
 }
+.boton-tres {
+	background: #38B6FF;
+    transform: matrix(1, 0.3, 0, 1, 0, 0);
+} 
+.boton-cuatro {
+	background: #5271FF;
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+/* ------Navbar------ */
+
+.nav {
+    height: 25px;
+    width: 100%;
+    position: relative;
+    transform: translateY(-20PX);
+  }
+  
+  .nav .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #fff;
+    padding:5px 10px 3px 10px
+  }
+  
+  .nav-btn {
+    display: none;
+  }
+  
+  .nav-search{
+    display: none;
+  }
+
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      /* width: 50px;
+      height: 50px; */
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 20px;
+      height: 8px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: 250px;
+      overflow-y: auto;
+    }
+  }
 
 
-/* ------Navigation------ */
+
+
+
+/* 
 .toda-navbar {
     display: flex;
     flex-direction: row-reverse;
@@ -154,22 +237,23 @@ header {
     text-align: end;
     font-weight: 400;
     border-radius: 0 6px 6px 0;
-}
+} */
 /* ------ MAIN ------ */
 
 .banner{
     background-image:url("/img/red gente2.jpg") ;
-    border-radius: 0.5em;
-    background-color: grey;
-    border-radius: 10px;
 	text-align: center;
 	padding: 20px;
 	background-size: cover;
 	background-position: center center;
-    display: flex;
-	flex-direction: column;
+    /* display: flex;
+	flex-direction: column; */
 	justify-content: space-between;
-    
+}
+.banner2{
+    width: 100vw;
+    height: 23vh;
+    margin-bottom: 5px;
 }
 
 h4 {
@@ -183,7 +267,7 @@ h4 {
   }
 
 /* ------- CARD -------- */
-/* --------------------- */
+
 .ofertas{
     /* border: solid 1px rgb(226, 6, 167); */
     display:flex;
@@ -191,10 +275,11 @@ h4 {
     width: 95vw;
     padding: 10px;
     margin: auto;
-
+    justify-content: center;
 }
 
-#container{
+.container{
+    display: flex;
 	box-shadow: 0 15px 30px 1px grey;
 	background: rgba(255, 255, 255, 0.90);
 	text-align: center;
@@ -204,9 +289,10 @@ h4 {
 	/*height: 350px;
 	width: 700px;*/
     height: 25vh;
-    max-width: 340px;
+    max-width: 380px;
     min-width: 250px;
 }
+
 
 .product-details {
     display: flex;
@@ -219,7 +305,7 @@ h4 {
     justify-content: space-between;
 }
 
-#container .product-details h1{
+.container .product-details h1{
 	font-family: 'Bebas Neue', cursive;
 	display: inline-block;
 	position: relative;
@@ -229,7 +315,7 @@ h4 {
 	
 }
 
-#container .product-details h1:before{
+.container .product-details h1:before{
 	position: absolute;
 	content: '';
 	right: 0%; 
@@ -256,7 +342,7 @@ h4 {
 } */
 
 
-#container .product-details > p {
+.container .product-details > p {
 font-family: 'EB Garamond', serif;
 	text-align: center;
 	font-size: 18px;
@@ -334,7 +420,7 @@ font-family: 'EB Garamond', serif;
 	display: inline-block;
 }
 
-#container img {width: 100%;height: 100%;}
+.container img {width: 100%;height: 100%;}
 
 .info {
     background: rgba(27, 26, 26, 0.9);
@@ -358,16 +444,13 @@ font-family: 'EB Garamond', serif;
 .product-image:hover .info{transform: translateX(0);}
 
 .info ul li{transition: 0.3s ease;}
-.info ul li:hover{transform: translateX(50px) scale(1.3);}
+.info ul li:hover{transform: translateX(50px) scale(1.2);}
 
 .product-image:hover img {transition: all 0.3s ease-out;}
 .product-image:hover img {transform: scale(1.2, 1.2);}
 
-
-/* ------- CARD -------- */
-/* --------------------- */
-
 /* ------- FOOTER -------- */
+
 .div-footer {
     background-color: #340b8c;
 }
@@ -399,6 +482,7 @@ footer a {
 }
 .contactos-footer {
     grid-column: 1/3;
+    display: contents;
 }
 /*PARA LOS ICONOS QUE NO SON DE FLATICON*/
 footer i {
@@ -527,6 +611,12 @@ footer i {
     .todo-header img{
         width: 35vw;
     }
+    .contenedor-botones {
+        width: 22%;
+        gap: 0.5px;
+        height: 7vw;
+        padding-top: 5px;
+    }
     .img-banner {
         width: 100vw;
         height: 30vh;
@@ -535,13 +625,14 @@ footer i {
     
     .div-footer {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
     footer a {
         font-size: 0.8rem;
     }
-
+    .contenedor-ofertas{
+        display: flex;
+    }
     .ofertas{
         display: flex;
         justify-content: space-around;
@@ -561,7 +652,7 @@ footer i {
         height: max-content;
     }
     .todo-header img{
-        width: 25vw;
+        width: 35vw;
     }
     .burger-menu{
         display: none;
@@ -598,6 +689,14 @@ footer i {
         text-decoration: none;
         color: #000;
     }
+    /* .contenedor-ofertas{
+    width: 27%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 0.5px;
+    height: 8vw;
+    padding-top: 5px;
+    } */
     .ofertas{
         /* display: grid;
         grid-template-columns: 3fr 1fr; */
@@ -613,33 +712,5 @@ footer i {
 
 
 
-
-.contenedor-carrito{
-    display: flex;
-}
-.contenedor-articulos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-.articulo{
-    display: flex;
-
-}
-.contenedor-totales{
-    display: flex;
-}
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
-
-
-/* body {
-background: #DFC2F2;
-	background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
-	background-attachment: fixed;	
-	background-size: cover;
-  
-	} */
 
