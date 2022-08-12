@@ -552,15 +552,15 @@ footer i {
   }
 /* ------ Carrito de Compras y Detalle de Productos ------- */
 
-.div-totales {
-    width: 25vw;
+.contenedor-totales {
+    width: 100vw;
     border: solid 1px rgb(226, 6, 167);
     border-radius: 0.5em;
     display: flex;
-    flex-direction: column;
+    /*position:absolute;*/
   }
 
-  .detalle-articulo {
+  /* .detalle-articulo {
     width: 50vw;
     height: 40vh;
     border: 0.5px rgb(14, 4, 105);
@@ -570,7 +570,43 @@ footer i {
     justify-items: center;
     border: rgb(14, 4, 105) 4px solid;
     background-color: rgb(66, 51, 141);
+  } */
+  .div-logo{
+    width: 20vw;
+    align-self: center;
+    text-align: center;
+
   }
+  .div-logo img{
+    width: 80%;
+    justify-content: center;
+    border-radius: 0.5em;
+  }
+  .div-precioFinal{
+    width: 50vw;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    height: 15vh;
+  }
+  .boton-carrito{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #38B6FF;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    border: solid 1px black;
+    border-radius: 0.5em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    max-height: 90%;
+  } 
 
 
 

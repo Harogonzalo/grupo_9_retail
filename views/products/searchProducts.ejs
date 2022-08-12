@@ -15,12 +15,63 @@
 <!------  MAIN  ------>
 
 <main>
-    <div class="div-ofertas">
+  <div class="contenedor-ofertas">
+    <!-- <h4>LOS PRODUCTOS DEL MES</h4> -->
+  
+    <div class="ofertas">
+    
+      <% for( let i = 0; i < productSearch.length; i++ ) { %>
+      <div class="container">	
+      <div class="product-details">
+        
+      <h1><%= productSearch[i].name %></h1>
+      <!-- <span class="hint-star star">
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+      </span> -->
+        
+          <p class="information">ACA VAN MAS DETALLES DEL PRODUCTO</p>
+    
+    <div class="control">
+      
+      <button class="btn">
+       <span class="price"> $ <%= productSearch[i].price %></span>
+       <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+       <span class="buy">Comprar</span>
+     </button>
+      
+    </div>
+          
+    </div>
+      
+    <div class="product-image">
+      <img src= <%= productSearch[i].imagen %> alt="">
+    <div class="info">
+      <h2> Detalles</h2>
+      <ul>
+        <li><strong>Comentarios +: </strong>9/10</li>
+        <li><strong>Precio mas bajo: </strong>7/10</li>
+        <li><strong>Durabilidad: </strong>8/10</li>      
+      </ul>
+    </div>
+    </div>
+      </div>
+      <% } %>
+  </div>
+  
+
+
+
+
+    <!-- <div class="contenedor-ofertas">
         <h4>BUSQUEDA</h4>
     
-    <div class="div-articulos">    
+    <div class="ofertas">    
       <% for( let i = 0; i < productSearch.length; i++ ) { %>   
-        <div class="nuevo-articulo">  
+        <div class="container">  
         <img src= <%= productSearch[i].imagen %> />  
         <h3> <%= productSearch[i].name %> </h3>
         <div class="div-precio">
@@ -30,7 +81,7 @@
         <a href= "/products/productDetail/<%= productSearch[i].id %>" >Mas Detalles <i class="fas fa-angle-double-right"> </i></a>
       </div>
       <% } %></div>
-    </div>
+    </div> -->
 </main>
       
 <%- include("../partials/footer") %>      

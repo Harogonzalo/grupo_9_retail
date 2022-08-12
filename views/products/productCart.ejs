@@ -14,7 +14,7 @@
       <div class="ofertas">
   
         <% for( let i = 0; i < 4/*products.length*/; i++ ) { %>
-        <div id="container">	
+        <div class="container">	
         <div class="product-details">
           
         <h1><%= products[i].name %></h1>
@@ -57,20 +57,21 @@
     </div>
         <div class="contenedor-totales">
           <div class="div-logo">
-            <img src="/img/Logo-prueba2.png" width="25%" alt="Logo de MI NOMBRE"/>
+            <img src="/img/Logo-chico.png" alt="Logo de MI NOMBRE"/>
           </div>
+          <div class="div-precioFinal">
           <h3 class="h3-totales">TOTAL COMPRAS</h3>
-          <div class="div-precioFinal">$ 111.470,00</div>
+          <p>$ 111.470,00</p></div>
           <div>
             <form action="javascript:void(0);" style="display: block";>
-              <div class="div-botones">
-                <a href="/"> <button>PAGAR</button></a>
+              <div >
+                <a href="/"> <button class="boton-carrito">PAGAR</button></a>
               </div>
-              <div class="div-botones">
-                <a href="/"> <button>Vaciar Carrito</button></a>
+              <div >
+                <a href="/"> <button class="boton-carrito">Vaciar Carrito</button></a>
               </div>
-              <div class="div-botones">
-                <a href="/"> <button>Comprar más</button></a>
+              <div >
+                <a href="/"> <button class="boton-carrito">Comprar más</button></a>
               </div>
             </form>
           </div>

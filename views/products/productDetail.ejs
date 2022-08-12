@@ -10,12 +10,12 @@
 
       <main>
       <h4>Detalle de Producto</h4>
-      <div class="div-carrito">
+      <div class="ofertas">
         <!-- Articulos en Detalle -->
         
-        <div>                  
-          
-            <div class="nuevo-articulo">  
+          <div class="container">  
+            <div class="product-details">
+
             <img src= <%= productoFiltrado.imagen %> />
             <h3> <%= productoFiltrado.name %> </h3>
             <div class="div-precio">
@@ -30,28 +30,7 @@
         <h2>Detalle: <%= productoFiltrado.fulldescription %> </h2>
         
       </div>
-      <div class="div-totales">
-        <div class="div-logo">
-          <img src="/img/Logo-prueba2.png" width="25%" alt="Logo de MI NOMBRE"/>
-        </div>
-        <h3 class="h3-totales">PRECIO</h3>
-        <div class="div-precioFinal"><P>$<%= productoFiltrado.price %></P> </div>
-        <div>
-          <form action="javascript:void(0);">
-            <div class="div-botones">
-              <a href="/"> <button>PAGAR</button></a>
-            </div>
-            <div class="div-botones">
-              <a href="/"> <button>Vaciar Carrito</button></a>
-            </div>
-            <div class="div-botones">
-              <a href="/"> <button>Comprar más</button></a>
-            </div>
-
-        </div>
-            </form>
-          </div>
-        </div>
+      
       </div>
     </main>
     
