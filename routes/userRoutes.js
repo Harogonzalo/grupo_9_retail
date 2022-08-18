@@ -6,20 +6,20 @@ const userValidate = require('../middlewares/userValidate');
 
 // const registerValidations = require("../middlewares/validationsForms/registerValidations.js");
 // const loginValidations = require("../middlewares/validationsForms/loginValidations");
-const unAuthMiddleware = require("../middlewares/access/unAuthorizedmdlwr");
-const authMiddleware = require('../middlewares/access/AuthorizedMd')
+// const unAuthMiddleware = require("../middlewares/unAuthorizedmdlwr");
+// const authMiddleware = require('../middlewares/AuthorizedMd')
 
 
-router.get("/register", userControllers.register);
-router.post(
-  "/register",
-  upload.single("avatar"),
-  registerValidations,
-  userControllers.userStore
-);
+// router.get("/register", userController.userStore);
+// router.post(
+//   "/register",
+//   upload.single("avatar"),
+//   registerValidations,
+//   userController.userStore
+// );
 
-router.get("/login", unAuthMiddleware, userControllers.login);
-router.post("/login", userValidate, userControllers.processLogin);
+// router.get("/login", unAuthMiddleware, userController.login);
+// router.post("/login", userValidate, userController.processLogin);
 
 
 // INDEX
