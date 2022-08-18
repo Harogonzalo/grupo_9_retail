@@ -15,3 +15,11 @@
 -Se emprolijo el codigo
 - Se creo products.json y user.json
 -Finalizando Crud.
+
+# 18-8-2022
+
+- Separamos el trabajo en dos grupos para poder completar lo que falta del sprint 5
+- Resolvimos algunos inconvenientes de las vistas y rutas de productos
+- Completamos tablero de trabajo
+- Volvimos a ver la clase de Express para ir completando el CRUD
+

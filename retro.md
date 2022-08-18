@@ -86,3 +86,24 @@ Dejar pasar el tiempo sin comunicarnos
 Posponer  hasta ultimo momento 
 ### Dejar de hacer.
 no dejar puntos sin terminar de los Sprint
+
+
+### Retrospectiva del Sprint 5
+
+### Comenzar a hacer.
+Actualizar tablero Frecuentemente
+Relacion con Base de Datos
+### Hacer más.
+ Cocretar mas encuentros sincronicos
+ Definir equitativamente la tarea de cada uno con respecto al proyecto 
+ Emprolijar el codigo, limpar carpetas y archivos
+ ### Continuar haciendo.
+ Sistema de Logeo y Middleware
+ Completar Rutas y Vistas
+### Hacer menos.
+Dejar pasar el tiempo sin comunicarnos 
+### Dejar de hacer.
+no dejar puntos sin terminar de los Sprint
+Trabajar individualmente
+
+
