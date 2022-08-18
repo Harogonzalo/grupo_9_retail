@@ -2,9 +2,11 @@ const { body } = require('express-validator');
 
 const validateProduct = [
     body('name')
+        .notEmpty()
         .isLength({ min: 3 })
         .withMessage('El nombre debe tener al menos 3 caracteres'),
     body('price')
+        .notEmpty()
         .isFloat({ gt: 0 })
         .withMessage('El precio debe ser un número mayor a 0'),
     body('currency')

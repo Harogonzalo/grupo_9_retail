@@ -1,13 +1,16 @@
 const { body } = require('express-validator');
 
-const validateUser = [
+module.exports = [
     body('username')
+        .notEmpty()
         .isLength({ min: 3 })
         .withMessage('El nombre debe tener al menos 3 caracteres'),
     body('password')
+        .notEmpty()
         .isLength({ min: 6 })
         .withMessage('La contraseña debe tener almenos 6 caracteres'),
     body('email')
+        .notEmpty()
         .isEmail()
         .withMessage('Debe ser un email valido').bail().isEmail().withMessage('Debes escribir un formato de email aceptado'),  //bail es para unir otra validacion
 ];
@@ -23,5 +26,3 @@ const validateUser = [
     //         }
     //         return true;
     //     })
-
-module.exports = validateUser;

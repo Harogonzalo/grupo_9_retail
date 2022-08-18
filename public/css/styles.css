@@ -114,24 +114,24 @@ header {
     display: none;
   }
 
-  .nav > .nav-links {
+  .nav .nav-links {
     display: inline;
     float: right;
     font-size: 18px;
   }
   
-  .nav > .nav-links > a {
+  .nav .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
   }
   
-  .nav > .nav-links > a:hover {
+  .nav .nav-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
   
-  .nav > #nav-check {
+  .nav #nav-check {
     display: none;
   }
   
@@ -144,8 +144,8 @@ header {
     }
     .nav > .nav-btn > label {
       display: inline-block;
-      /* width: 50px;
-      height: 50px; */
+      /* width: 50px;*/
+      height: 50px; 
       padding: 13px;
     }
     .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
@@ -179,7 +179,7 @@ header {
       height: 250px;
       overflow-y: auto;
     }
-  }
+  } 
 
 
 
@@ -686,10 +686,15 @@ footer i {
     .todo-header {
         font-size: 1.5rem;
         height: max-content;
+        justify-content:space-between
     }
     .todo-header img{
-        width: 35vw;
+        width: 23vw;
     }
+    .contenedor-botones {
+      width: 18%;
+      
+  }
     .burger-menu{
         display: none;
     }
@@ -743,6 +748,49 @@ footer i {
     }
     .section-footer h2{
         font-size: 2rem;
+    }
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      /* width: 50px;
+      height: 50px; */
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 20px;
+      height: 8px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: 250px;
+      overflow-y: auto;
     }
 }
 

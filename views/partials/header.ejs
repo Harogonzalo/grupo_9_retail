@@ -1,35 +1,35 @@
 <header>
-<div class="todo-header">
+  <div class="todo-header">
     
     <a href="/"> <img src="/img/logo-alargado.png" alt="Logo de MI NOMBRE"/> </a>
-
     
-      <div class="contenedor-botones">
+    
+    <div class="contenedor-botones">
         <button class="boton-uno"><a href="/users/register"><span>Usuario: </span></button></a>
         <button class="boton-dos"><a href="/users/register"><span> Anonimo</span></button></a>
         <button class="boton-tres"><a href="/users/login"><span>Ingresar</span></button></a>
         <button class="boton-cuatro"><a href="/products/productCart"><span>Carrito</span></button></a>
         <!-- <div class="contenedor-iconos"><i class="flaticon-shopping-cart-2"></i></div>
-        <div class="contenedor-iconos"><i class="flaticon-user-1"></i></div> -->
-    </div>
-</div>
-  <!------ NAVBAR -------->
-    
-  <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <div class="nav-title">
-        <form class ="nav-search" action="products/search" method="GET">
-          <input type="text" name="search"  placeholder="Buscar productos, marcas..">
-          <!-- <input class="flaticon-magnifying-glass" type="submit" value="Search"> -->
-        </form>
-        <div>
-        <i class="flaticon-magnifying-glass" type="submit" value="Search"></i>
+          <div class="contenedor-iconos"><i class="flaticon-user-1"></i></div> -->
+        </div>
       </div>
-      </div>
-    </div>
-    <div class="nav-btn">
-      <label for="nav-check">
+      <!------ NAVBAR -------->
+      
+      <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <form class ="nav-search" action="products/search" method="GET">
+              <input type="text" name="search"  placeholder="Buscar productos, marcas..">
+              <!-- <input class="flaticon-magnifying-glass" type="submit" value="Search"> -->
+            </form>
+            <div>
+              <i class="flaticon-magnifying-glass" type="submit" value="Search"></i>
+            </div>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
         <span></span>
         <span></span>
         <span></span>
@@ -44,49 +44,49 @@
     </div>
   </div>
   
-
-<!-- </div>  -->
-
+  
+  <!-- </div>  -->
+  
   <!-- <nav class="toda-navbar">
-      <ul class="izq-navbar">
-        <li><a href="/products/productDetail"></a></li>
-        <li><a href="/products/productDetail">Electrodomesticos</a></li>
-        <li><a href="/products/productDetail">Computacion</a></li>
-        <li><a href="/products/productDetail">Celulares</a></li>
+    <ul class="izq-navbar">
+      <li><a href="/products/productDetail"></a></li>
+      <li><a href="/products/productDetail">Electrodomesticos</a></li>
+      <li><a href="/products/productDetail">Computacion</a></li>
+      <li><a href="/products/productDetail">Celulares</a></li>
       </ul>
       <div class="der-navbar">
         
-      <form class ="busqueda" action="products/search" method="GET">
-      <input type="text" name="search"  placeholder="Buscar productos, marcas..">
-      <!-- <input class="flaticon-magnifying-glass" type="submit" value="Search"> -->
-      <!-- <i class="flaticon-magnifying-glass" type="submit" value="Search"></i>
-      </form>
-      
+        <form class ="busqueda" action="products/search" method="GET">
+          <input type="text" name="search"  placeholder="Buscar productos, marcas..">
+          <!-- <input class="flaticon-magnifying-glass" type="submit" value="Search"> -->
+          <!-- <i class="flaticon-magnifying-glass" type="submit" value="Search"></i>
+          </form>
+          
       </div>
       <div class="burger-menu">
         <i class="fas fa-bars"></i>
         <span>CATEGORÍAS</span>
       </div>
     </nav> -->
-  
+    
   </header>
-<!-- <script>
-  document.querySelector('.burger-menu').addEventListener('click',() =>{
-  document.querySelector('.izq-navbar').classList.toggle('show')
-  document.querySelector('.burger-menu').classList.toggle('mobile')
-})</script> -->
-
-<script>
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
-
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-menu_visible");
-
-  if (navMenu.classList.contains("nav-menu_visible")) {
-    navToggle.setAttribute("aria-label", "Cerrar menú");
-  } else {
-    navToggle.setAttribute("aria-label", "Abrir menú");
-  }
-});
-</script>
+  <!-- <script>
+    document.querySelector('.burger-menu').addEventListener('click',() =>{
+      document.querySelector('.izq-navbar').classList.toggle('show')
+      document.querySelector('.burger-menu').classList.toggle('mobile')
+    })</script> -->
+    
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+      
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-menu_visible");
+        
+        if (navMenu.classList.contains("nav-menu_visible")) {
+          navToggle.setAttribute("aria-label", "Cerrar menú");
+        } else {
+          navToggle.setAttribute("aria-label", "Abrir menú");
+        }
+      });
+      </script>
