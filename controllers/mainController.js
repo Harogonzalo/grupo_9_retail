@@ -6,13 +6,13 @@ const productList = JSON.parse(fs.readFileSync(productListPath, "utf8"));
 
 const mainController = {
   index: (req, res) => {
-    if (req.session.userLoged) {
-      res.render("index", {
-        user: req.session.userLoged,
-      }, { products: productList });
-    } else {
-      res.render("index", { products: productList });
-    }
+    // if (req.session.userLoged) {
+    //   res.render("index", {
+    //     user: req.session.userLoged,
+    //   }, { products: productList });
+    // } else {
+    //   res.render("index", { products: productList });
+    // }
     res.render("index", { products: productList });
   },
   
