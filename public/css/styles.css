@@ -52,7 +52,7 @@ header {
     height: auto;
     max-height: 90%;
     transform: matrix(1, 0.3, 0, 1, 0, 0);
-} 
+}
 .boton-dos,.boton-tres,.boton-cuatro,.boton-uno span {
 	position: relative;
 	z-index: 2;
@@ -71,9 +71,9 @@ header {
 	border-right: 80px solid transparent;
 	transition: .4s ease-in-out all;
 }
-.boton-dos:hover::after {
+/* .boton-dos:hover::after { causa que el boton dos directamente desaparezca si tiene el mouse arriba
 	left: 0;
-}
+} */
 .boton-uno {
     background: #5271FF;
     transform: matrix(1, -0.3, 0, 1, 0, 0);
@@ -81,7 +81,7 @@ header {
 .boton-tres {
 	background: #38B6FF;
     transform: matrix(1, 0.3, 0, 1, 0, 0);
-} 
+}
 .boton-cuatro {
 	background: #5271FF;
     transform: matrix(1, -0.3, 0, 1, 0, 0);
@@ -93,23 +93,24 @@ header {
     width: 100%;
     position: relative;
     transform: translateY(-20PX);
+    z-index: 5;
   }
-  
+
   .nav .nav-header {
     display: inline;
   }
-  
+
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 1.1rem;
     color: #fff;
     padding:5px 10px 3px 10px
   }
-  
+
   .nav-btn {
     display: none;
   }
-  
+
   .nav-search{
     display: none;
   }
@@ -120,21 +121,21 @@ header {
     font-size: 18px;
   }
   
-  .nav .nav-links > a {
+  .nav > .nav-links > a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
   }
   
-  .nav .nav-links > a:hover {
+  .nav > .nav-links > a:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
   
-  .nav #nav-check {
+  .nav > #nav-check {
     display: none;
   }
-  
+
   @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -185,7 +186,7 @@ header {
 
 
 
-/* 
+/*
 .toda-navbar {
     display: flex;
     flex-direction: row-reverse;
@@ -312,13 +313,13 @@ h4 {
 	font-size: 15px;
 	color: #344055;
 	text-align: center;
-	
+
 }
 
 .container .product-details h1:before{
 	position: absolute;
 	content: '';
-	right: 0%; 
+	right: 0%;
 	top: 0%;
 	transform: translate(25px, -15px);
 	font-family: 'Bree Serif', serif;
@@ -332,8 +333,8 @@ h4 {
 	animation: chan-sh 6s ease infinite;
 
 }
-	
-/* 
+
+/*
 .hint-star {
 	display: inline-block;
 	margin-left: 0.5em;
@@ -347,13 +348,13 @@ font-family: 'EB Garamond', serif;
 	text-align: center;
 	font-size: 18px;
 	color: #7d7d7d;
-	
+
 }
 .control{
 	/*position: absolute;
 	 bottom: 20%; */
 	left: 22.8%;
-	
+
 }
 .btn {
 	transition: 0.3s linear;
@@ -367,7 +368,7 @@ font-family: 'EB Garamond', serif;
 	padding: 0;
 	margin: 0;
     display: flex;
-	
+
 }
 
 .btn:hover{transform: translateY(-6px);
@@ -380,7 +381,7 @@ font-family: 'EB Garamond', serif;
   padding: 10px 20px;
 	font-size: 1.2em;
 	margin:0;
-	
+
 }
 .btn .price, .shopping-cart{
 	background: #333;
@@ -415,7 +416,7 @@ font-family: 'EB Garamond', serif;
 	position: relative;
 	overflow: hidden;
 	height: 100%;
-	
+
 	width: 40%;
 	display: inline-block;
 }
@@ -444,7 +445,7 @@ font-family: 'EB Garamond', serif;
 .product-image:hover .info{transform: translateX(0);}
 
 .info ul li{transition: 0.3s ease;}
-.info ul li:hover{transform: translateX(50px) scale(1.2);}
+/* .info ul li:hover{transform: translateX(50px) scale(1.2);} */
 
 .product-image:hover img {transition: all 0.3s ease-out;}
 .product-image:hover img {transform: scale(1.2, 1.2);}
@@ -531,7 +532,7 @@ footer i {
     color: white;
     text-decoration: none;
   }
-  
+
   .form-register a:hover {
     color: white;
     text-decoration: underline;
@@ -606,7 +607,7 @@ footer i {
     overflow: hidden;
     height: auto;
     max-height: 90%;
-  } 
+  }
 
 
 
@@ -619,7 +620,7 @@ footer i {
 
 
   /*  Mobile small  */
-@media (max-width: 350px) {
+@media (max-width: 599px) {
     .todo-header {
         padding: 5px 5px;
     }
@@ -637,7 +638,7 @@ footer i {
     h4{
         font-size: 1.5rem;
     }
-    
+
 }
   /*  Mobile large  */
 @media (min-width: 600px) {
@@ -658,7 +659,7 @@ footer i {
         height: 30vh;
         margin-bottom: 5px;
     }
-    
+
     .div-footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -672,7 +673,7 @@ footer i {
     .ofertas{
         display: flex;
         justify-content: space-around;
-        
+
         /* display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 3px */
@@ -724,7 +725,7 @@ footer i {
         transform: none;
         list-style: none;
         justify-content: space-around;
-        position: relative;  
+        position: relative;
     }
     .izq-navbar a{
         text-decoration: none;

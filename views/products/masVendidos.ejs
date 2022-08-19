@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head") %>
+
+  <title>Editar Producto</title>
+
+  <body>
+    <%- include("../partials/header") %>
+
+    <main>
+        <div class="contenedor-ofertas">
+            <!-- <h4>LOS PRODUCTOS DEL MES</h4> -->
+        
+            <div class="ofertas">
+            
+            <% for( let i = 0; i < 4/*products.length*/; i++ ) { %>
+            <div class="container">	
+            <div class="product-details">
+                
+            <h1><%= products[i].name %></h1>
+            <!-- <span class="hint-star star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span> -->
+                
+                <p class="information">ACA VAN MAS DETALLES DEL PRODUCTO</p>
+            
+            <div class="control">
+            
+            
+            <button class="btn">
+               <span class="price"> $ <%= products[i].price %></span>
+               <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+               <a href="/products/<%= products[i].id%>"> <span class="buy" >Comprar</span> </a>
+             </button>
+              
+            </div>
+                  
+            </div>
+              
+            <div class="product-image">
+              <img src= <%= products[i].imagen %> alt="">
+            <div class="info">
+              <h2> Detalles</h2>
+              <ul>
+                <li><strong>Comentarios +: </strong>9/10</li>
+                <li><strong>Precio mas bajo: </strong>7/10</li>
+                <li><strong>Durabilidad: </strong>8/10</li>      
+              </ul>
+            </div>
+            </div>
+              </div>
+              <% } %>
+          </div>
+          
+          
+          <!-- <h4>LOS MAS VENDIDOS</h4> -->
+          
+          <div class="ofertas">
+            
+            <% for( let i = 4; i < 8/*products.length*/; i++ ) { %>
+            <div class="container">	
+            
+          <div class="product-image">
+            <img src= <%= products[i].imagen %> alt="">
+          
+          <div class="info">
+            <h2>Detalles</h2>
+            <ul>
+              <li><strong>Comentarios +: </strong>9/10</li>
+              <li><strong>Precio más bajo: </strong>7/10</li>
+              <li><strong>Durabilidad: </strong>8/10</li>  
+            </ul>
+          </div>
+          </div>
+          <div class="product-details">
+              
+            <h1><%= products[i].name %></h1>
+            <!-- <span class="hint-star star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span> -->
+                <p class="information">ACA VAN MAS DETALLES DEL PRODUCTO</p>
+          
+          <div class="control">
+            
+            <button class="btn">
+             <span class="price"> $ <%= products[i].price %></span>
+             <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+             <span class="buy">Comprar</span>
+           </button>
+            
+          </div>    
+          </div>
+            </div>
+            <% } %>
+    </main>
+
+    <%- include("../partials/footer") %>
+  </body>
+</html>

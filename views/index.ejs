@@ -49,7 +49,7 @@
     <button class="btn">
      <span class="price"> $ <%= products[i].price %></span>
      <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-     <span class="buy">Comprar</span>
+     <a href="/products/<%= products[i].id%>"> <span class="buy" >Comprar</span> </a>
    </button>
     
   </div>

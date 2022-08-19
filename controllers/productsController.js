@@ -22,6 +22,9 @@ const productsController = {
   productCart: (req, res) => {
     res.render("products/productCart", { products: productList });
 },
+masVendidos: (req,res) => {
+  res.render("products/masVendidos", {products: productList})
+},
 
   productDetail: (req, res) => {
     let id = req.params.id
