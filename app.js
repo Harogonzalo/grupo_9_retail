@@ -1,16 +1,32 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const session = require("express-session"); //paquete para loguear usuarios
+const methodOverride = require("method-override"); // paquete para usar PUT y Delete
+const cookieParser = require("cookie-parser");
 
 const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || 'localhost';
 
+// Routes
 const mainRoutes = require('./routes/mainRoutes');
 const productsRoutes = require('./routes/productRoutes');
 const usersRoutes = require('./routes/userRoutes');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+// Middlewares globales
+
+app.use(express.urlencoded({ extended: false }));  //sin esto fallan rutas que van en POST, creo.
+app.use(cookieParser());
+app.use(methodOverride("_method"));
+app.use(
+    session({
+    secret: "This is the secret used to sign the session cookie",
+    // resave: false,
+    // saveUninitialized: true,
+    })
+);
 
 // configuarcion de public static
 app.use(express.static(path.join(__dirname, 'public')));
@@ -25,14 +41,16 @@ app.listen(PORT, ()=>{
     console.log(`Server running at http://${HOST}:${PORT}/`);
 });
 
-// 404
+// Para que muestre pagina de error, esta comentado por razones de troubleshooting 
+
+// 404  
 // app.use((req, res, next) => {
 //     res.status(404).render("../views/404.ejs")
 // })
 
 
 
-// Rutas a vistas
+// Rutas a vistas (obsoleto, se pueden borrar creo)
 
 /**/
 

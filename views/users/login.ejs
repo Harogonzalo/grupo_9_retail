@@ -13,11 +13,11 @@
 
 
     <main class="main-login">
-            <form class="form-register">
+            <form action="/users/login" method="POST" class="form-register">
               <!-- USERNAME INPUT -->
-              <input class="controls"  type="text" placeholder="Ingresa usuario"><br>
+              <input class="controls"  type="text"  name="username" placeholder="Ingresa usuario"><br>
               <!-- PASSWORD INPUT -->
-              <input class="controls" type="constraseña" placeholder="Ingresar constraseña"><br>
+              <input class="controls" type="password" name="password"  placeholder="Ingresar constraseña"><br>
               <input class="botons" type="submit" value="Ingresar"><br>
               <p><a href="#">Olvido su contraseña?</a></p> 
               <p><a href="/users/register">Registrate</a></p>

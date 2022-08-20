@@ -3,12 +3,9 @@ const router = express.Router();
 
 const usersController = require('../controllers/usersController');
 const userValidate = require('../middlewares/userValidate'); 
-
-// const registerValidations = require("../middlewares/validationsForms/registerValidations.js");
-// const loginValidations = require("../middlewares/validationsForms/loginValidations");
-// const unAuthMiddleware = require("../middlewares/unAuthorizedmdlwr");
-// const authMiddleware = require('../middlewares/AuthorizedMd')
-
+const loginValidations = require("../middlewares/loginValidations");
+const unAuthMiddleware = require("../middlewares/access/unAuthorizedmdlwr"); 
+const authMiddleware = require('../middlewares/access/AuthorizedMd')
 
 // router.get("/register", userController.userStore);
 // router.post(
@@ -28,9 +25,14 @@ const userValidate = require('../middlewares/userValidate');
 // vista del login
 router.get('/login', usersController.login);
 
+router.post("/login", loginValidations, usersController.processLogin);
+
 // vista del registro
 router.get('/register', usersController.register);
 
 router.post('/register', express.urlencoded( {extended: false}), userValidate, usersController.userStore);
+
+// router.get("/logout", userController.processLogout); 
+
 
 module.exports = router;

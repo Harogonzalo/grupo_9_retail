@@ -576,7 +576,6 @@ footer i {
     width: 20vw;
     align-self: center;
     text-align: center;
-
   }
   .div-logo img{
     width: 80%;
@@ -608,6 +607,9 @@ footer i {
     height: auto;
     max-height: 90%;
   }
+  .boton-borrar{
+    background-color: red;
+  }
 
 
 
@@ -631,7 +633,7 @@ footer i {
         display: none
     }
     .img-banner {
-        width: 100vw;
+        width: 100vw; 
         height: 20vh;
         margin-bottom: 0px;
     }

@@ -6,6 +6,17 @@ const productList = JSON.parse(fs.readFileSync(productListPath, "utf8"));
 
 const mainController = {
   index: (req, res) => {
+    {
+      if (req.session.userLoged) {
+        console.log(req.session)
+        console.log(req.session.userLoged.isAdmin)
+        res.render("index", {
+        products: productList,
+        user: req.session.userLoged});
+      } else {
+        res.render("index", {products: productList});
+      }
+    }
     // if (req.session.userLoged) {
     //   res.render("index", {
     //     user: req.session.userLoged,
@@ -13,7 +24,10 @@ const mainController = {
     // } else {
     //   res.render("index", { products: productList });
     // }
-    res.render("index", { products: productList });
+  },
+  makeAdmin: (req,res) => {
+    req.session.userLoged.isAdmin = true
+    res.redirect("/");
   },
   
   //TODAVIA NO SE APLICA

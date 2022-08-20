@@ -5,8 +5,11 @@
     
     
     <div class="contenedor-botones">
-        <button class="boton-uno"><a href="/users/register"><span>Usuario: </span></button></a>
-        <button class="boton-dos"><a href="/users/register"><span> Anonimo</span></button></a>
+        <button class="boton-uno" ><a href="/users/register"><span>Usuario: </span></button></a>
+        <button class="boton-dos"><a href="/users/register"> <% if(locals.user && locals.user) {%>
+          <span> <%= user.username %> </span>
+          <% } else {%> <span> Anonimo</span>
+          <% } %> </button></a>
         <button class="boton-tres"><a href="/users/login"><span>Ingresar</span></button></a>
         <button class="boton-cuatro"><a href="/products/productCart"><span>Carrito</span></button></a>
         <!-- <div class="contenedor-iconos"><i class="flaticon-shopping-cart-2"></i></div>
@@ -37,10 +40,10 @@
     </div>
     
     <div class="nav-links">
-      <a href="/products/masVendidos" target="_blank">Mas Vendidos</a>
-      <a href="/products/masVendidos" target="_blank">Mejor Precio</a>
-      <a href="/products/masVendidos" target="_blank">Mejores Cometarios</a>
-      <a href="/products/masVendidos" target="_blank">Todos</a>
+      <a href="/products/masVendidos" target="_self">Mas Vendidos</a>
+      <a href="/products/masVendidos" target="_self">Mejor Precio</a>
+      <a href="/products/masVendidos" target="_self">Mejores Cometarios</a>
+      <a href="/products/masVendidos" target="_self">Todos</a>
     </div>
   </div>
   

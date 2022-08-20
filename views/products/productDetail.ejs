@@ -12,7 +12,16 @@
       <h4>Detalle de Producto</h4>
       <div class="ofertas">
         <!-- Articulos en Detalle -->
-        
+        <% if(locals.user && locals.user.isAdmin == true) { %>
+          <form
+            action="/products/delete/<%= productoFiltrado.id %>?_method=DELETE"
+            method="POST"
+          >
+            <button type="submit" class="boton-borrar">
+              Borrar Producto
+            </button>
+          </form>
+          <% } %>    
           <div class="image-container">  
             <div class="product-details">
 

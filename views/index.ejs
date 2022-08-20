@@ -15,6 +15,15 @@
 <!------  MAIN  ------>
 
 <main>
+  <% if(locals.user && locals.user.isAdmin == false) { %>
+    <form
+    action="/user/makeAdmin?_method=PUT"
+    method="POST"
+  >
+  <button type="submit" class="link btn btn-delete">
+    Volverse admin
+  </button>
+    <% } %>
   
   <div class="banner">
     <h3>
@@ -108,7 +117,7 @@
   <button class="btn">
    <span class="price"> $ <%= products[i].price %></span>
    <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-   <span class="buy">Comprar</span>
+   <a href="/products/<%= products[i].id%>"> <span class="buy" >Comprar</span> </a>
  </button>
   
 </div>    

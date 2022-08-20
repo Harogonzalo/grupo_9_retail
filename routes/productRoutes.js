@@ -30,7 +30,7 @@ router.post('/:id/edit', upload.array ('image', 5), validateProduct, productsCon
  //RUTA Acción de edición (a donde se envía el formulario)
 router.put("/products/:id", productsController.updateProduct);
 
- //RUTA Acción de borrado
-router.delete("/products/:id", productsController.deleteProduct);
-*/
+ //RUTA Acción de borrado */
+router.delete("/delete/:id", productsController.deleteProduct);
+
 module.exports = router;

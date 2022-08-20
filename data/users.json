@@ -16,5 +16,13 @@
     "password": "123456",
     "level": "admin",
     "image": "image"
+  },
+  {
+    "username": "Arrgorrarsda@hotmail.com",
+    "surname": "Arrgorrarsda@hotmail.com",
+    "email": "Arrgorrarsda@hotmail.com",
+    "password": "$2a$10$3bnaI5V3zxQatCsL9g2PvuqHGZM4.VygsOxRbZQNp9uTFLC.hlOmu",
+    "id": 1660978205710,
+    "isAdmin": false
   }
 ]

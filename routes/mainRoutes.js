@@ -9,7 +9,7 @@ router.get('/', mainController.index);
 router.get('/index', mainController.index)
 router.get('/index', mainController.ofertaProducts)
 router.get('/index', mainController.novedadesProducts)
-
+router.put('/user/makeAdmin', mainController.makeAdmin)
 router.get
 
 // router.get('*', mainController.sendPageNotFound)

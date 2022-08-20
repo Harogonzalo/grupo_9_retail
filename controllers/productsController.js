@@ -17,11 +17,21 @@ const productsController = {
         productResults.push(productList[i])
       }
     }
+      if (req.session.userLoged) {
+        res.render('products/searchProducts', {productSearch: productResults,
+        user: req.session.userLoged
+        });
+      } else {
     res.render('products/searchProducts', {productSearch: productResults})
-  },
+  }},
   productCart: (req, res) => {
+    if (req.session.userLoged) {
+      res.render('products/productCart', {products: productList,
+      user: req.session.userLoged
+      });
+    } else {
     res.render("products/productCart", { products: productList });
-},
+}},
 masVendidos: (req,res) => {
   res.render("products/masVendidos", {products: productList})
 },
@@ -31,8 +41,13 @@ masVendidos: (req,res) => {
     let productoFiltrado = productList.find((producto) => producto.id == id )
     
     // console.log(productoFiltrado)
+    if (req.session.userLoged) {
+      res.render('products/productDetail', {productoFiltrado,
+      user: req.session.userLoged
+      });
+    } else {
     res.render("products/productDetail",{productoFiltrado });
-  },
+  }},
 
   getAllProducts: (req, res) => {
     res.render("index", {
@@ -60,7 +75,7 @@ masVendidos: (req,res) => {
     let product = req.body;
     product.imagen =  "/img/uploads/"+ req.files[0].filename
 
-    product.id = uuidv4();
+    product.id = Date.now();
 
     productList.push(product);
 
