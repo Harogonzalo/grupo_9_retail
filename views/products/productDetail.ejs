@@ -22,23 +22,35 @@
             </button>
           </form>
           <% } %>    
-          <div class="image-container">  
-            <div class="product-details">
-
-            <img src= <%= productoFiltrado.imagen %> />
-            <h3> <%= productoFiltrado.name %> </h3>
+          <div class="product-container">  
+            <div class="image-container">
+              <img src= <%= productoFiltrado.imagen %> />
+            </div>
+            <div class="product-information">
+            <h2> <%= productoFiltrado.name %> </h3>
             <div class="div-precio">
-            <p class="precio">  <%= productoFiltrado.price %>$  </p>
+            <p class="precio">  <%= productoFiltrado.price %>$  </p> 
             <p class="descuento">   <%= productoFiltrado.discount %>% off</p>
           </div>
-          </div> -->
           </div>
-
-        <div class="detalle-articulo">
-        <h2>Detalle: <%= productoFiltrado.fulldescription %> </h2>
+          </div>
+          <div class="detalle-articulo">
+            <h2>Detalle: <%= productoFiltrado.fulldescription %> </h2>
         
       </div>
       
+      </div>
+      <div class="metodos-de-pago">
+        <h2> Metodos de pago:</h2>
+        <p> En tanques</p>
+        <p> En cuchillos de plastico</p>
+        <p> En papafritas Lays</p>
+
+      </div>
+      <div class="comprar">
+        <button class="btn">
+          <a href="#"> <span class="buy" >COMPRAR</span> </a>
+        </button>
       </div>
     </main>
     

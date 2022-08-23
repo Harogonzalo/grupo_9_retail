@@ -8,8 +8,6 @@ const mainController = {
   index: (req, res) => {
     {
       if (req.session.userLoged) {
-        console.log(req.session)
-        console.log(req.session.userLoged.isAdmin)
         res.render("index", {
         products: productList,
         user: req.session.userLoged});

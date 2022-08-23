@@ -402,7 +402,7 @@ font-family: 'EB Garamond', serif;
   top: 0;
 }
 
-.btn .buy {z-index: 3; font-weight: bolder;}
+.btn .buy {z-index: 3; font-weight: bolder; color: white;}
 
 .btn:hover .price {transform: translateX(-110%);}
 
@@ -610,6 +610,34 @@ footer i {
   .boton-borrar{
     background-color: red;
   }
+  .image-container{
+    width: 100%;
+    height: 90%;
+  }
+  .image-container > img {
+    max-width: 80%;
+  }
+  .detalle-articulo{
+    padding-top: 50px;
+  }
+  .descuento{
+    border-radius: 5px;
+    width: 10%;
+    background-color: #38B6FF;
+  }
+  .comprar{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  }
+  .comprar > .btn:hover{
+    transform: translateY(0px);
+  }
+  .comprar > .btn{
+    width: 100%;
+    justify-content: center;
+  }
 
 
 
@@ -640,7 +668,6 @@ footer i {
     h4{
         font-size: 1.5rem;
     }
-
 }
   /*  Mobile large  */
 @media (min-width: 600px) {
@@ -680,9 +707,10 @@ footer i {
         grid-template-columns: repeat(3, 1fr);
         gap: 3px */
     }
-
-
-
+    .nav > .nav-links > a:hover {
+      background-color: transparent;
+      text-decoration: solid underline white;
+    }
 }
   /* Tablet y Laptop  */
 @media (min-width: 900px) {
@@ -698,9 +726,6 @@ footer i {
       width: 18%;
       
   }
-    .burger-menu{
-        display: none;
-    }
     .toda-navbar {
         padding-bottom: 0;
         display: block;
@@ -752,12 +777,12 @@ footer i {
     .section-footer h2{
         font-size: 2rem;
     }
-    .nav > .nav-btn {
+    /* .nav > .nav-btn {
       display: inline-block;
       position: absolute;
       right: 0px;
       top: 0px;
-    }
+    } */
     .nav > .nav-btn > label {
       display: inline-block;
       /* width: 50px;
@@ -773,7 +798,7 @@ footer i {
       height: 8px;
       border-top: 2px solid #eee;
     }
-    .nav > .nav-links {
+    /* .nav > .nav-links {
       position: absolute;
       display: block;
       width: 100%;
@@ -790,10 +815,23 @@ footer i {
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
-    }
+    } */
     .nav > #nav-check:checked ~ .nav-links {
       height: 250px;
       overflow-y: auto;
+    }
+    .nav-btn{
+      display: none
+    }
+    .nav > .nav-links > a:hover {
+      background-color: transparent;
+      text-decoration: solid underline white;
+    }
+    .nav-search{
+      display: block
+    }
+    .nav-search-image{
+      display:none
     }
 }
 
