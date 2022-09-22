@@ -3,12 +3,55 @@ const fs = require("fs");
 const path = require("path");
 const { validationResult }= require('express-validator')
 
+// const sequelize = db.sequelize;
+// const db = require("../database/models");
+
 
 const productListPath = path.resolve(__dirname, "../data/products.json");
 const productList = JSON.parse(fs.readFileSync(productListPath, "utf8"));
 
 const productsController = {
-  search: (req, res) => {
+  
+    // getAllProducts: async (req, res) => {
+    //   // listar todos
+    //   await db.products.findAll()
+    //     .then((products) => {
+    //       res.render("index", { products });
+    //     })
+    //     .catch((error) => {
+    //       console.error(error);
+    //     });
+  
+  
+   getAllProducts: (req, res) => {
+     res.render("index", {
+       products: productList,
+     });
+   },
+    getProductById: (req, res) => {
+    let id = req.params.id;
+  
+    res.send("Get product by id: " + id);
+  },
+    productFilter: async (req, res) => {
+    //Filtro de productos
+    const clasificacion = req.params.category; //obtenemos la categoría del producto
+    const productList = await db.Products.findAll({
+      where: {
+        category: clasificacion
+      } 
+    })
+
+    res.render("products/allProducts", {
+      //renderizamos la vista de todos los productos
+      styles: "allProducts", //le pasamos el estilo correspondiente
+      products: productList, //le pasamos la lista de productos filtrada
+    });
+  },
+
+
+  
+    search: (req, res) => {
     let productoBuscado = req.query.search;
     let productResults = [];
     
@@ -36,7 +79,7 @@ masVendidos: (req,res) => {
   res.render("products/masVendidos", {products: productList})
 },
 
-  productDetail: (req, res) => {
+productDetail: (req, res) => {
     let id = req.params.id
     let productoFiltrado = productList.find((producto) => producto.id == id )
     
@@ -49,16 +92,6 @@ masVendidos: (req,res) => {
     res.render("products/productDetail",{productoFiltrado });
   }},
 
-  getAllProducts: (req, res) => {
-    res.render("index", {
-      products: productList,
-    });
-  },
-  getProductById: (req, res) => {
-    let id = req.params.id;
-
-    res.send("Get product by id: " + id);
-  },
   createProduct: (req, res) => {
     res.render("products/create");
   },

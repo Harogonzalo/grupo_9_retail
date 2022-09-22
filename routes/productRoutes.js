@@ -21,6 +21,8 @@ router.post('/create', upload.array ('image', 5), validateProduct, productsContr
 // RUTA Detalle de un producto particular
 router.get("/:id", productsController.productDetail);
 router.get("/products/:id", productsController.getProductById);
+// Route to get a product by category
+// router.get("/category", productsController.productFilter);
 //RUTA Formulario de edición de productos
 router.get("/:id/edit", productsController.editProduct);
 router.post('/:id/edit', upload.array ('image', 5), validateProduct, productsController.updateProduct);

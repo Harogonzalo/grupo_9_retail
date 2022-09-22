@@ -4,6 +4,10 @@ const fs = require("fs");
 const path = require("path");
 const { validationResult } = require("express-validator");
 
+//Preparar para sequalize
+// const db = require('../database/models')
+// const { Op } = require('Sequelize');
+
 const userListPath = path.resolve(__dirname, "../data/users.json");
 const userList = JSON.parse(fs.readFileSync(userListPath, "utf8"));
 
@@ -21,14 +25,33 @@ const usersController = {
   login: (req, res) => {
     res.render("users/login");
   }, 
-  userStore: (req, res) => {
+  userStore: async (req, res) => {
     const resultValidation = validationResult(req);
     if (resultValidation.errors.length > 0) {
       return res.render("users/register", {
         errors: resultValidation.mapped(),
         oldData: req.body,
       });
-    } else {
+    } 
+    let usuarioRepetido = await db.Users.findOne({
+			where: {
+				email: { [Op.like]: req.body.email },
+			},
+		});
+
+		if (!resultValidation.errors.length && !usuarioRepetido) {
+			db.Users.create({
+				name: req.body.name,
+				email: req.body.email,
+				password: bcryptjs.hashSync(req.body.password, 10),
+				avatar: req.file.filename,
+				isAdmin: false,
+			}).then(function (user) {
+				req.session.userLogged = user;
+				res.redirect("/");
+			});
+		} 
+    else {
       let user = req.body;
       user.id = Date.now();      // lo cambie de uuidv4 a datenow ya que datenow son puros numeros
       user.password = bcrypt.hashSync(user.password, 10);
@@ -40,11 +63,18 @@ const usersController = {
       res.redirect("/users/login");
     }
   },
-  processLogin: (req, res) => {
+  processLogin: /*async*/ (req, res) => {
+		
+    // let userToLogin = await db.Users.findOne({
+		// 	where: {
+		// 		email: { [Op.like]: req.body.email },
+		// 	},
+		// });
+
     const resultValidation = validationResult(req);
-    console.log("Llegue a process login")
+    // console.log("Llegue a process login")
     if (!resultValidation.isEmpty()) {
-      console.log("Errores en la VALIDATION")
+      // console.log("Errores en la VALIDATION")
       return res.render("users/login", {
         errors: resultValidation.mapped(),
       });
@@ -58,7 +88,7 @@ const usersController = {
         res.render("users/login", {
           error: "Usuario no encontrado",
         })
-        console.log("No se encontro el usuario")
+        // console.log("No se encontro el usuario")
         ;
       }
 
@@ -76,7 +106,9 @@ const usersController = {
     }
   },
   processLogout: (req, res) => {
-
+    res.clearCookie('recordame');
+    req.session.destroy();
+    return res.redirect('/')
   }
 };
 

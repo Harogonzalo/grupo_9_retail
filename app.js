@@ -28,6 +28,8 @@ app.use(
     })
 );
 
+app.use(methodOverride('_method'));
+
 // configuarcion de public static
 app.use(express.static(path.join(__dirname, 'public')));
 
