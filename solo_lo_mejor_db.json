@@ -1,0 +1,38 @@
+[
+{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"solo_lo_mejor_db"},
+{"type":"table","name":"category","database":"solo_lo_mejor_db","data":
+[
+{"id":"1","name":"masVendidos"},
+{"id":"2","name":"masBuscados"}
+]
+}
+,{"type":"table","name":"images_products","database":"solo_lo_mejor_db","data":
+[
+{"id":"1","name":"product-1657110953499.jpg"},
+{"id":"2","name":"product-1657113824499.jpg"},
+{"id":"3","name":"product-1657113994191.jpg"},
+{"id":"4","name":"product-1657114413101.jpg"}
+]
+}
+,{"type":"table","name":"products","database":"solo_lo_mejor_db","data":
+[
+{"id":"1","name":"Horno Electrico","description":"bla bl bla","fulldescription":"Un horno eléctrico es aquel aparato para la cocción que funciona con energía eléctrica. Esta es convertida en calor por resistencias. Los hornos eléctricos son totalmente automatizados; la cocción es ","price":"34200","discount":"10","category":"0","id_image_product":"0"},
+{"id":"2","name":"Cafetera Moulinex","description":"Juego Red Dead Redemption II para xbox, Rockstar Games","fulldescription":"Viene con el juego Red Dead Redemption II. Alta cafetera.","price":"30500","discount":"40","category":"0","id_image_product":"0"},
+{"id":"3","name":"Pava Electrica Atma","description":"PAva bla bla bla","fulldescription":"La pava eléctrica Atma PE0821NAP tiene un diseño clásico en color metalico y una capacidad de 1,7 litros. Posee indicador de nivel de agua. Corta automáticamente al hervir el agua y es ideal para toma","price":"6770","discount":"15","category":"0","id_image_product":"0"},
+{"id":"4","name":"Notebook Lenovo","description":"Intel Core i5 10210U 12GB de RAM 512GB SSD, Intel UHD Graphics 620 1920x1080px","fulldescription":"Notebook Intel Core i5 10210U 12GB de RAM 512GB SSD, Intel UHD Graphics 620 1920x1080px","price":"154999","discount":"15","category":"0","id_image_product":"0"},
+{"id":"5","name":"Samsung Galaxy A33","description":"5g 128 Gb Awesome Black 6 Gb Ram","fulldescription":"Autonomía: muy buena autonomía, pero viene sin cargador, algo incomprensible. Conectividad y audio: sonido decente y conectividad con todo lo necesario hoy en día. Conclusión: un teléfono que puede so","price":"65000","discount":"5","category":"0","id_image_product":"0"},
+{"id":"6","name":"Heladera Pati:c k","description":"HPK141M10 silver con freezer 355L 220V","fulldescription":"Heladera caliente","price":"102000","discount":"25","category":"0","id_image_product":"0"},
+{"id":"7","name":"SmartTv Samsung 43","description":"bla bnla bla","fulldescription":"SmartTV para ver cosas no muy Smart","price":"60200","discount":"5","category":"0","id_image_product":"0"},
+{"id":"8","name":"Sbeve","description":"ゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴゴ","fulldescription":"300","price":"2","discount":"0","category":"0","id_image_product":"232"},
+{"id":"15","name":"Panel Calefactor","description":"Calefactor","fulldescription":"El panel Hotpanel es un calefactor pensado para que puedas calefaccionar tu hogar de la forma más segura. Cuenta con una potencia de 1200 W y una gran convección natural de calor.","price":"300","discount":"5","category":"0","id_image_product":"0"}
+]
+}
+,{"type":"table","name":"users","database":"solo_lo_mejor_db","data":
+[
+{"id":"1","name":"Cosme Fulanito","email":"cosme_fulanito@gmail.com","password":"123456","isAdmin":"0"},
+{"id":"2","name":"Esteban Quito","email":"EstebanQuito@gmail.com","password":"123456","isAdmin":"0"},
+{"id":"3","name":"Lalo Landa","email":"Arrgorrarsda@hotmail.com","password":"$2a$10$3bnaI5V3zxQatCsL9g2PvuqHGZM4.VygsOxRbZQNp9uTFLC.hlOmu","isAdmin":"0"}
+]
+}
+]
