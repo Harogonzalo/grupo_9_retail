@@ -15,6 +15,8 @@ const usersController = {
   register: (req, res) => {
     {
       if (req.session.userLoged) {
+        
+        // Reemplazar por un Alert
         console.log("El Register es solo para usuarios")
         res.redirect("/");
       } else {
@@ -44,7 +46,6 @@ const usersController = {
 				name: req.body.name,
 				email: req.body.email,
 				password: bcryptjs.hashSync(req.body.password, 10),
-				avatar: req.file.filename,
 				isAdmin: false,
 			}).then(function (user) {
 				req.session.userLogged = user;

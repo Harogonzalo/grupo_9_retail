@@ -21,7 +21,20 @@
       <div class="nav">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
-          <div class="nav-title">
+          
+          <div class="wrap">
+            <div class="search">
+              <form class ="nav-search" action="products/search" method="GET">
+               <input type="text" class="searchTerm" placeholder="Buscar productos, marcas..">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+              </form>
+            </div>
+         </div>
+          
+          
+          <!-- <div class="nav-title">
             <form class ="nav-search" action="products/search" method="GET">
               <input type="text" name="search"  placeholder="Buscar productos, marcas..">
               <button class="sss">
@@ -30,11 +43,11 @@
                 </div>
               </button>
               <!-- <input class="flaticon-magnifying-glass" type="submit" value="Search"> -->
-            </form>
+            <!--</form>
             <div class="nav-search-image">
               <i class="flaticon-magnifying-glass" type="submit" value="Search"></i>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="nav-btn">
           <label for="nav-check">

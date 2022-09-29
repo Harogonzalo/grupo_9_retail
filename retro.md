@@ -107,3 +107,16 @@ no dejar puntos sin terminar de los Sprint
 Trabajar individualmente
 
 
+### Retrospectiva del Sprint 6
+
+### Comenzar a hacer.
+Base de Datos
+### Hacer más.
+ Trabaja en Equipo 
+ Emprolijar el codigo, limpar carpetas y archivos
+ ### Continuar haciendo.
+Estilos de la pagina y vistas
+### Hacer menos.
+Trabajar individualmente
+### Dejar de hacer.
+No coordinar tareas y no dejar puntos de los sprint sin hacer

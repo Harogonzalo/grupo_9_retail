@@ -15,16 +15,18 @@ const usersRoutes = require('./routes/userRoutes');
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
+
 // Middlewares globales
 
 app.use(express.urlencoded({ extended: false }));  //sin esto fallan rutas que van en POST, creo.
 app.use(cookieParser());
 app.use(methodOverride("_method"));
+app.use(express.json());
 app.use(
     session({
     secret: "This is the secret used to sign the session cookie",
-    // resave: false,
-    // saveUninitialized: true,
+    resave: false,
+    saveUninitialized: true,
     })
 );
 
