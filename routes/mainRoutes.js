@@ -10,7 +10,7 @@ router.get('/index', mainController.index)
 router.get('/index', mainController.ofertaProducts)
 router.get('/index', mainController.novedadesProducts)
 router.put('/user/makeAdmin', mainController.makeAdmin)
-router.get
+router.get("/carrito", mainController.carrito);
 
 // router.get('*', mainController.sendPageNotFound)
 

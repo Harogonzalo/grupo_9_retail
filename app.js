@@ -1,11 +1,11 @@
-const express = require('express');
-const app = express();
-const path = require('path');
+const express = require("express"); // requiero express
+const app = express(); // uso la funcionalida de express
+const path = require("path"); //crea rutas absolutas
 const session = require("express-session"); //paquete para loguear usuarios
 const methodOverride = require("method-override"); // paquete para usar PUT y Delete
 const cookieParser = require("cookie-parser");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; //variable dinamica de puerto
 const HOST = process.env.HOST || 'localhost';
 
 // Routes
@@ -13,11 +13,12 @@ const mainRoutes = require('./routes/mainRoutes');
 const productsRoutes = require('./routes/productRoutes');
 const usersRoutes = require('./routes/userRoutes');
 
+//ubicacion de la carpta de vistas para express
 app.set('views', path.join(__dirname, 'views'));
+//motor de vista usado en la app
 app.set('view engine', 'ejs');
 
 // Middlewares globales
-
 app.use(express.urlencoded({ extended: false }));  //sin esto fallan rutas que van en POST, creo.
 app.use(cookieParser());
 app.use(methodOverride("_method"));
@@ -29,8 +30,6 @@ app.use(
     saveUninitialized: true,
     })
 );
-
-app.use(methodOverride('_method'));
 
 // configuarcion de public static
 app.use(express.static(path.join(__dirname, 'public')));

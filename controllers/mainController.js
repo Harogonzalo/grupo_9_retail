@@ -27,6 +27,11 @@ const mainController = {
     req.session.userLoged.isAdmin = true
     res.redirect("/");
   },
+  carrito: (req, res) => {
+    res.render("carrito", {
+      title: "Carrito",
+      styles: "carrito.css",
+    })},
   
   //TODAVIA NO SE APLICA
   ofertaProducts: (req, res) => {
